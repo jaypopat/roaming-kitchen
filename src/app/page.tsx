@@ -11,8 +11,7 @@ export default function Component() {
         muted
         className="absolute w-full h-full object-cover"
       >
-        <source src="/path/to/your-video.mp4" type="video/mp4" />
-        <source src="/path/to/your-video.webm" type="video/webm" />
+        <source src="public/slideshow.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen bg-black bg-opacity-50">
