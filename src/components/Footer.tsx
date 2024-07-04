@@ -10,7 +10,7 @@ export default function Component() {
           <Link className="inline-block font-bold" href="#">
             Food Truck Catering Company
           </Link>
-          <p className="text-xs">© 2023 Food Truck Catering Company. All rights reserved.</p>
+          <p className="text-xs">©2024 NV Hospitality. All rights reserved.</p>
         </div>
         <nav className="flex flex-col gap-2 order-3 text-sm justify-center lg:gap-4 lg:order-2 lg:text-base xl:gap-2">
           <Link className="hover:underline" href="#">
@@ -35,13 +35,6 @@ export default function Component() {
             About
           </Link>
         </nav>
-        <div className="flex flex-col gap-2 order-2 text-sm justify-end lg:gap-4 lg:order-3 lg:text-base xl:gap-2">
-          <p className="text-center lg:text-left">Sign up to get notified when we launch.</p>
-          <form className="flex gap-2 justify-center lg:justify-start">
-            <Input className="max-w-sm" placeholder="Enter your email" type="email" />
-            <Button type="submit">Sign Up</Button>
-          </form>
-        </div>
       </div>
     </footer>
   )

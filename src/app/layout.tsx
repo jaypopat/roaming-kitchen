@@ -22,17 +22,8 @@ export default function RootLayout({
         <html lang="en" />
       </Head>
       <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <Header />
+       
           <main>{children}</main>
-          <Footer />
-        </ThemeProvider>
-
       </body>
     </>
   );
