@@ -219,7 +219,7 @@ export default function Component() {
   )
 }
 
-function ClockIcon(props) {
+function ClockIcon(props:any) {
   return (
     <svg
       {...props}
@@ -240,7 +240,7 @@ function ClockIcon(props) {
 }
 
 
-function LocateIcon(props) {
+function LocateIcon(props:any) {
   return (
     <svg
       {...props}
@@ -264,7 +264,7 @@ function LocateIcon(props) {
 }
 
 
-function TruckIcon(props) {
+function TruckIcon(props:any) {
   return (
     <svg
       {...props}
