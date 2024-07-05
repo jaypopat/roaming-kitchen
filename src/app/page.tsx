@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import ContactForm from "@/components/contact"
 import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
 import { readdirSync } from "fs"
@@ -15,9 +14,10 @@ export const metadata: Metadata = {
 
 export default function Page() {
 
-  let chef_portfolio_dir = "chef-portfolio/Narendra";
-  let chef_awards_dir = "chef-portfolio/Narendra/awards";
-
+  const chef_portfolio_dir = "/chef-portfolio/Narendra";
+  const chef_awards_dir = "/chef-portfolio/Narendra/awards";
+  const chef_pfp = "/chef-portfolio/Narendra/awards/pfp.png";
+  const vipul_pfp = "/vipul/pfp.jpg"
 
   const readDirectory = (dir: string) => {
     const directoryPath = path.join("public", dir);
@@ -30,8 +30,8 @@ export default function Page() {
 
 
 
-  console.log(chef_images)
-  console.log(chef_achievments) 
+  // console.log(chef_images)
+  // console.log(chef_achievments) 
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
@@ -66,7 +66,7 @@ export default function Page() {
               <p className="max-w-[600px] md:text-xl">Serving up delicious, freshly-prepared meals on the go.</p>
             </div>
             <Link
-              href="#"
+              href="#menu"
               className="inline-flex h-10 items-center justify-center rounded-md bg-primary-foreground px-8 text-sm font-medium text-primary shadow transition-colors hover:bg-primary-foreground/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
               prefetch={false}
             >
@@ -183,18 +183,18 @@ export default function Page() {
               </div>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="flex flex-col items-center justify-center">
-                  <Avatar className="w-24 h-24 mb-4">
-                    <AvatarImage src="/placeholder-user.jpg" />
-                    <AvatarFallback>VP</AvatarFallback>
-                  </Avatar>
+                  <Card>
+                    <Image src={vipul_pfp} alt="@vipulpopat" width={400} height={500} className="aspect-video object-cover rounded-md"
+                    />
+                  </Card>
                   <h3 className="text-xl font-bold">Vipul Popat</h3>
                   <p className="text-muted-foreground">Co-Founder</p>
                 </div>
                 <div className="flex flex-col items-center justify-center">
-                  <Avatar className="w-24 h-24 mb-4">
-                    <AvatarImage src="/placeholder-user.jpg" />
-                    <AvatarFallback>NS</AvatarFallback>
-                  </Avatar>
+                  <Card>
+                    <Image src={chef_pfp} alt="@narendrasharma" width={400} height={500} className="aspect-video object-cover rounded-md"
+                    />
+                  </Card>
                   <h3 className="text-xl font-bold">Narendra Sharma</h3>
                   <p className="text-muted-foreground">Co-Founder and Chef</p>
                 </div>
@@ -218,7 +218,7 @@ export default function Page() {
                   {chef_images.map((image) => (
                     <CarouselItem key={image}>
                       <Image
-                        src={`/${chef_portfolio_dir}/${image}`}
+                        src={`${chef_portfolio_dir}/${image}`}
                         width={448}
                         height={252}
                         alt={image}
@@ -267,7 +267,7 @@ export default function Page() {
                   {chef_achievments.map((image) => (
                     <CarouselItem key={image}>
                       <Image
-                        src={`/${chef_awards_dir}/${image}`}
+                        src={`${chef_awards_dir}/${image}`}
                         width={448}
                         height={252}
                         alt={image}
