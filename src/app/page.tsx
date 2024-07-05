@@ -20,7 +20,7 @@ export default function Page() {
 
 
   const readDirectory = (dir: string) => {
-    const directoryPath = path.join(process.cwd(), dir);
+    const directoryPath = path.join("public", dir);
     const files = readdirSync(directoryPath);
     return files.filter(file => /\.(jpg|jpeg|png|gif)$/.test(file));
   };
