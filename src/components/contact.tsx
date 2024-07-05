@@ -21,12 +21,13 @@ export default function ContactForm() {
   };
 
   const handleSubmit = async (e:any) => {
-    e.preventDefault();
+    e.preventDefault(); // Prevent default form submission
 
     try {
       const response = await axios.post('/api/mail', formData);
       if (response.status === 200) {
         alert('Email sent successfully');
+        setFormData({ name: '', email: '', message: '' }); // Reset form
       }
     } catch (error) {
       console.error('Error sending email:', error);
@@ -34,7 +35,7 @@ export default function ContactForm() {
     }
   };
 
-  return (
+  return (  
     <section id="contact" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">

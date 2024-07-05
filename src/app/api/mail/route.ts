@@ -1,17 +1,19 @@
+import { NextRequest } from 'next/server';
 import nodemailer from 'nodemailer';
 
-export default async function handler(req, res) {
+export default async function POST(req:NextRequest) {
 
-  if (req.method === 'POST') {
     console.log("endpoint got hit");
-    const { name, email, message } = req.body;
+    const formData = await req.json(); 
+
+    const { name, email, message } = formData;
 
     const transporter = nodemailer.createTransport({
       service: 'Gmail',
       auth: {
         user: "contact.jaypopat@gmail.com",
         pass: "x",
-      },
+      },  
     });
 
     // Define the email options
@@ -29,13 +31,9 @@ export default async function handler(req, res) {
     try {
       // Send the email
       await transporter.sendMail(mailOptions);
-      res.status(200).json({ message:'Email sent successfully' });
-      console.log("sent mf");
+      return new Response('Email sent successfully', { status: 200 });
     } catch (error) {
       console.error('Error sending email:', error);
-      res.status(500).json({ message: 'Error sending email' });
+      return new Response('Error sending email', { status: 500 });
     }
-  } else {
-    res.status(405).json({ message: 'Method not allowed' });
   }
-}
