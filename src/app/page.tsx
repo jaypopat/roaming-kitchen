@@ -30,35 +30,12 @@ export default function Page() {
 
 
 
-  // console.log(chef_images)
-  // console.log(chef_achievments) 
-
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="fixed top-0 left-0 right-0 px-4 lg:px-6 h-14 flex items-center bg-primary text-primary-foreground z-50">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <Image height={80} width={80} src="/logo.png" alt="" />
-          <span className="text-2xl font-bold">Roaming Kitchen</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#menu" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Menu
-          </Link>
-          <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            About
-          </Link>
-          <Link href="#team" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Team
-          </Link>
-          <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
-            Contact
-          </Link>
-        </nav>
-      </header>
       <main className="flex-1">
         <section className="w-full h-screen relative">
           <video className="w-full h-full object-cover" autoPlay loop muted>
-            <source src="slideshow.mp4" type="video/mp4" />
+            <source src="slideshow.mp4" type="video p4" />
           </video>
           <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
             <div className="space-y-2">
@@ -285,17 +262,6 @@ export default function Page() {
         </section>
         <ContactForm />
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-primary text-primary-foreground">
-        <p className="text-xs">&copy; 2024 Roaming Kitchen. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
-            Terms of Service
-          </Link>
-          <Link href="#" className="text-xs hover:underline underline-offset-4" prefetch={false}>
-            Privacy Policy
-          </Link>
-        </nav>
-      </footer>
     </div>
   )
 }
