@@ -1,32 +1,56 @@
-"use client"
 import Link from "next/link"
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar"
 import ContactForm from "@/components/contact"
+import { Carousel, CarouselContent, CarouselItem, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
+import { readdirSync } from "fs"
+import path from "path"
+import Image from "next/image"
+import { Metadata } from 'next'
 
 
-export default function Component() {
+export const metadata: Metadata = {
+  title: 'Roaming Kitchen',
+}
+
+export default function Page() {
+
+  let chef_portfolio_dir = "chef-portfolio/Narendra";
+  let chef_awards_dir = "chef-portfolio/Narendra/awards";
 
 
+  const readDirectory = (dir: string) => {
+    const directoryPath = path.join(process.cwd(), dir);
+    const files = readdirSync(directoryPath);
+    return files.filter(file => /\.(jpg|jpeg|png|gif)$/.test(file));
+  };
+
+  let chef_images = readDirectory(chef_portfolio_dir);
+  let chef_achievments = readDirectory(chef_awards_dir);
+
+
+
+  console.log(chef_images)
+  console.log(chef_achievments) 
 
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="px-4 lg:px-6 h-14 flex items-center bg-primary text-primary-foreground">
+      <header className="fixed top-0 left-0 right-0 px-4 lg:px-6 h-14 flex items-center bg-primary text-primary-foreground z-50">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
-            <img height={80} width={80} src="logo.png" alt="" />
+          <Image height={80} width={80} src="/logo.png" alt="" />
           <span className="text-2xl font-bold">Roaming Kitchen</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link href="#menu"  className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link href="#menu" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             Menu
           </Link>
-          <Link href="#about"  className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link href="#about" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             About
           </Link>
-          <Link href="#team"  className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link href="#team" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             Team
           </Link>
-          <Link href="#contact"  className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
+          <Link href="#contact" className="text-sm font-medium hover:underline underline-offset-4" prefetch={false}>
             Contact
           </Link>
         </nav>
@@ -62,7 +86,7 @@ export default function Component() {
             </div>
             <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
               <Card>
-                <img
+                <Image
                   src="/placeholder.svg"
                   width="550"
                   height="310"
@@ -77,7 +101,7 @@ export default function Component() {
                 </CardContent>
               </Card>
               <Card>
-                <img
+                <Image
                   src="/placeholder.svg"
                   width="550"
                   height="310"
@@ -92,7 +116,7 @@ export default function Component() {
                 </CardContent>
               </Card>
               <Card>
-                <img
+                <Image
                   src="/placeholder.svg"
                   width="550"
                   height="310"
@@ -107,7 +131,7 @@ export default function Component() {
                 </CardContent>
               </Card>
               <Card>
-                <img
+                <Image
                   src="/placeholder.svg"
                   width="550"
                   height="310"
@@ -130,19 +154,20 @@ export default function Component() {
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">About Roaming Kitchen</h2>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Roaming Kitchen is your go-to spot for delicious, chef-crafted meals made with passion and the freshest ingredients. 
-                We are committed to bringing quality and affordability together, making your dining experience a delightful adventure.
-                 Join us as we bring our culinary creations to your neighborhood!
+                  Roaming Kitchen is your go-to spot for delicious, chef-crafted meals made with passion and the freshest ingredients.
+                  We are committed to bringing quality and affordability together, making your dining experience a delightful adventure.
+                  Join us as we bring our culinary creations to your neighborhood!
                 </p>
               </div>
               <div className="flex items-center justify-center">
                 <img
-                  src=" https://www.renaultgroup.com/wp-content/uploads/2015/06/ft8.jpg "
-                  width="550"
-                  height="310"
+                  src="https://www.renaultgroup.com/wp-content/uploads/2015/06/ft8.jpg"
+                  width={550}
+                  height={310}
                   alt="About Roaming Kitchen"
                   className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
                 />
+
               </div>
             </div>
           </div>
@@ -177,7 +202,88 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <ContactForm/>
+        <section id="chef" className="w-full py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Meet Our Chef</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Chef Narendra brings 25 years of culinary expertise from top hotels and restaurants, consistently creating dishes that delight discerning palates.  They have excelled at leading large teams, orchestrating events for hundreds of guests, and managing intricate social gatherings.  Their experience also includes strong supplier relationships, ensuring fresh, high-quality ingredients at the best value. Chef Narendra is a culinary maestro, a skilled leader, and a logistics expert—the perfect combination to spearhead any culinary endeavor, guaranteeing delicious food and an unforgettable experience.
+                </p>
+              </div>
+              <Carousel className="w-full max-w-md">
+                <CarouselContent>
+
+
+                  {chef_images.map((image) => (
+                    <CarouselItem key={image}>
+                      <Image
+                        src={`/${chef_portfolio_dir}/${image}`}
+                        width={448}
+                        height={252}
+                        alt={image}
+                        className="aspect-video object-cover rounded-md"
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
+          </div>
+        </section>
+        <section id="chef-achievements" className="w-full py-12 md:py-24 lg:py-32 bg-muted">
+          <div className="container px-4 md:px-6">
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">Chef's Achievements</h2>
+                <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Check out some of our chef's proudest accomplishments.
+                </p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <Card>
+                  <CardContent className="flex flex-col items-center justify-center p-6">
+                    <h3 className="text-2xl font-bold">Best Chef 2022</h3>
+                    <p className="text-muted-foreground">Awarded by the National Culinary Association</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="flex flex-col items-center justify-center p-6">
+                    <h3 className="text-2xl font-bold">Top Rated Chef 2023</h3>
+                    <p className="text-muted-foreground">Voted by our loyal customers</p>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardContent className="flex flex-col items-center justify-center p-6">
+                    <h3 className="text-2xl font-bold">Michelin Star 2024</h3>
+                    <p className="text-muted-foreground">Recognized for our exceptional cuisine</p>
+                  </CardContent>
+                </Card>
+              </div>
+              <Carousel className="w-full max-w-md">
+                <CarouselContent>
+                  {chef_achievments.map((image) => (
+                    <CarouselItem key={image}>
+                      <Image
+                        src={`/${chef_awards_dir}/${image}`}
+                        width={448}
+                        height={252}
+                        alt={image}
+                        className="aspect-video object-cover rounded-md"
+                      />
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+
+                <CarouselPrevious />
+                <CarouselNext />
+              </Carousel>
+            </div>
+          </div>
+        </section>
+        <ContactForm />
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-primary text-primary-foreground">
         <p className="text-xs">&copy; 2024 Roaming Kitchen. All rights reserved.</p>
