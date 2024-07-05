@@ -131,7 +131,7 @@ export default function Component() {
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">About Roaming Kitchen</h2>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Roaming Kitchen is your go-to spot for delicious, chef-crafted meals made with passion and the freshest ingredients. 
-                We're committed to bringing quality and affordability together, making your dining experience a delightful adventure.
+                We are committed to bringing quality and affordability together, making your dining experience a delightful adventure.
                  Join us as we bring our culinary creations to your neighborhood!
                 </p>
               </div>
