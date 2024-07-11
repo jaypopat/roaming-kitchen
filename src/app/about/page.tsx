@@ -66,7 +66,7 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="flex items-center justify-center">
-              <Image
+              <img
                 src="https://www.renaultgroup.com/wp-content/uploads/2015/06/ft8.jpg"
                 width={550}
                 height={310}
