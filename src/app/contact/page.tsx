@@ -23,19 +23,19 @@ export default function ContactForm() {
   const handleSubmit = async (e:any) => {
     e.preventDefault(); // Prevent default form submission
 
-    try {
-      const response = await axios.post('/api/mail', formData);
-      if (response.status === 200) {
-        alert('Email sent successfully');
-        setFormData({ name: '', email: '', message: '' }); // Reset form
-      }
-    } catch (error) {
-      console.error('Error sending email:', error);
-      alert('Error sending email');
-    }
+    // try {
+    //   const response = await axios.post('/api/mail', formData);
+    //   if (response.status === 200) {
+    //     alert('Email sent successfully');
+    //     setFormData({ name: '', email: '', message: '' }); // Reset form
+    //   }
+    // } catch (error) {
+    //   console.error('Error sending email:', error);
+    //   alert('Error sending email');
+    // }
   };
 
-  return (  
+  return (
 <section id="contact" className="w-full py-24 md:py-48 lg:py-64 bg-muted">
           <div className="container px-8 md:px-12 lg:px-16">
         <div className="flex flex-col items-center justify-center space-y-8 text-center">
@@ -81,13 +81,13 @@ export default function ContactForm() {
                 onChange={handleChange}
               />
               <Button type="submit" className="py-4 px-8 text-lg">Submit</Button>
-            </form> 
+            </form>
           </div>
         </div>
       </div>
     </section>
   );
-}   
+}
 
 
 
