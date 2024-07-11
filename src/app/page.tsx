@@ -1,13 +1,12 @@
-import Link from "next/link"
-import { Metadata } from 'next'
-
+"use client";
+import Link from "next/link";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Roaming Kitchen',
-}
+  title: "Roaming Kitchen",
+};
 
 export default function Page() {
-
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
@@ -17,8 +16,12 @@ export default function Page() {
           </video>
           <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
             <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Roaming Kitchen</h1>
-              <p className="max-w-[600px] md:text-xl">Serving up delicious, freshly-prepared meals on the go.</p>
+              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
+                Roaming Kitchen
+              </h1>
+              <p className="max-w-[600px] md:text-xl">
+                Serving up delicious, freshly-prepared meals on the go.
+              </p>
             </div>
             <Link
               href="/menu"
@@ -31,5 +34,5 @@ export default function Page() {
         </section>
       </main>
     </div>
-  )
+  );
 }
