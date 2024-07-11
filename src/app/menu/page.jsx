@@ -1,32 +1,40 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
-import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuLabel, DropdownMenuSeparator, DropdownMenuCheckboxItem } from "@/components/ui/dropdown-menu"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
+import { useState } from "react";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
+import {
+  DropdownMenu,
+  DropdownMenuTrigger,
+  DropdownMenuContent,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuCheckboxItem,
+} from "@/components/ui/dropdown-menu";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Component() {
-  const [activeTab, setActiveTab] = useState("appetizer")
+  const [activeTab, setActiveTab] = useState("appetizer");
   const [filters, setFilters] = useState({
     vegetarian: true,
     nonVegetarian: true,
-  })
+  });
   const handleFilterChange = (filter, checked) => {
     setFilters((prevFilters) => ({
       ...prevFilters,
       [filter]: checked,
-    }))
-  }
+    }));
+  };
   return (
     <div className="flex flex-col min-h-[100dvh]">
-     
       <main className="flex-1">
         <section className="py-12 md:py-24">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center gap-6">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">Our Menu</h2>
+                <h2 className="text-3xl font-bold sm:text-4xl md:text-5xl">
+                  Our Menu
+                </h2>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
                   Explore our delicious selection of street food favorites.
                 </p>
@@ -53,13 +61,17 @@ export default function Component() {
                         <DropdownMenuSeparator />
                         <DropdownMenuCheckboxItem
                           checked={filters.vegetarian}
-                          onCheckedChange={(checked) => handleFilterChange("vegetarian", checked)}
+                          onCheckedChange={(checked) =>
+                            handleFilterChange("vegetarian", checked)
+                          }
                         >
                           Vegetarian
                         </DropdownMenuCheckboxItem>
                         <DropdownMenuCheckboxItem
                           checked={filters.nonVegetarian}
-                          onCheckedChange={(checked) => handleFilterChange("nonVegetarian", checked)}
+                          onCheckedChange={(checked) =>
+                            handleFilterChange("nonVegetarian", checked)
+                          }
                         >
                           Non-Vegetarian
                         </DropdownMenuCheckboxItem>
@@ -81,9 +93,12 @@ export default function Component() {
                                   className="rounded-full"
                                 />
                                 <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">Vegetable Spring Rolls</h3>
+                                  <h3 className="text-lg font-semibold">
+                                    Vegetable Spring Rolls
+                                  </h3>
                                   <p className="text-muted-foreground">
-                                    Crispy fried rolls filled with fresh vegetables.
+                                    Crispy fried rolls filled with fresh
+                                    vegetables.
                                   </p>
                                   <div className="font-medium">$4.99</div>
                                 </div>
@@ -101,8 +116,12 @@ export default function Component() {
                                   className="rounded-full"
                                 />
                                 <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">Chicken Satay</h3>
-                                  <p className="text-muted-foreground">Grilled chicken skewers with peanut sauce.</p>
+                                  <h3 className="text-lg font-semibold">
+                                    Chicken Satay
+                                  </h3>
+                                  <p className="text-muted-foreground">
+                                    Grilled chicken skewers with peanut sauce.
+                                  </p>
                                   <div className="font-medium">$5.99</div>
                                 </div>
                               </CardContent>
@@ -127,8 +146,12 @@ export default function Component() {
                                   className="rounded-full"
                                 />
                                 <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">Tomato Soup</h3>
-                                  <p className="text-muted-foreground">Creamy tomato soup with fresh basil.</p>
+                                  <h3 className="text-lg font-semibold">
+                                    Tomato Soup
+                                  </h3>
+                                  <p className="text-muted-foreground">
+                                    Creamy tomato soup with fresh basil.
+                                  </p>
                                   <div className="font-medium">$3.99</div>
                                 </div>
                               </CardContent>
@@ -145,8 +168,12 @@ export default function Component() {
                                   className="rounded-full"
                                 />
                                 <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">Chicken Noodle Soup</h3>
-                                  <p className="text-muted-foreground">Hearty chicken soup with egg noodles.</p>
+                                  <h3 className="text-lg font-semibold">
+                                    Chicken Noodle Soup
+                                  </h3>
+                                  <p className="text-muted-foreground">
+                                    Hearty chicken soup with egg noodles.
+                                  </p>
                                   <div className="font-medium">$4.99</div>
                                 </div>
                               </CardContent>
@@ -171,8 +198,12 @@ export default function Component() {
                                   className="rounded-full"
                                 />
                                 <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">Caprese Salad</h3>
-                                  <p className="text-muted-foreground">Fresh mozzarella, tomatoes, and basil.</p>
+                                  <h3 className="text-lg font-semibold">
+                                    Caprese Salad
+                                  </h3>
+                                  <p className="text-muted-foreground">
+                                    Fresh mozzarella, tomatoes, and basil.
+                                  </p>
                                   <div className="font-medium">$6.99</div>
                                 </div>
                               </CardContent>
@@ -189,8 +220,13 @@ export default function Component() {
                                   className="rounded-full"
                                 />
                                 <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">Bruschetta</h3>
-                                  <p className="text-muted-foreground">Toasted bread with tomato, garlic, and basil.</p>
+                                  <h3 className="text-lg font-semibold">
+                                    Bruschetta
+                                  </h3>
+                                  <p className="text-muted-foreground">
+                                    Toasted bread with tomato, garlic, and
+                                    basil.
+                                  </p>
                                   <div className="font-medium">$4.99</div>
                                 </div>
                               </CardContent>
@@ -215,8 +251,12 @@ export default function Component() {
                                   className="rounded-full"
                                 />
                                 <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">Beef Bulgogi</h3>
-                                  <p className="text-muted-foreground">Marinated and grilled beef with rice.</p>
+                                  <h3 className="text-lg font-semibold">
+                                    Beef Bulgogi
+                                  </h3>
+                                  <p className="text-muted-foreground">
+                                    Marinated and grilled beef with rice.
+                                  </p>
                                   <div className="font-medium">$12.99</div>
                                 </div>
                               </CardContent>
@@ -233,8 +273,12 @@ export default function Component() {
                                   className="rounded-full"
                                 />
                                 <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">Vegetable Curry</h3>
-                                  <p className="text-muted-foreground">Aromatic vegetable curry with basmati rice.</p>
+                                  <h3 className="text-lg font-semibold">
+                                    Vegetable Curry
+                                  </h3>
+                                  <p className="text-muted-foreground">
+                                    Aromatic vegetable curry with basmati rice.
+                                  </p>
                                   <div className="font-medium">$9.99</div>
                                 </div>
                               </CardContent>
@@ -259,8 +303,12 @@ export default function Component() {
                                   className="rounded-full"
                                 />
                                 <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">Mango Sticky Rice</h3>
-                                  <p className="text-muted-foreground">Sweet sticky rice with fresh mango.</p>
+                                  <h3 className="text-lg font-semibold">
+                                    Mango Sticky Rice
+                                  </h3>
+                                  <p className="text-muted-foreground">
+                                    Sweet sticky rice with fresh mango.
+                                  </p>
                                   <div className="font-medium">$5.99</div>
                                 </div>
                               </CardContent>
@@ -277,8 +325,12 @@ export default function Component() {
                                   className="rounded-full"
                                 />
                                 <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">Churros</h3>
-                                  <p className="text-muted-foreground">Crispy fried pastries with cinnamon sugar.</p>
+                                  <h3 className="text-lg font-semibold">
+                                    Churros
+                                  </h3>
+                                  <p className="text-muted-foreground">
+                                    Crispy fried pastries with cinnamon sugar.
+                                  </p>
                                   <div className="font-medium">$4.99</div>
                                 </div>
                               </CardContent>
@@ -293,10 +345,9 @@ export default function Component() {
             </div>
           </div>
         </section>
-        
       </main>
     </div>
-  )
+  );
 }
 
 function FilterIcon(props) {
@@ -315,15 +366,14 @@ function FilterIcon(props) {
     >
       <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
     </svg>
-  )
+  );
 }
-
 
 function SandwichIcon(props) {
   return (
     <svg
       {...props}
-      xmlns="http://www.w3.org/2000/svg"  
+      xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
@@ -338,9 +388,8 @@ function SandwichIcon(props) {
       <path d="m3 11 7.77-6.04a2 2 0 0 1 2.46 0L21 11H3Z" />
       <path d="M12.97 19.77 7 15h12.5l-3.75 4.5a2 2 0 0 1-2.78.27Z" />
     </svg>
-  )
+  );
 }
-
 
 function TruckIcon(props) {
   return (
@@ -362,5 +411,5 @@ function TruckIcon(props) {
       <circle cx="17" cy="18" r="2" />
       <circle cx="7" cy="18" r="2" />
     </svg>
-  )
+  );
 }
