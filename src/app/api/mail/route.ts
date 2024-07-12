@@ -25,6 +25,7 @@ export async function POST(request: NextRequest) {
           Name: ${name}
           Email: ${email}
           Message: ${message}
+          Phone: ${phone}
         `,
     };
 

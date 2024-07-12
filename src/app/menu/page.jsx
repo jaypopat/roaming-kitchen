@@ -11,8 +11,7 @@ import {
   DropdownMenuCheckboxItem,
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import Image from "next/image";
+import { MenuItems } from "@/components/MenuItem";
 import items from "./items.json";
 
 export default function Component() {
@@ -21,12 +20,14 @@ export default function Component() {
     vegetarian: true,
     nonVegetarian: true,
   });
+
   const handleFilterChange = (filter, checked) => {
     setFilters((prevFilters) => ({
       ...prevFilters,
       [filter]: checked,
     }));
   };
+
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
@@ -80,248 +81,40 @@ export default function Component() {
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
-                  {/* {console.log(items)} */}
                   <TabsContent value="appetizer">
-                    <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                      {filters.vegetarian &&
-                        items.Appetizers.Vegetarian.map((item) => (
-                          <Card key={item.item}>
-                            <CardContent className="flex flex-col items-center gap-2">
-                              <Image
-                                src="/menu/starters/chips-and-wedges.jpeg"
-                                width={150}
-                                height={150}
-                                alt={item.item}
-                                className="rounded-md"
-                              />
-                              <div className="space-y-1">
-                                <h3 className="text-lg font-semibold">
-                                  {item.item}
-                                </h3>
-                                <p className="text-muted-foreground">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </CardContent>
-                          </Card>
-                        ))}
-                      {filters.nonVegetarian &&
-                        items.Appetizers["Non-Vegetarian"].map((item) => (
-                          <Card key={item.item}>
-                            <CardContent className="flex flex-col items-center gap-2">
-                              <Image
-                                src="/menu/starters/chips-and-wedges.jpeg"
-                                width={150}
-                                height={150}
-                                alt={item.item}
-                                className="rounded-full"
-                              />
-                              <div className="space-y-1">
-                                <h3 className="text-lg font-semibold">
-                                  {item.item}
-                                </h3>
-                                <p className="text-muted-foreground">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </CardContent>
-                          </Card>
-                        ))}
-                    </div>
+                    <MenuItems
+                      category="Appetizers"
+                      filters={filters}
+                      items={items}
+                    />
                   </TabsContent>
-
                   <TabsContent value="soup">
-                    <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                      {filters.vegetarian &&
-                        items.Soups.Vegetarian.map((item) => (
-                          <Card key={item.item}>
-                            <CardContent className="flex flex-col items-center gap-2">
-                              <Image
-                                src="/menu/starters/chips-and-wedges.jpeg"
-                                width={150}
-                                height={150}
-                                alt={item.item}
-                                className="rounded-full"
-                              />
-                              <div className="space-y-1">
-                                <h3 className="text-lg font-semibold">
-                                  {item.item}
-                                </h3>
-                                <p className="text-muted-foreground">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </CardContent>
-                          </Card>
-                        ))}
-                      {filters.nonVegetarian &&
-                        items.Soups["Non-Vegetarian"].map((item) => (
-                          <Card key={item.item}>
-                            <CardContent className="flex flex-col items-center gap-2">
-                              <Image
-                                src="/menu/starters/chips-and-wedges.jpeg"
-                                width={150}
-                                height={150}
-                                alt={item.item}
-                                className="rounded-full"
-                              />
-                              <div className="space-y-1">
-                                <h3 className="text-lg font-semibold">
-                                  {item.item}
-                                </h3>
-                                <p className="text-muted-foreground">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </CardContent>
-                          </Card>
-                        ))}
-                    </div>
+                    <MenuItems
+                      category="Soups"
+                      filters={filters}
+                      items={items}
+                    />
                   </TabsContent>
-
                   <TabsContent value="starter">
-                    <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                      {filters.vegetarian &&
-                        items.Starters.Vegetarian.map((item) => (
-                          <Card key={item.item}>
-                            <CardContent className="flex flex-col items-center gap-2">
-                              <Image
-                                src="/menu/starters/chips-and-wedges.jpeg"
-                                width={150}
-                                height={150}
-                                alt={item.item}
-                                className="rounded-full"
-                              />
-                              <div className="space-y-1">
-                                <h3 className="text-lg font-semibold">
-                                  {item.item}
-                                </h3>
-                                <p className="text-muted-foreground">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </CardContent>
-                          </Card>
-                        ))}
-                      {filters.nonVegetarian &&
-                        items.Starters["Non-Vegetarian"].map((item) => (
-                          <Card key={item.item}>
-                            <CardContent className="flex flex-col items-center gap-2">
-                              <Image
-                                src="/menu/starters/chips-and-wedges.jpeg"
-                                width={150}
-                                height={150}
-                                alt={item.item}
-                                className="rounded-full"
-                              />
-                              <div className="space-y-1">
-                                <h3 className="text-lg font-semibold">
-                                  {item.item}
-                                </h3>
-                                <p className="text-muted-foreground">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </CardContent>
-                          </Card>
-                        ))}
-                    </div>
+                    <MenuItems
+                      category="Starters"
+                      filters={filters}
+                      items={items}
+                    />
                   </TabsContent>
                   <TabsContent value="main">
-                    <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                      {filters.vegetarian &&
-                        items["Main Course"].Vegetarian.map((item) => (
-                          <Card key={item.item}>
-                            <CardContent className="flex flex-col items-center gap-2">
-                              <Image
-                                src="/menu/starters/chips-and-wedges.jpeg"
-                                width={150}
-                                height={150}
-                                alt={item.item}
-                                className="rounded-full"
-                              />
-                              <div className="space-y-1">
-                                <h3 className="text-lg font-semibold">
-                                  {item.item}
-                                </h3>
-                                <p className="text-muted-foreground">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </CardContent>
-                          </Card>
-                        ))}
-                      {filters.nonVegetarian &&
-                        items["Main Course"]["Non-Vegetarian"].map((item) => (
-                          <Card key={item.item}>
-                            <CardContent className="flex flex-col items-center gap-2">
-                              <Image
-                                src="/menu/starters/chips-and-wedges.jpeg"
-                                width={150}
-                                height={150}
-                                alt={item.item}
-                                className="rounded-full"
-                              />
-                              <div className="space-y-1">
-                                <h3 className="text-lg font-semibold">
-                                  {item.item}
-                                </h3>
-                                <p className="text-muted-foreground">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </CardContent>
-                          </Card>
-                        ))}
-                    </div>
+                    <MenuItems
+                      category="Main Course"
+                      filters={filters}
+                      items={items}
+                    />
                   </TabsContent>
                   <TabsContent value="desert">
-                    <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                      {filters.vegetarian &&
-                        items.Deserts.Vegetarian.map((item) => (
-                          <Card key={item.item}>
-                            <CardContent className="flex flex-col items-center gap-2">
-                              <Image
-                                src="/menu/starters/chips-and-wedges.jpeg"
-                                width={150}
-                                height={150}
-                                alt={item.item}
-                                className="rounded-full"
-                              />
-                              <div className="space-y-1">
-                                <h3 className="text-lg font-semibold">
-                                  {item.item}
-                                </h3>
-                                <p className="text-muted-foreground">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </CardContent>
-                          </Card>
-                        ))}
-                      {filters.nonVegetarian &&
-                        items.Deserts["Non-Vegetarian"].map((item) => (
-                          <Card key={item.item}>
-                            <CardContent className="flex flex-col items-center gap-2">
-                              <Image
-                                src="/menu/starters/chips-and-wedges.jpeg"
-                                width={150}
-                                height={150}
-                                alt={item.item}
-                                className="rounded-full"
-                              />
-                              <div className="space-y-1">
-                                <h3 className="text-lg font-semibold">
-                                  {item.item}
-                                </h3>
-                                <p className="text-muted-foreground">
-                                  {item.description}
-                                </p>
-                              </div>
-                            </CardContent>
-                          </Card>
-                        ))}
-                    </div>
+                    <MenuItems
+                      category="Deserts"
+                      filters={filters}
+                      items={items}
+                    />
                   </TabsContent>
                 </Tabs>
               </div>
