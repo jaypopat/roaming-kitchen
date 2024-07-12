@@ -33,34 +33,31 @@ export default function ChefPage() {
                 Meet Our Chef
               </h2>
               <p className="mt-4 max-w-[800px] text-muted-foreground md:text-2xl/relaxed lg:text-xl/relaxed xl:text-2xl/relaxed">
-                Chef Narendra brings 25 years of culinary expertise from top
-                hotels and restaurants, consistently creating dishes that
-                delight discerning palates. They have excelled at leading large
-                teams, orchestrating events for hundreds of guests, and managing
-                intricate social gatherings. Their experience also includes
-                strong supplier relationships, ensuring fresh, high-quality
-                ingredients at the best value. Chef Narendra is a culinary
-                maestro, a skilled leader, and a logistics expert—the perfect
-                combination to spearhead any culinary endeavor, guaranteeing
-                delicious food and an unforgettable experience.
+                A culinary maestro with 25 years of experience leading top
+                kitchens. Chef Narendra creates dishes that delight,
+                orchestrates events for hundreds, and builds strong supplier
+                relationships for the freshest ingredients. Experience delicious
+                food and an unforgettable experience with Chef Narendra.
               </p>
             </div>
-            <Carousel className="w-full max-w-md">
+            <Carousel className="w-full max-w-[50vw]">
               <CarouselContent>
                 {chef_images.map((image) => (
                   <CarouselItem key={image}>
-                    <Image
-                      src={`${chef_portfolio_dir}/${image}`}
-                      width={448}
-                      height={252}
-                      alt={image}
-                      className="aspect-video object-cover rounded-md"
-                    />
+                    <div className="flex justify-center items-center">
+                      <Image
+                        src={`${chef_portfolio_dir}/${image}`}
+                        width={1200}
+                        height={675}
+                        alt={image}
+                        className="aspect-video object-cover rounded-md"
+                      />
+                    </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
             </Carousel>
           </div>
         </div>
@@ -120,8 +117,8 @@ export default function ChefPage() {
                 ))}
               </CarouselContent>
 
-              <CarouselPrevious />
-              <CarouselNext />
+              <CarouselPrevious className="left-4" />
+              <CarouselNext className="right-4" />
             </Carousel>
           </div>
         </div>

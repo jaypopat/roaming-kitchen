@@ -12,6 +12,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import Image from "next/image";
+import items from "./items.json";
 
 export default function Component() {
   const [activeTab, setActiveTab] = useState("appetizer");
@@ -46,7 +48,7 @@ export default function Component() {
                     <TabsTrigger value="soup">Soups</TabsTrigger>
                     <TabsTrigger value="starter">Starters</TabsTrigger>
                     <TabsTrigger value="main">Main Courses</TabsTrigger>
-                    <TabsTrigger value="dessert">Desserts</TabsTrigger>
+                    <TabsTrigger value="desert">Desserts</TabsTrigger>
                   </TabsList>
                   <div className="flex items-center gap-4 mb-6">
                     <DropdownMenu>
@@ -78,266 +80,247 @@ export default function Component() {
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
+                  {console.log(items)}
                   <TabsContent value="appetizer">
                     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                      {(filters.vegetarian || filters.nonVegetarian) && (
-                        <>
-                          {filters.vegetarian && (
-                            <Card>
-                              <CardContent className="flex flex-col items-center gap-2">
-                                <img
-                                  src="/placeholder.svg"
-                                  width={150}
-                                  height={150}
-                                  alt="Vegetable Spring Rolls"
-                                  className="rounded-full"
-                                />
-                                <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">
-                                    Vegetable Spring Rolls
-                                  </h3>
-                                  <p className="text-muted-foreground">
-                                    Crispy fried rolls filled with fresh
-                                    vegetables.
-                                  </p>
-                                  <div className="font-medium">$4.99</div>
-                                </div>
-                              </CardContent>
-                            </Card>
-                          )}
-                          {filters.nonVegetarian && (
-                            <Card>
-                              <CardContent className="flex flex-col items-center gap-2">
-                                <img
-                                  src="/placeholder.svg"
-                                  width={150}
-                                  height={150}
-                                  alt="Chicken Satay"
-                                  className="rounded-full"
-                                />
-                                <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">
-                                    Chicken Satay
-                                  </h3>
-                                  <p className="text-muted-foreground">
-                                    Grilled chicken skewers with peanut sauce.
-                                  </p>
-                                  <div className="font-medium">$5.99</div>
-                                </div>
-                              </CardContent>
-                            </Card>
-                          )}
-                        </>
-                      )}
+                      {filters.vegetarian &&
+                        items.Appetizers.Vegetarian.map((item) => (
+                          <Card key={item.item}>
+                            <CardContent className="flex flex-col items-center gap-2">
+                              <Image
+                                src="/placeholder.svg"
+                                width={150}
+                                height={150}
+                                alt={item.item}
+                                className="rounded-full"
+                              />
+                              <div className="space-y-1">
+                                <h3 className="text-lg font-semibold">
+                                  {item.item}
+                                </h3>
+                                <p className="text-muted-foreground">
+                                  {item.description}
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        ))}
+                      {filters.nonVegetarian &&
+                        items.Appetizers["Non-Vegetarian"].map((item) => (
+                          <Card key={item.item}>
+                            <CardContent className="flex flex-col items-center gap-2">
+                              <Image
+                                src="/placeholder.svg"
+                                width={150}
+                                height={150}
+                                alt={item.item}
+                                className="rounded-full"
+                              />
+                              <div className="space-y-1">
+                                <h3 className="text-lg font-semibold">
+                                  {item.item}
+                                </h3>
+                                <p className="text-muted-foreground">
+                                  {item.description}
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        ))}
                     </div>
                   </TabsContent>
+
                   <TabsContent value="soup">
                     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                      {(filters.vegetarian || filters.nonVegetarian) && (
-                        <>
-                          {filters.vegetarian && (
-                            <Card>
-                              <CardContent className="flex flex-col items-center gap-2">
-                                <img
-                                  src="/placeholder.svg"
-                                  width={150}
-                                  height={150}
-                                  alt="Tomato Soup"
-                                  className="rounded-full"
-                                />
-                                <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">
-                                    Tomato Soup
-                                  </h3>
-                                  <p className="text-muted-foreground">
-                                    Creamy tomato soup with fresh basil.
-                                  </p>
-                                  <div className="font-medium">$3.99</div>
-                                </div>
-                              </CardContent>
-                            </Card>
-                          )}
-                          {filters.nonVegetarian && (
-                            <Card>
-                              <CardContent className="flex flex-col items-center gap-2">
-                                <img
-                                  src="/placeholder.svg"
-                                  width={150}
-                                  height={150}
-                                  alt="Chicken Noodle Soup"
-                                  className="rounded-full"
-                                />
-                                <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">
-                                    Chicken Noodle Soup
-                                  </h3>
-                                  <p className="text-muted-foreground">
-                                    Hearty chicken soup with egg noodles.
-                                  </p>
-                                  <div className="font-medium">$4.99</div>
-                                </div>
-                              </CardContent>
-                            </Card>
-                          )}
-                        </>
-                      )}
+                      {filters.vegetarian &&
+                        items.Soups.Vegetarian.map((item) => (
+                          <Card key={item.item}>
+                            <CardContent className="flex flex-col items-center gap-2">
+                              <Image
+                                src="/placeholder.svg"
+                                width={150}
+                                height={150}
+                                alt={item.item}
+                                className="rounded-full"
+                              />
+                              <div className="space-y-1">
+                                <h3 className="text-lg font-semibold">
+                                  {item.item}
+                                </h3>
+                                <p className="text-muted-foreground">
+                                  {item.description}
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        ))}
+                      {filters.nonVegetarian &&
+                        items.Soups["Non-Vegetarian"].map((item) => (
+                          <Card key={item.item}>
+                            <CardContent className="flex flex-col items-center gap-2">
+                              <Image
+                                src="/placeholder.svg"
+                                width={150}
+                                height={150}
+                                alt={item.item}
+                                className="rounded-full"
+                              />
+                              <div className="space-y-1">
+                                <h3 className="text-lg font-semibold">
+                                  {item.item}
+                                </h3>
+                                <p className="text-muted-foreground">
+                                  {item.description}
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        ))}
                     </div>
                   </TabsContent>
+
                   <TabsContent value="starter">
                     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                      {filters.vegetarian && (
-                        <>
-                          {filters.vegetarian && (
-                            <Card>
-                              <CardContent className="flex flex-col items-center gap-2">
-                                <img
-                                  src="/placeholder.svg"
-                                  width={150}
-                                  height={150}
-                                  alt="Caprese Salad"
-                                  className="rounded-full"
-                                />
-                                <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">
-                                    Caprese Salad
-                                  </h3>
-                                  <p className="text-muted-foreground">
-                                    Fresh mozzarella, tomatoes, and basil.
-                                  </p>
-                                  <div className="font-medium">$6.99</div>
-                                </div>
-                              </CardContent>
-                            </Card>
-                          )}
-                          {filters.vegetarian && (
-                            <Card>
-                              <CardContent className="flex flex-col items-center gap-2">
-                                <img
-                                  src="/placeholder.svg"
-                                  width={150}
-                                  height={150}
-                                  alt="Bruschetta"
-                                  className="rounded-full"
-                                />
-                                <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">
-                                    Bruschetta
-                                  </h3>
-                                  <p className="text-muted-foreground">
-                                    Toasted bread with tomato, garlic, and
-                                    basil.
-                                  </p>
-                                  <div className="font-medium">$4.99</div>
-                                </div>
-                              </CardContent>
-                            </Card>
-                          )}
-                        </>
-                      )}
+                      {filters.vegetarian &&
+                        items.Starters.Vegetarian.map((item) => (
+                          <Card key={item.item}>
+                            <CardContent className="flex flex-col items-center gap-2">
+                              <Image
+                                src="/placeholder.svg"
+                                width={150}
+                                height={150}
+                                alt={item.item}
+                                className="rounded-full"
+                              />
+                              <div className="space-y-1">
+                                <h3 className="text-lg font-semibold">
+                                  {item.item}
+                                </h3>
+                                <p className="text-muted-foreground">
+                                  {item.description}
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        ))}
+                      {filters.nonVegetarian &&
+                        items.Starters["Non-Vegetarian"].map((item) => (
+                          <Card key={item.item}>
+                            <CardContent className="flex flex-col items-center gap-2">
+                              <Image
+                                src="/placeholder.svg"
+                                width={150}
+                                height={150}
+                                alt={item.item}
+                                className="rounded-full"
+                              />
+                              <div className="space-y-1">
+                                <h3 className="text-lg font-semibold">
+                                  {item.item}
+                                </h3>
+                                <p className="text-muted-foreground">
+                                  {item.description}
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        ))}
                     </div>
                   </TabsContent>
                   <TabsContent value="main">
                     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                      {(filters.vegetarian || filters.nonVegetarian) && (
-                        <>
-                          {filters.nonVegetarian && (
-                            <Card>
-                              <CardContent className="flex flex-col items-center gap-2">
-                                <img
-                                  src="/placeholder.svg"
-                                  width={150}
-                                  height={150}
-                                  alt="Beef Bulgogi"
-                                  className="rounded-full"
-                                />
-                                <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">
-                                    Beef Bulgogi
-                                  </h3>
-                                  <p className="text-muted-foreground">
-                                    Marinated and grilled beef with rice.
-                                  </p>
-                                  <div className="font-medium">$12.99</div>
-                                </div>
-                              </CardContent>
-                            </Card>
-                          )}
-                          {filters.vegetarian && (
-                            <Card>
-                              <CardContent className="flex flex-col items-center gap-2">
-                                <img
-                                  src="/placeholder.svg"
-                                  width={150}
-                                  height={150}
-                                  alt="Vegetable Curry"
-                                  className="rounded-full"
-                                />
-                                <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">
-                                    Vegetable Curry
-                                  </h3>
-                                  <p className="text-muted-foreground">
-                                    Aromatic vegetable curry with basmati rice.
-                                  </p>
-                                  <div className="font-medium">$9.99</div>
-                                </div>
-                              </CardContent>
-                            </Card>
-                          )}
-                        </>
-                      )}
+                      {filters.vegetarian &&
+                        items["Main Course"].Vegetarian.map((item) => (
+                          <Card key={item.item}>
+                            <CardContent className="flex flex-col items-center gap-2">
+                              <Image
+                                src="/placeholder.svg"
+                                width={150}
+                                height={150}
+                                alt={item.item}
+                                className="rounded-full"
+                              />
+                              <div className="space-y-1">
+                                <h3 className="text-lg font-semibold">
+                                  {item.item}
+                                </h3>
+                                <p className="text-muted-foreground">
+                                  {item.description}
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        ))}
+                      {filters.nonVegetarian &&
+                        items["Main Course"]["Non-Vegetarian"].map((item) => (
+                          <Card key={item.item}>
+                            <CardContent className="flex flex-col items-center gap-2">
+                              <Image
+                                src="/placeholder.svg"
+                                width={150}
+                                height={150}
+                                alt={item.item}
+                                className="rounded-full"
+                              />
+                              <div className="space-y-1">
+                                <h3 className="text-lg font-semibold">
+                                  {item.item}
+                                </h3>
+                                <p className="text-muted-foreground">
+                                  {item.description}
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        ))}
                     </div>
                   </TabsContent>
-                  <TabsContent value="dessert">
+                  <TabsContent value="desert">
                     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                      {filters.vegetarian && (
-                        <>
-                          {filters.vegetarian && (
-                            <Card>
-                              <CardContent className="flex flex-col items-center gap-2">
-                                <img
-                                  src="/placeholder.svg"
-                                  width={150}
-                                  height={150}
-                                  alt="Mango Sticky Rice"
-                                  className="rounded-full"
-                                />
-                                <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">
-                                    Mango Sticky Rice
-                                  </h3>
-                                  <p className="text-muted-foreground">
-                                    Sweet sticky rice with fresh mango.
-                                  </p>
-                                  <div className="font-medium">$5.99</div>
-                                </div>
-                              </CardContent>
-                            </Card>
-                          )}
-                          {filters.vegetarian && (
-                            <Card>
-                              <CardContent className="flex flex-col items-center gap-2">
-                                <img
-                                  src="/placeholder.svg"
-                                  width={150}
-                                  height={150}
-                                  alt="Churros"
-                                  className="rounded-full"
-                                />
-                                <div className="space-y-1">
-                                  <h3 className="text-lg font-semibold">
-                                    Churros
-                                  </h3>
-                                  <p className="text-muted-foreground">
-                                    Crispy fried pastries with cinnamon sugar.
-                                  </p>
-                                  <div className="font-medium">$4.99</div>
-                                </div>
-                              </CardContent>
-                            </Card>
-                          )}
-                        </>
-                      )}
+                      {filters.vegetarian &&
+                        items.Deserts.Vegetarian.map((item) => (
+                          <Card key={item.item}>
+                            <CardContent className="flex flex-col items-center gap-2">
+                              <Image
+                                src="/placeholder.svg"
+                                width={150}
+                                height={150}
+                                alt={item.item}
+                                className="rounded-full"
+                              />
+                              <div className="space-y-1">
+                                <h3 className="text-lg font-semibold">
+                                  {item.item}
+                                </h3>
+                                <p className="text-muted-foreground">
+                                  {item.description}
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        ))}
+                      {filters.nonVegetarian &&
+                        items.Deserts["Non-Vegetarian"].map((item) => (
+                          <Card key={item.item}>
+                            <CardContent className="flex flex-col items-center gap-2">
+                              <Image
+                                src="/placeholder.svg"
+                                width={150}
+                                height={150}
+                                alt={item.item}
+                                className="rounded-full"
+                              />
+                              <div className="space-y-1">
+                                <h3 className="text-lg font-semibold">
+                                  {item.item}
+                                </h3>
+                                <p className="text-muted-foreground">
+                                  {item.description}
+                                </p>
+                              </div>
+                            </CardContent>
+                          </Card>
+                        ))}
                     </div>
                   </TabsContent>
                 </Tabs>

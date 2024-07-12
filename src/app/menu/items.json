@@ -1,0 +1,483 @@
+{
+  "Appetizers": {
+    "Vegetarian": [
+      {
+        "item": "Vegetable Spring Rolls",
+        "description": "Crispy rolls filled with mixed vegetables and served with a dipping sauce.",
+        "image": "url_to_image_of_vegetable_spring_rolls"
+      },
+      {
+        "item": "Chips / Wedges",
+        "description": "Golden fried potato chips or wedges, served with a variety of dips.",
+        "image": "url_to_image_of_chips_wedges"
+      },
+      {
+        "item": "Garlic Mushrooms",
+        "description": "Sautéed mushrooms in a rich garlic butter sauce.",
+        "image": "url_to_image_of_garlic_mushrooms"
+      },
+      {
+        "item": "Mozarella Sticks",
+        "description": "Breaded and fried mozzarella cheese sticks, served with marinara sauce.",
+        "image": "url_to_image_of_mozarella_sticks"
+      },
+      {
+        "item": "Crumb Fried Brie",
+        "description": "Breaded and deep-fried Brie cheese, served with a fruit compote.",
+        "image": "url_to_image_of_crumb_fried_brie"
+      }
+    ],
+    "Non-Vegetarian": [
+      {
+        "item": "Cocktail Sausages",
+        "description": "Mini sausages served with a tangy mustard dip.",
+        "image": "url_to_image_of_cocktail_sausages"
+      },
+      {
+        "item": "Chicken Wings",
+        "description": "Juicy chicken wings, available in a variety of flavors and served with dipping sauce.",
+        "image": "url_to_image_of_chicken_wings"
+      },
+      {
+        "item": "Fish Goujons",
+        "description": "Breaded and fried fish strips, served with tartar sauce.",
+        "image": "url_to_image_of_fish_goujons"
+      },
+      {
+        "item": "Chicken Goujons",
+        "description": "Breaded and fried chicken strips, served with a choice of dips.",
+        "image": "url_to_image_of_chicken_goujons"
+      },
+      {
+        "item": "Spicy Cocktain Chicken Skewers",
+        "description": "Spicy marinated chicken pieces on skewers, grilled to perfection.",
+        "image": "url_to_image_of_spicy_cocktail_chicken_skewers"
+      }
+    ]
+  },
+  "Soups": {
+    "Vegetarian": [
+      {
+        "item": "Tomato & Basil",
+        "description": "A classic soup made with ripe tomatoes and fresh basil.",
+        "image": "url_to_image_of_tomato_basil_soup"
+      },
+      {
+        "item": "Potato & Leek",
+        "description": "A creamy soup made with potatoes and leeks.",
+        "image": "url_to_image_of_potato_leek_soup"
+      },
+      {
+        "item": "Carrot, Ginger, Orange",
+        "description": "A refreshing soup made with carrots, ginger, and a hint of orange.",
+        "image": "url_to_image_of_carrot_ginger_orange_soup"
+      },
+      {
+        "item": "Butternut Squash",
+        "description": "A rich and creamy soup made with butternut squash.",
+        "image": "url_to_image_of_butternut_squash_soup"
+      },
+      {
+        "item": "Mixed Vegetables",
+        "description": "A healthy soup made with a mix of fresh vegetables.",
+        "image": "url_to_image_of_mixed_vegetable_soup"
+      },
+      {
+        "item": "Hot & Sour",
+        "description": "A tangy and spicy soup with vegetables.",
+        "image": "url_to_image_of_hot_sour_soup"
+      },
+      {
+        "item": "Manchow",
+        "description": "A spicy and flavorful soup with mixed vegetables.",
+        "image": "url_to_image_of_manchow_soup"
+      },
+      {
+        "item": "Tom Yam",
+        "description": "A spicy and sour Thai soup with vegetables.",
+        "image": "url_to_image_of_tom_yam_soup"
+      },
+      {
+        "item": "Others on request",
+        "description": "Custom soups available upon request.",
+        "image": "url_to_image_of_custom_soups"
+      }
+    ],
+    "Non-Vegetarian": [
+      {
+        "item": "Tom Yam Chicken",
+        "description": "A spicy and sour Thai soup with chicken.",
+        "image": "url_to_image_of_tom_yam_chicken_soup"
+      },
+      {
+        "item": "Tom Kha Chicken",
+        "description": "A creamy Thai soup with chicken and coconut milk.",
+        "image": "url_to_image_of_tom_kha_chicken_soup"
+      },
+      {
+        "item": "Sea Food Chowder",
+        "description": "A rich and creamy chowder with a variety of seafood.",
+        "image": "url_to_image_of_seafood_chowder"
+      },
+      {
+        "item": "Miso Soup",
+        "description": "A traditional Japanese soup with miso and seafood.",
+        "image": "url_to_image_of_miso_soup"
+      }
+    ]
+  },
+  "Starters": {
+    "Vegetarian": [
+      {
+        "item": "Goat Cheese Tart",
+        "description": "A tart filled with creamy goat cheese and caramelized onions.",
+        "image": "url_to_image_of_goat_cheese_tart"
+      },
+      {
+        "item": "Paneer Tikka",
+        "description": "Marinated paneer cubes grilled to perfection.",
+        "image": "url_to_image_of_paneer_tikka"
+      },
+      {
+        "item": "Caprese Salad",
+        "description": "A fresh salad with tomatoes, mozzarella, and basil.",
+        "image": "url_to_image_of_caprese_salad"
+      },
+      {
+        "item": "Selection of Sushi",
+        "description": "A variety of vegetarian sushi rolls.",
+        "image": "url_to_image_of_vegetarian_sushi"
+      },
+      {
+        "item": "Caesar Salad",
+        "description": "A classic Caesar salad with crispy romaine lettuce and croutons.",
+        "image": "url_to_image_of_caesar_salad"
+      },
+      {
+        "item": "Quesdillas",
+        "description": "Cheese-filled tortillas served with salsa and guacamole.",
+        "image": "url_to_image_of_vegetarian_quesadillas"
+      },
+      {
+        "item": "Vegan Salad Bowl",
+        "description": "A healthy salad bowl with a variety of fresh vegetables.",
+        "image": "url_to_image_of_vegan_salad_bowl"
+      },
+      {
+        "item": "Tandoori Aloo",
+        "description": "Spicy marinated potatoes cooked in a tandoor.",
+        "image": "url_to_image_of_tandoori_aloo"
+      },
+      {
+        "item": "Dahi ke kabab",
+        "description": "Soft kababs made with yogurt and spices.",
+        "image": "url_to_image_of_dahi_ke_kabab"
+      },
+      {
+        "item": "Honey Chilli Potato",
+        "description": "Crispy potatoes tossed in a honey and chili sauce.",
+        "image": "url_to_image_of_honey_chilli_potato"
+      }
+    ],
+    "Non-Vegetarian": [
+      {
+        "item": "Chicken Tikka",
+        "description": "Marinated chicken pieces grilled to perfection.",
+        "image": "url_to_image_of_chicken_tikka"
+      },
+      {
+        "item": "Fish Fingers",
+        "description": "Breaded and fried fish strips served with tartar sauce.",
+        "image": "url_to_image_of_fish_fingers"
+      },
+      {
+        "item": "Crumb Fried Prawns",
+        "description": "Breaded and fried prawns served with a tangy dip.",
+        "image": "url_to_image_of_crumb_fried_prawns"
+      },
+      {
+        "item": "Chicken Vol Au Vent",
+        "description": "Puff pastry filled with creamy chicken and mushrooms.",
+        "image": "url_to_image_of_chicken_vol_au_vent"
+      },
+      {
+        "item": "Selection of Sushi",
+        "description": "A variety of sushi rolls with seafood.",
+        "image": "url_to_image_of_non_vegetarian_sushi"
+      },
+      {
+        "item": "Thai Chicken Satay",
+        "description": "Marinated chicken skewers served with peanut sauce.",
+        "image": "url_to_image_of_thai_chicken_satay"
+      },
+      {
+        "item": "Shrimp Cocktail",
+        "description": "Chilled shrimp served with a tangy cocktail sauce.",
+        "image": "url_to_image_of_shrimp_cocktail"
+      },
+      {
+        "item": "Salt n Pepper Chicken",
+        "description": "Crispy chicken pieces seasoned with salt and pepper.",
+        "image": "url_to_image_of_salt_n_pepper_chicken"
+      }
+    ]
+  },
+  "Main Course": {
+    "Vegetarian": [
+      {
+        "item": "Veg Biryani",
+        "description": "Aromatic rice cooked with mixed vegetables and spices.",
+        "image": "url_to_image_of_veg_biryani"
+      },
+      {
+        "item": "Bhindi Masala",
+        "description": "Spicy okra cooked with onions and tomatoes.",
+        "image": "url_to_image_of_bhindi_masala"
+      },
+      {
+        "item": "Pasta with Tomato or white sauce",
+        "description": "Pasta served with your choice of tomato or creamy white sauce.",
+        "image": "url_to_image_of_pasta_with_sauce"
+      },
+      {
+        "item": "Dal Makhani",
+        "description": "Creamy lentils cooked with butter and spices.",
+        "image": "url_to_image_of_dal_makhani"
+      },
+      {
+        "item": "Dal Tadka",
+        "description": "Lentils tempered with ghee, garlic, and spices.",
+        "image": "url_to_image_of_dal_tadka"
+      },
+      {
+        "item": "Paneer Butter Masala",
+        "description": "Cottage cheese cubes in a rich and creamy tomato sauce.",
+        "image": "url_to_image_of_paneer_butter_masala"
+      },
+      {
+        "item": "Malai Kofta",
+        "description": "Fried dumplings in a creamy tomato gravy.",
+        "image": "url_to_image_of_malai_kofta"
+      },
+      {
+        "item": "Stir Fried Vegetables",
+        "description": "Mixed vegetables stir-fried with soy sauce and garlic.",
+        "image": "url_to_image_of_stir_fried_vegetables"
+      },
+      {
+        "item": "Thai Vegetable Curry Red/Green/Yellow",
+        "description": "Vegetable curry in a choice of red, green, or yellow Thai curry sauce.",
+        "image": "url_to_image_of_thai_vegetable_curry"
+      },
+      {
+        "item": "Veg Lasagne",
+        "description": "Layers of pasta, vegetables, and cheese baked to perfection.",
+        "image": "url_to_image_of_veg_lasagne"
+      },
+      {
+        "item": "Baked Vegetables",
+        "description": "Mixed vegetables baked with herbs and spices.",
+        "image": "url_to_image_of_baked_vegetables"
+      },
+      {
+        "item": "Aloo Gobhi",
+        "description": "Potatoes and cauliflower cooked with spices.",
+        "image": "url_to_image_of_aloo_gobhi"
+      },
+      {
+        "item": "Chole Masala",
+        "description": "Spicy chickpeas cooked with onions and tomatoes.",
+        "image": "url_to_image_of_chole_masala"
+      },
+      {
+        "item": "Rajma Masala",
+        "description": "Kidney beans cooked in a spicy tomato gravy.",
+        "image": "url_to_image_of_rajma_masala"
+      },
+      {
+        "item": "Kale Methi Palak",
+        "description": "A mix of kale, fenugreek, and spinach cooked with spices.",
+        "image": "url_to_image_of_kale_methi_palak"
+      }
+    ],
+    "Non-Vegetarian": [
+      {
+        "item": "Butter Chicken",
+        "description": "Chicken cooked in a creamy tomato sauce with butter.",
+        "image": "url_to_image_of_butter_chicken"
+      },
+      {
+        "item": "Chicken Curry",
+        "description": "Chicken cooked in a spicy curry sauce.",
+        "image": "url_to_image_of_chicken_curry"
+      },
+      {
+        "item": "Stir Fried Chicken",
+        "description": "Chicken stir-fried with vegetables and soy sauce.",
+        "image": "url_to_image_of_stir_fried_chicken"
+      },
+      {
+        "item": "Fish Curry",
+        "description": "Fish cooked in a spicy curry sauce.",
+        "image": "url_to_image_of_fish_curry"
+      },
+      {
+        "item": "Thai Chicken Curry Red/Green/Yellow",
+        "description": "Chicken curry in a choice of red, green, or yellow Thai curry sauce.",
+        "image": "url_to_image_of_thai_chicken_curry"
+      },
+      {
+        "item": "Beef Lasagne",
+        "description": "Layers of pasta, beef, and cheese baked to perfection.",
+        "image": "url_to_image_of_beef_lasagne"
+      },
+      {
+        "item": "Grilled Chicken Breast",
+        "description": "Juicy chicken breast grilled to perfection.",
+        "image": "url_to_image_of_grilled_chicken_breast"
+      },
+      {
+        "item": "Pan Fried Fish",
+        "description": "Fish fillet pan-fried with herbs and spices.",
+        "image": "url_to_image_of_pan_fried_fish"
+      },
+      {
+        "item": "Fish n Chips",
+        "description": "Breaded and fried fish served with crispy chips.",
+        "image": "url_to_image_of_fish_n_chips"
+      },
+      {
+        "item": "Lamb Curry",
+        "description": "Lamb cooked in a spicy curry sauce.",
+        "image": "url_to_image_of_lamb_curry"
+      },
+      {
+        "item": "Chicken Biryani",
+        "description": "Aromatic rice cooked with chicken and spices.",
+        "image": "url_to_image_of_chicken_biryani"
+      },
+      {
+        "item": "Lamb Biryani",
+        "description": "Aromatic rice cooked with lamb and spices.",
+        "image": "url_to_image_of_lamb_biryani"
+      },
+      {
+        "item": "Lamb Rogan Josh",
+        "description": "Lamb cooked in a rich and spicy sauce.",
+        "image": "url_to_image_of_lamb_rogan_josh"
+      },
+      {
+        "item": "Chicken Tikka Masala",
+        "description": "Marinated chicken pieces cooked in a creamy tomato sauce.",
+        "image": "url_to_image_of_chicken_tikka_masala"
+      }
+    ]
+  },
+  "Accompaniments": {
+    "Vegetarian": [
+      {
+        "item": "Dahi Vada",
+        "description": "Lentil dumplings soaked in yogurt and topped with tamarind chutney.",
+        "image": "url_to_image_of_dahi_vada"
+      },
+      {
+        "item": "Selection of Raita",
+        "description": "A variety of yogurt-based side dishes.",
+        "image": "url_to_image_of_selection_of_raita"
+      },
+      {
+        "item": "Pappadums",
+        "description": "Crispy lentil wafers.",
+        "image": "url_to_image_of_pappadums"
+      },
+      {
+        "item": "Salad",
+        "description": "Fresh mixed salad.",
+        "image": "url_to_image_of_salad"
+      },
+      {
+        "item": "Puri",
+        "description": "Deep-fried Indian bread.",
+        "image": "url_to_image_of_puri"
+      },
+      {
+        "item": "Paratha",
+        "description": "Indian flatbread made with whole wheat flour.",
+        "image": "url_to_image_of_paratha"
+      },
+      {
+        "item": "Tawa Roti",
+        "description": "Whole wheat flatbread cooked on a griddle.",
+        "image": "url_to_image_of_tawa_roti"
+      },
+      {
+        "item": "Selection of Parathas",
+        "description": "A variety of stuffed Indian flatbreads.",
+        "image": "url_to_image_of_selection_of_parathas"
+      }
+    ],
+    "Non-Vegetarian": [
+      {
+        "item": "Selection of Pickles & Chutneys",
+        "description": "A variety of pickles and chutneys to complement your meal.",
+        "image": "url_to_image_of_selection_of_pickles_and_chutneys"
+      }
+    ]
+  },
+  "Deserts": {
+    "Vegetarian": [
+      {
+        "item": "Gajar ka Halwa",
+        "description": "A traditional Indian dessert made with grated carrots, milk, and sugar.",
+        "image": "url_to_image_of_gajar_ka_halwa"
+      },
+      {
+        "item": "Kheer",
+        "description": "A creamy rice pudding made with milk and sugar.",
+        "image": "url_to_image_of_kheer"
+      },
+      {
+        "item": "Shrikhand",
+        "description": "A traditional Indian sweet made with strained yogurt and flavored with saffron.",
+        "image": "url_to_image_of_shrikhand"
+      },
+      {
+        "item": "Baked Yoghurt",
+        "description": "A creamy dessert made with baked yogurt and flavored with cardamom.",
+        "image": "url_to_image_of_baked_yoghurt"
+      },
+      {
+        "item": "Shahi Tukda",
+        "description": "A royal dessert made with fried bread, soaked in sweetened milk and garnished with nuts.",
+        "image": "url_to_image_of_shahi_tukda"
+      },
+      {
+        "item": "Mixed Fruits",
+        "description": "A refreshing assortment of seasonal fruits.",
+        "image": "url_to_image_of_mixed_fruits"
+      }
+    ],
+    "Non-Vegetarian": [
+      {
+        "item": "Creme Brulee",
+        "description": "A classic French dessert with a creamy custard base and a caramelized sugar top.",
+        "image": "url_to_image_of_creme_brulee"
+      },
+      {
+        "item": "Chocolate Mouse",
+        "description": "A rich and creamy chocolate dessert.",
+        "image": "url_to_image_of_chocolate_mouse"
+      },
+      {
+        "item": "Chocolate Brownie",
+        "description": "A fudgy chocolate brownie.",
+        "image": "url_to_image_of_chocolate_brownie"
+      },
+      {
+        "item": "Apple Crumble Tart",
+        "description": "A tart filled with spiced apples and topped with a crumbly streusel.",
+        "image": "url_to_image_of_apple_crumble_tart"
+      }
+    ]
+  }
+}

@@ -26,7 +26,7 @@ export default function ContactForm() {
     try {
       const response = await axios.post("/api/mail", formData);
       if (response.status === 200) {
-        alert("Email sent successfully");
+        alert("Thank you for your message! We will get back to you soon.");
         setFormData({ name: "", email: "", message: "" }); // Reset form
       }
     } catch (error) {
