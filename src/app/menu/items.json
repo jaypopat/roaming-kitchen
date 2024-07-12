@@ -4,27 +4,27 @@
       {
         "item": "Vegetable Spring Rolls",
         "description": "Crispy rolls filled with mixed vegetables and served with a dipping sauce.",
-        "image": "menu/starters/veg_spring_rolls.jpeg"
+        "image": "/menu/starters/chips-and-wedges.jpeg"
       },
       {
         "item": "Chips / Wedges",
         "description": "Golden fried potato chips or wedges, served with a variety of dips.",
-        "image": "menu/starters/chips-and-wedges.jpeg"
+        "image": "/menu/starters/chips-and-wedges.jpeg"
       },
       {
         "item": "Garlic Mushrooms",
         "description": "Sautéed mushrooms in a rich garlic butter sauce.",
-        "image": "menu/starters/garlic-mushrooms.jpg"
+        "image": "/menu/starters/garlic-mushrooms.jpg"
       },
       {
         "item": "Mozarella Sticks",
         "description": "Breaded and fried mozzarella cheese sticks, served with marinara sauce.",
-        "image": "menu/starters/mozzarella-sticks.jpeg"
+        "image": "/menu/starters/mozzarella-sticks.jpeg"
       },
       {
         "item": "Crumb Fried Brie",
         "description": "Breaded and deep-fried Brie cheese, served with a fruit compote.",
-        "image": "menu/starters/crumb-fried-brie.webp"
+        "image": "/menu/starters/crumb-fried-brie.webp"
       }
     ],
     "Non-Vegetarian": [

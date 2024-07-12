@@ -88,11 +88,11 @@ export default function Component() {
                           <Card key={item.item}>
                             <CardContent className="flex flex-col items-center gap-2">
                               <Image
-                                src="/placeholder.svg"
+                                src="/menu/starters/chips-and-wedges.jpeg"
                                 width={150}
                                 height={150}
                                 alt={item.item}
-                                className="rounded-full"
+                                className="rounded-md"
                               />
                               <div className="space-y-1">
                                 <h3 className="text-lg font-semibold">
@@ -110,7 +110,7 @@ export default function Component() {
                           <Card key={item.item}>
                             <CardContent className="flex flex-col items-center gap-2">
                               <Image
-                                src="/placeholder.svg"
+                                src="/menu/starters/chips-and-wedges.jpeg"
                                 width={150}
                                 height={150}
                                 alt={item.item}
@@ -137,7 +137,7 @@ export default function Component() {
                           <Card key={item.item}>
                             <CardContent className="flex flex-col items-center gap-2">
                               <Image
-                                src="/placeholder.svg"
+                                src="/menu/starters/chips-and-wedges.jpeg"
                                 width={150}
                                 height={150}
                                 alt={item.item}
@@ -159,7 +159,7 @@ export default function Component() {
                           <Card key={item.item}>
                             <CardContent className="flex flex-col items-center gap-2">
                               <Image
-                                src="/placeholder.svg"
+                                src="/menu/starters/chips-and-wedges.jpeg"
                                 width={150}
                                 height={150}
                                 alt={item.item}
@@ -186,7 +186,7 @@ export default function Component() {
                           <Card key={item.item}>
                             <CardContent className="flex flex-col items-center gap-2">
                               <Image
-                                src="/placeholder.svg"
+                                src="/menu/starters/chips-and-wedges.jpeg"
                                 width={150}
                                 height={150}
                                 alt={item.item}
@@ -208,7 +208,7 @@ export default function Component() {
                           <Card key={item.item}>
                             <CardContent className="flex flex-col items-center gap-2">
                               <Image
-                                src="/placeholder.svg"
+                                src="/menu/starters/chips-and-wedges.jpeg"
                                 width={150}
                                 height={150}
                                 alt={item.item}
@@ -234,7 +234,7 @@ export default function Component() {
                           <Card key={item.item}>
                             <CardContent className="flex flex-col items-center gap-2">
                               <Image
-                                src="/placeholder.svg"
+                                src="/menu/starters/chips-and-wedges.jpeg"
                                 width={150}
                                 height={150}
                                 alt={item.item}
@@ -256,7 +256,7 @@ export default function Component() {
                           <Card key={item.item}>
                             <CardContent className="flex flex-col items-center gap-2">
                               <Image
-                                src="/placeholder.svg"
+                                src="/menu/starters/chips-and-wedges.jpeg"
                                 width={150}
                                 height={150}
                                 alt={item.item}
@@ -282,7 +282,7 @@ export default function Component() {
                           <Card key={item.item}>
                             <CardContent className="flex flex-col items-center gap-2">
                               <Image
-                                src="/placeholder.svg"
+                                src="/menu/starters/chips-and-wedges.jpeg"
                                 width={150}
                                 height={150}
                                 alt={item.item}
@@ -304,7 +304,7 @@ export default function Component() {
                           <Card key={item.item}>
                             <CardContent className="flex flex-col items-center gap-2">
                               <Image
-                                src="/placeholder.svg"
+                                src="/menu/starters/chips-and-wedges.jpeg"
                                 width={150}
                                 height={150}
                                 alt={item.item}
