@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
       service: "Gmail",
       auth: {
         user: "contact.jaypopat@gmail.com",
-        pass: "jwkt sjsy fngq ojmr",
+        pass: process.env.GMAIL_PWD,
       },
     });
 
