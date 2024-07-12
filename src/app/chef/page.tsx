@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { readdirSync } from "fs";
 import path from "path";
+import { Metadata } from "next";
 import {
   Carousel,
   CarouselContent,
@@ -9,6 +10,11 @@ import {
   CarouselPrevious,
   CarouselNext,
 } from "@/components/ui/carousel";
+
+export const metadata: Metadata = {
+  title: "Chef",
+  description: "Meet our chef and check out his proudest accomplishments.",
+};
 
 export default function ChefPage() {
   const chef_portfolio_dir = "/chef-portfolio/Narendra";

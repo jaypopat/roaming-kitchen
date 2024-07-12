@@ -3,6 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Roaming Kitchen",
+  description: "Serving up delicious, freshly-prepared meals on the go.",
 };
 
 export default function Page() {

@@ -5,6 +5,11 @@ import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata = {
+  title: "Roaming Kitchen",
+  description: "Contact Roaming Kitchen for catering services.",
+};
+
 export default function RootLayout({
   children,
 }: {

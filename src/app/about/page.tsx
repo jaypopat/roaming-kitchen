@@ -1,6 +1,13 @@
-"use client";
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Learn more about the passionate individuals behind Roaming Kitchen.",
+};
+
 export default function AboutPage() {
   const chef_pfp = "/chef-portfolio/Narendra/awards/pfp.png";
   const vipul_pfp = "/vipul/pfp.jpg";
