@@ -1,18 +1,18 @@
-"use client"
-import { useState } from 'react';
-import axios from 'axios';
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Button } from "@/components/ui/button"
+"use client";
+import { useState } from "react";
+import axios from "axios";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Button } from "@/components/ui/button";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
-  const handleChange = (e:any) => {
+  const handleChange = (e: any) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -20,36 +20,41 @@ export default function ContactForm() {
     });
   };
 
-  const handleSubmit = async (e:any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault(); // Prevent default form submission
 
-    // try {
-    //   const response = await axios.post('/api/mail', formData);
-    //   if (response.status === 200) {
-    //     alert('Email sent successfully');
-    //     setFormData({ name: '', email: '', message: '' }); // Reset form
-    //   }
-    // } catch (error) {
-    //   console.error('Error sending email:', error);
-    //   alert('Error sending email');
-    // }
+    try {
+      const response = await axios.post("/api/mail", formData);
+      if (response.status === 200) {
+        alert("Email sent successfully");
+        setFormData({ name: "", email: "", message: "" }); // Reset form
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+      alert("Error sending email");
+    }
   };
 
   return (
-<section id="contact" className="w-full py-24 md:py-48 lg:py-64 bg-muted">
-          <div className="container px-8 md:px-12 lg:px-16">
+    <section id="contact" className="w-full py-24 md:py-48 lg:py-64 bg-muted">
+      <div className="container px-8 md:px-12 lg:px-16">
         <div className="flex flex-col items-center justify-center space-y-8 text-center">
           <div className="space-y-4">
-            <h2 className="text-4xl font-bold tracking-tighter sm:text-6xl">Contact Us</h2>
+            <h2 className="text-4xl font-bold tracking-tighter sm:text-6xl">
+              Contact Us
+            </h2>
             <p className="max-w-[900px] text-muted-foreground md:text-2xl lg:text-xl xl:text-2xl">
-              Get in touch with us for catering, event bookings, or any other inquiries.
+              Get in touch with us for catering, event bookings, or any other
+              inquiries.
             </p>
           </div>
           <div className="mx-auto w-full max-w-lg space-y-4">
             <div className="grid gap-4">
               <div className="flex items-center gap-4">
                 <LocateIcon className="h-6 w-6 text-muted-foreground" />
-                <p className="text-muted-foreground">We are on wheels.. Tell us where to park</p>
+                <p className="text-muted-foreground">
+                  We are on wheels.. Tell us where to park
+                </p>
               </div>
               <div className="flex items-center gap-4">
                 <ClockIcon className="h-6 w-6 text-muted-foreground" />
@@ -80,7 +85,9 @@ export default function ContactForm() {
                 value={formData.message}
                 onChange={handleChange}
               />
-              <Button type="submit" className="py-4 px-8 text-lg">Submit</Button>
+              <Button type="submit" className="py-4 px-8 text-lg">
+                Submit
+              </Button>
             </form>
           </div>
         </div>
@@ -89,48 +96,45 @@ export default function ContactForm() {
   );
 }
 
-
-
 function ClockIcon(props: any) {
-    return (
-        <svg
-            {...props}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <circle cx="12" cy="12" r="10" />
-            <polyline points="12 6 12 12 16 14" />
-        </svg>
-    )
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <circle cx="12" cy="12" r="10" />
+      <polyline points="12 6 12 12 16 14" />
+    </svg>
+  );
 }
 
-
 function LocateIcon(props: any) {
-    return (
-        <svg
-            {...props}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <line x1="2" x2="5" y1="12" y2="12" />
-            <line x1="19" x2="22" y1="12" y2="12" />
-            <line x1="12" x2="12" y1="2" y2="5" />
-            <line x1="12" x2="12" y1="19" y2="22" />
-            <circle cx="12" cy="12" r="7" />
-        </svg>
-    )
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <line x1="2" x2="5" y1="12" y2="12" />
+      <line x1="19" x2="22" y1="12" y2="12" />
+      <line x1="12" x2="12" y1="2" y2="5" />
+      <line x1="12" x2="12" y1="19" y2="22" />
+      <circle cx="12" cy="12" r="7" />
+    </svg>
+  );
 }
