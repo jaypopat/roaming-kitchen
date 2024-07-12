@@ -2,15 +2,17 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 
 export const MenuItems = ({ category, filters, items }) => {
-  let image_width = 300;
-  let image_height = 400;
+  const cardSize = 300;
+  const imageWidth = 300;
+  const imageHeight = 225; // 3:4 aspect ratio
+  const textPositionFromBottom = 20; // Adjusted for better visibility
 
   const VegIndicator = ({ isVeg }) => (
     <div
       style={{
         position: "absolute",
-        top: "-10px",
-        right: "-10px",
+        top: "10px",
+        right: "10px",
         width: "30px",
         height: "30px",
         borderRadius: "50%",
@@ -30,19 +32,33 @@ export const MenuItems = ({ category, filters, items }) => {
   );
 
   const MenuItem = ({ item, isVeg }) => (
-    <Card key={item.item} style={{ position: "relative", overflow: "visible" }}>
-      <VegIndicator isVeg={isVeg} />
-      <CardContent className="flex flex-col items-center gap-2">
-        <Image
-          src={item.image}
-          width={image_width}
-          height={image_height}
-          alt={item.item}
-          className="rounded-md"
-        />
-        <div className="space-y-1 text-center">
+    <Card
+      key={item.item}
+      style={{
+        position: "relative",
+        overflow: "hidden",
+        width: `${cardSize}px`,
+        height: `${cardSize}px`,
+      }}
+    >
+      <CardContent className="p-0">
+        <div style={{ position: "relative" }}>
+          <Image
+            src={item.image}
+            width={imageWidth}
+            height={imageHeight}
+            alt={item.item}
+            objectFit="cover"
+          />
+          <VegIndicator isVeg={isVeg} />
+        </div>
+        <div
+          className="absolute w-full text-center bg-white bg-opacity-75 py-2"
+          style={{
+            bottom: `${textPositionFromBottom}px`,
+          }}
+        >
           <h3 className="text-lg font-semibold">{item.item}</h3>
-          {/* <p className="text-muted-foreground">{item.description}</p> */}
         </div>
       </CardContent>
     </Card>
