@@ -15,7 +15,7 @@ import { MenuItems } from "@/components/MenuItem";
 import items from "./items.json";
 
 export default function Component() {
-  const [activeTab, setActiveTab] = useState("appetizer");
+  const [activeTab, setActiveTab] = useState("finger-food");
   const [filters, setFilters] = useState({
     vegetarian: true,
     nonVegetarian: true,
@@ -45,7 +45,7 @@ export default function Component() {
               <div className="flex flex-col items-center gap-4">
                 <Tabs value={activeTab} onValueChange={setActiveTab}>
                   <TabsList className="flex gap-4">
-                    <TabsTrigger value="appetizer">Appetizers</TabsTrigger>
+                    <TabsTrigger value="appetizer">Finger Food</TabsTrigger>
                     <TabsTrigger value="soup">Soups</TabsTrigger>
                     <TabsTrigger value="starter">Starters</TabsTrigger>
                     <TabsTrigger value="main">Main Courses</TabsTrigger>
@@ -81,9 +81,9 @@ export default function Component() {
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
-                  <TabsContent value="appetizer">
+                  <TabsContent value="finger-food">
                     <MenuItems
-                      category="Appetizers"
+                      category="Finger Foods"
                       filters={filters}
                       items={items}
                     />
