@@ -4,10 +4,12 @@ import axios from "axios";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-
+import "react-phone-number-input/style.css";
+import { PhoneInput } from "@/components/ui/phone-input";
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
+    phone: "",
     email: "",
     message: "",
   });
@@ -19,18 +21,26 @@ export default function ContactForm() {
       [name]: value,
     });
   };
+  const handlePhoneChange = (value: string) => {
+    setFormData({
+      ...formData,
+      phone: value,
+    });
+  };
 
   const handleSubmit = async (e: any) => {
     e.preventDefault(); // Prevent default form submission
 
     try {
+      console.log(formData);
       const response = await axios.post("/api/mail", formData);
       if (response.status === 200) {
         alert("Thank you for your message! We will get back to you soon.");
-        setFormData({ name: "", email: "", message: "" }); // Reset form
+        setFormData({ name: "", phone: "", email: "", message: "" }); // Reset form
       }
     } catch (error) {
       console.error("Error sending email:", error);
+      console.log(error.response.data);
       alert("Error sending email");
     }
   };
@@ -69,6 +79,12 @@ export default function ContactForm() {
                 className="max-w-lg flex-1"
                 value={formData.name}
                 onChange={handleChange}
+              />
+              <PhoneInput
+                name="phone"
+                placeholder="Enter phone number"
+                value={formData.phone}
+                onChange={handlePhoneChange}
               />
               <Input
                 type="email"

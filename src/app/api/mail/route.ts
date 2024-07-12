@@ -6,7 +6,11 @@ export async function POST(request: NextRequest) {
     console.log("endpoint got hit");
     const formData = await request.json();
 
-    const { name, email, message } = formData;
+    console.log(formData, "formdata from server");
+
+    const { name, phone, email, message } = formData;
+
+    console.log(name, phone, email, message, "name, phone, email, message");
 
     const transporter = nodemailer.createTransport({
       service: "Gmail",
@@ -25,6 +29,7 @@ export async function POST(request: NextRequest) {
           Name: ${name}
           Email: ${email}
           Message: ${message}
+          Phone: ${phone}
         `,
     };
 

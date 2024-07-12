@@ -80,7 +80,7 @@ export default function Component() {
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
-                  {console.log(items)}
+                  {/* {console.log(items)} */}
                   <TabsContent value="appetizer">
                     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                       {filters.vegetarian &&
