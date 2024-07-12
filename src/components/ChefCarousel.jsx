@@ -34,8 +34,8 @@ export default function ChefCarousel({ images, dir, w, h }) {
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious className="left-0" />
-      <CarouselNext />
+      <CarouselPrevious className="absolute left-2 top-1/2 transform -translate-y-1/2 z-10" />
+      <CarouselNext className="absolute right-2 top-1/2 transform -translate-y-1/2 z-10" />
     </Carousel>
   );
 }

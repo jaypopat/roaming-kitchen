@@ -3,13 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { readdirSync } from "fs";
 import path from "path";
 import { Metadata } from "next";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
-} from "@/components/ui/carousel";
+import ChefCarousel from "@/components/ChefCarousel";
 
 export const metadata: Metadata = {
   title: "Chef",
@@ -46,25 +40,12 @@ export default function ChefPage() {
                 food and an unforgettable experience with Chef Narendra.
               </p>
             </div>
-            <Carousel className="w-full max-w-[50vw]">
-              <CarouselContent>
-                {chef_images.map((image) => (
-                  <CarouselItem key={image}>
-                    <div className="flex justify-center items-center">
-                      <Image
-                        src={`${chef_portfolio_dir}/${image}`}
-                        width={1200}
-                        height={675}
-                        alt={image}
-                        className="aspect-video object-cover rounded-md"
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="left-4" />
-              <CarouselNext className="right-4" />
-            </Carousel>
+            <ChefCarousel
+              images={chef_images}
+              dir={chef_portfolio_dir}
+              w={1100}
+              h={400}
+            />
           </div>
         </div>
       </section>
@@ -108,24 +89,12 @@ export default function ChefPage() {
                 </CardContent>
               </Card>
             </div>
-            <Carousel className="w-full max-w-md">
-              <CarouselContent>
-                {chef_achievments.map((image) => (
-                  <CarouselItem key={image}>
-                    <Image
-                      src={`${chef_awards_dir}/${image}`}
-                      width={448}
-                      height={252}
-                      alt={image}
-                      className="aspect-video object-cover rounded-md"
-                    />
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-
-              <CarouselPrevious className="left-4" />
-              <CarouselNext className="right-4" />
-            </Carousel>
+            <ChefCarousel
+              images={chef_achievments}
+              dir={chef_awards_dir}
+              w={600}
+              h={300}
+            />
           </div>
         </div>
       </section>

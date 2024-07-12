@@ -26,6 +26,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "cmdk": "^1.0.0",
+    "embla-carousel-autoplay": "^8.1.6",
     "embla-carousel-react": "^8.1.6",
     "fs": "^0.0.1-security",
     "lucide-react": "^0.372.0",
