@@ -2,8 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 
 export const MenuItems = ({ category, filters, items }) => {
-  let image_width = 150;
-  let image_height = 150;
+  let image_width = 300;
+  let image_height = 400;
 
   const VegIndicator = ({ isVeg }) => (
     <div
@@ -34,15 +34,15 @@ export const MenuItems = ({ category, filters, items }) => {
       <VegIndicator isVeg={isVeg} />
       <CardContent className="flex flex-col items-center gap-2">
         <Image
-          src="/placeholder.jpg"
+          src={item.image}
           width={image_width}
           height={image_height}
           alt={item.item}
-          className="rounded-full"
+          className="rounded-md"
         />
         <div className="space-y-1 text-center">
           <h3 className="text-lg font-semibold">{item.item}</h3>
-          <p className="text-muted-foreground">{item.description}</p>
+          {/* <p className="text-muted-foreground">{item.description}</p> */}
         </div>
       </CardContent>
     </Card>

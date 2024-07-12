@@ -1,5 +1,5 @@
 {
-  "Finger Foods": {
+  "Appetizers": {
     "Vegetarian": [
       {
         "item": "Vegetable Spring Rolls",
@@ -12,7 +12,6 @@
         "description": "Golden fried potato chips or wedges, served with a variety of dips.",
         "image": "/menu/finger-foods/chips-and-wedges.jpeg",
         "allergens": ""
-        
       },
       {
         "item": "Garlic Mushrooms",
@@ -155,61 +154,61 @@
       {
         "item": "Goat Cheese Tart",
         "description": "A tart filled with creamy goat cheese and caramelized onions.",
-        "image": "url_to_image_of_goat_cheese_tart",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Paneer Tikka",
         "description": "Marinated paneer cubes grilled to perfection.",
-        "image": "url_to_image_of_paneer_tikka",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Caprese Salad",
         "description": "A fresh salad with tomatoes, mozzarella, and basil.",
-        "image": "url_to_image_of_caprese_salad",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Selection of Sushi",
         "description": "A variety of vegetarian sushi rolls.",
-        "image": "url_to_image_of_vegetarian_sushi",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Caesar Salad",
         "description": "A classic Caesar salad with crispy romaine lettuce and croutons.",
-        "image": "url_to_image_of_caesar_salad",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Quesdillas",
         "description": "Cheese-filled tortillas served with salsa and guacamole.",
-        "image": "url_to_image_of_vegetarian_quesadillas",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Vegan Salad Bowl",
         "description": "A healthy salad bowl with a variety of fresh vegetables.",
-        "image": "url_to_image_of_vegan_salad_bowl",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Tandoori Aloo",
         "description": "Spicy marinated potatoes cooked in a tandoor.",
-        "image": "url_to_image_of_tandoori_aloo",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Dahi ke kabab",
         "description": "Soft kababs made with yogurt and spices.",
-        "image": "url_to_image_of_dahi_ke_kabab",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Honey Chilli Potato",
         "description": "Crispy potatoes tossed in a honey and chili sauce.",
-        "image": "url_to_image_of_honey_chilli_potato",
+        "image": "/placeholder.svg",
         "allergens": ""
       }
     ],
@@ -217,49 +216,49 @@
       {
         "item": "Chicken Tikka",
         "description": "Marinated chicken pieces grilled to perfection.",
-        "image": "url_to_image_of_chicken_tikka",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Fish Fingers",
         "description": "Breaded and fried fish strips served with tartar sauce.",
-        "image": "url_to_image_of_fish_fingers",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Crumb Fried Prawns",
         "description": "Breaded and fried prawns served with a tangy dip.",
-        "image": "url_to_image_of_crumb_fried_prawns",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Chicken Vol Au Vent",
         "description": "Puff pastry filled with creamy chicken and mushrooms.",
-        "image": "url_to_image_of_chicken_vol_au_vent",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Selection of Sushi",
         "description": "A variety of sushi rolls with seafood.",
-        "image": "url_to_image_of_non_vegetarian_sushi",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Thai Chicken Satay",
         "description": "Marinated chicken skewers served with peanut sauce.",
-        "image": "url_to_image_of_thai_chicken_satay",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Shrimp Cocktail",
         "description": "Chilled shrimp served with a tangy cocktail sauce.",
-        "image": "url_to_image_of_shrimp_cocktail",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Salt n Pepper Chicken",
         "description": "Crispy chicken pieces seasoned with salt and pepper.",
-        "image": "url_to_image_of_salt_n_pepper_chicken",
+        "image": "/placeholder.svg",
         "allergens": ""
       }
     ]
@@ -269,91 +268,91 @@
       {
         "item": "Veg Biryani",
         "description": "Aromatic rice cooked with mixed vegetables and spices.",
-        "image": "url_to_image_of_veg_biryani",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Bhindi Masala",
         "description": "Spicy okra cooked with onions and tomatoes.",
-        "image": "url_to_image_of_bhindi_masala",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Pasta with Tomato or white sauce",
         "description": "Pasta served with your choice of tomato or creamy white sauce.",
-        "image": "url_to_image_of_pasta_with_sauce",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Dal Makhani",
         "description": "Creamy lentils cooked with butter and spices.",
-        "image": "url_to_image_of_dal_makhani",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Dal Tadka",
         "description": "Lentils tempered with ghee, garlic, and spices.",
-        "image": "url_to_image_of_dal_tadka",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Paneer Butter Masala",
         "description": "Cottage cheese cubes in a rich and creamy tomato sauce.",
-        "image": "url_to_image_of_paneer_butter_masala",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Malai Kofta",
         "description": "Fried dumplings in a creamy tomato gravy.",
-        "image": "url_to_image_of_malai_kofta",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Stir Fried Vegetables",
         "description": "Mixed vegetables stir-fried with soy sauce and garlic.",
-        "image": "url_to_image_of_stir_fried_vegetables",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Thai Vegetable Curry Red/Green/Yellow",
         "description": "Vegetable curry in a choice of red, green, or yellow Thai curry sauce.",
-        "image": "url_to_image_of_thai_vegetable_curry",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Veg Lasagne",
         "description": "Layers of pasta, vegetables, and cheese baked to perfection.",
-        "image": "url_to_image_of_veg_lasagne",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Baked Vegetables",
         "description": "Mixed vegetables baked with herbs and spices.",
-        "image": "url_to_image_of_baked_vegetables",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Aloo Gobhi",
         "description": "Potatoes and cauliflower cooked with spices.",
-        "image": "url_to_image_of_aloo_gobhi",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Chole Masala",
         "description": "Spicy chickpeas cooked with onions and tomatoes.",
-        "image": "url_to_image_of_chole_masala",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Rajma Masala",
         "description": "Kidney beans cooked in a spicy tomato gravy.",
-        "image": "url_to_image_of_rajma_masala",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Kale Methi Palak",
         "description": "A mix of kale, fenugreek, and spinach cooked with spices.",
-        "image": "url_to_image_of_kale_methi_palak",
+        "image": "/placeholder.svg",
         "allergens": ""
       }
     ],
@@ -361,85 +360,85 @@
       {
         "item": "Butter Chicken",
         "description": "Chicken cooked in a creamy tomato sauce with butter.",
-        "image": "url_to_image_of_butter_chicken",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Chicken Curry",
         "description": "Chicken cooked in a spicy curry sauce.",
-        "image": "url_to_image_of_chicken_curry",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Stir Fried Chicken",
         "description": "Chicken stir-fried with vegetables and soy sauce.",
-        "image": "url_to_image_of_stir_fried_chicken",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Fish Curry",
         "description": "Fish cooked in a spicy curry sauce.",
-        "image": "url_to_image_of_fish_curry",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Thai Chicken Curry Red/Green/Yellow",
         "description": "Chicken curry in a choice of red, green, or yellow Thai curry sauce.",
-        "image": "url_to_image_of_thai_chicken_curry",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Beef Lasagne",
         "description": "Layers of pasta, beef, and cheese baked to perfection.",
-        "image": "url_to_image_of_beef_lasagne",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Grilled Chicken Breast",
         "description": "Juicy chicken breast grilled to perfection.",
-        "image": "url_to_image_of_grilled_chicken_breast",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Pan Fried Fish",
         "description": "Fish fillet pan-fried with herbs and spices.",
-        "image": "url_to_image_of_pan_fried_fish",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Fish n Chips",
         "description": "Breaded and fried fish served with crispy chips.",
-        "image": "url_to_image_of_fish_n_chips",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Lamb Curry",
         "description": "Lamb cooked in a spicy curry sauce.",
-        "image": "url_to_image_of_lamb_curry",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Chicken Biryani",
         "description": "Aromatic rice cooked with chicken and spices.",
-        "image": "url_to_image_of_chicken_biryani",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Lamb Biryani",
         "description": "Aromatic rice cooked with lamb and spices.",
-        "image": "url_to_image_of_lamb_biryani",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Lamb Rogan Josh",
         "description": "Lamb cooked in a rich and spicy sauce.",
-        "image": "url_to_image_of_lamb_rogan_josh",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Chicken Tikka Masala",
         "description": "Marinated chicken pieces cooked in a creamy tomato sauce.",
-        "image": "url_to_image_of_chicken_tikka_masala",
+        "image": "/placeholder.svg",
         "allergens": ""
       }
     ]
@@ -449,49 +448,49 @@
       {
         "item": "Dahi Vada",
         "description": "Lentil dumplings soaked in yogurt and topped with tamarind chutney.",
-        "image": "url_to_image_of_dahi_vada",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Selection of Raita",
         "description": "A variety of yogurt-based side dishes.",
-        "image": "url_to_image_of_selection_of_raita",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Pappadums",
         "description": "Crispy lentil wafers.",
-        "image": "url_to_image_of_pappadums",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Salad",
         "description": "Fresh mixed salad.",
-        "image": "url_to_image_of_salad",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Puri",
         "description": "Deep-fried Indian bread.",
-        "image": "url_to_image_of_puri",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Paratha",
         "description": "Indian flatbread made with whole wheat flour.",
-        "image": "url_to_image_of_paratha",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Tawa Roti",
         "description": "Whole wheat flatbread cooked on a griddle.",
-        "image": "url_to_image_of_tawa_roti",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Selection of Parathas",
         "description": "A variety of stuffed Indian flatbreads.",
-        "image": "url_to_image_of_selection_of_parathas",
+        "image": "/placeholder.svg",
         "allergens": ""
       }
     ],
@@ -499,7 +498,7 @@
       {
         "item": "Selection of Pickles & Chutneys",
         "description": "A variety of pickles and chutneys to complement your meal.",
-        "image": "url_to_image_of_selection_of_pickles_and_chutneys",
+        "image": "/placeholder.svg",
         "allergens": ""
       }
     ]
@@ -509,37 +508,37 @@
       {
         "item": "Gajar ka Halwa",
         "description": "A traditional Indian dessert made with grated carrots, milk, and sugar.",
-        "image": "url_to_image_of_gajar_ka_halwa",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Kheer",
         "description": "A creamy rice pudding made with milk and sugar.",
-        "image": "url_to_image_of_kheer",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Shrikhand",
         "description": "A traditional Indian sweet made with strained yogurt and flavored with saffron.",
-        "image": "url_to_image_of_shrikhand",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Baked Yoghurt",
         "description": "A creamy dessert made with baked yogurt and flavored with cardamom.",
-        "image": "url_to_image_of_baked_yoghurt",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Shahi Tukda",
         "description": "A royal dessert made with fried bread, soaked in sweetened milk and garnished with nuts.",
-        "image": "url_to_image_of_shahi_tukda",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Mixed Fruits",
         "description": "A refreshing assortment of seasonal fruits.",
-        "image": "url_to_image_of_mixed_fruits",
+        "image": "/placeholder.svg",
         "allergens": ""
       }
     ],
@@ -547,25 +546,25 @@
       {
         "item": "Creme Brulee",
         "description": "A classic French dessert with a creamy custard base and a caramelized sugar top.",
-        "image": "url_to_image_of_creme_brulee",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Chocolate Mouse",
         "description": "A rich and creamy chocolate dessert.",
-        "image": "url_to_image_of_chocolate_mouse",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Chocolate Brownie",
         "description": "A fudgy chocolate brownie.",
-        "image": "url_to_image_of_chocolate_brownie",
+        "image": "/placeholder.svg",
         "allergens": ""
       },
       {
         "item": "Apple Crumble Tart",
         "description": "A tart filled with spiced apples and topped with a crumbly streusel.",
-        "image": "url_to_image_of_apple_crumble_tart",
+        "image": "/placeholder.svg",
         "allergens": ""
       }
     ]
