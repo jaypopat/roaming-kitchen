@@ -4,8 +4,6 @@ import axios from "axios";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import "react-phone-number-input/style.css";
-import { PhoneInput } from "@/components/ui/phone-input";
 export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -19,12 +17,6 @@ export default function ContactForm() {
     setFormData({
       ...formData,
       [name]: value,
-    });
-  };
-  const handlePhoneChange = (value: string) => {
-    setFormData({
-      ...formData,
-      phone: value,
     });
   };
 
@@ -79,11 +71,12 @@ export default function ContactForm() {
                 value={formData.name}
                 onChange={handleChange}
               />
-              <PhoneInput
+              <Input
+                type="tel"
                 name="phone"
                 placeholder="Enter phone number"
                 value={formData.phone}
-                onChange={handlePhoneChange}
+                onChange={handleChange}
               />
               <Input
                 type="email"
