@@ -15,7 +15,8 @@ import { MenuItems } from "@/components/MenuItem";
 import items from "./items.json";
 
 export default function Component() {
-  const [activeTab, setActiveTab] = useState("appetizer");
+  const types = Object.keys(items);
+  const [activeTab, setActiveTab] = useState(types[0]);
   const [filters, setFilters] = useState({
     vegetarian: true,
     nonVegetarian: true,
@@ -45,14 +46,13 @@ export default function Component() {
               <div className="flex flex-col items-center gap-4">
                 <Tabs value={activeTab} onValueChange={setActiveTab}>
                   <TabsList className="flex gap-4">
-                    <TabsTrigger value="appetizer">Appetizers</TabsTrigger>
-                    <TabsTrigger value="soup">Soups</TabsTrigger>
-                    <TabsTrigger value="starter">Starters</TabsTrigger>
-                    <TabsTrigger value="main">Main Courses</TabsTrigger>
-                    <TabsTrigger value="accompaniments">
-                      Accompaniments
-                    </TabsTrigger>
-                    <TabsTrigger value="desert">Desserts</TabsTrigger>
+                    {types.map((type) => {
+                      return (
+                        <TabsTrigger key={type} value={type}>
+                          {type}
+                        </TabsTrigger>
+                      );
+                    })}
                   </TabsList>
                   <div className="flex items-center gap-4 mb-6">
                     <DropdownMenu>
@@ -84,48 +84,17 @@ export default function Component() {
                       </DropdownMenuContent>
                     </DropdownMenu>
                   </div>
-                  <TabsContent value="appetizer">
-                    <MenuItems
-                      category="Appetizers"
-                      filters={filters}
-                      items={items}
-                    />
-                  </TabsContent>
-                  <TabsContent value="soup">
-                    <MenuItems
-                      category="Soups"
-                      filters={filters}
-                      items={items}
-                    />
-                  </TabsContent>
-                  <TabsContent value="starter">
-                    <MenuItems
-                      category="Starters"
-                      filters={filters}
-                      items={items}
-                    />
-                  </TabsContent>
-                  <TabsContent value="main">
-                    <MenuItems
-                      category="Main Course"
-                      filters={filters}
-                      items={items}
-                    />
-                  </TabsContent>
-                  <TabsContent value="accompaniments">
-                    <MenuItems
-                      category="Accompaniments"
-                      filters={filters}
-                      items={items}
-                    />
-                  </TabsContent>
-                  <TabsContent value="desert">
-                    <MenuItems
-                      category="Deserts"
-                      filters={filters}
-                      items={items}
-                    />
-                  </TabsContent>
+                  {types.map((type) => {
+                    return (
+                      <TabsContent key={type} value={type}>
+                        <MenuItems
+                          category={type}
+                          filters={filters}
+                          items={items}
+                        />
+                      </TabsContent>
+                    );
+                  })}
                 </Tabs>
               </div>
             </div>

@@ -33,7 +33,7 @@ export default function Header() {
           <Link
             key={index}
             href={link.href}
-            className="text-lg sm:text-xl font-semibold hover:text-accent"
+            className="text-sm font-medium hover:underline underline-offset-4"
           >
             {link.name}
           </Link>
