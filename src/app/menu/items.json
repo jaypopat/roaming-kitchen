@@ -221,149 +221,149 @@
     "Vegetarian": [
       {
         "item": "Veg Biryani",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/Veg-Biryani.jpg",
         "allergens": ""
       },
       {
         "item": "Bhindi Masala",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/bhindi-masala.jpg",
         "allergens": ""
       },
       {
         "item": "Pasta with Tomato or white sauce",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/spaghetti-with-tomato-sauce.webp",
         "allergens": ""
       },
       {
         "item": "Dal Makhani",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/dal-makhani.webp",
         "allergens": ""
       },
       {
         "item": "Dal Tadka",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/dal-tadka.jpg",
         "allergens": ""
       },
       {
         "item": "Paneer Butter Masala",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/paneer-butter-masala.webp",
         "allergens": ""
       },
       {
         "item": "Malai Kofta",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/malai-kofta.webp",
         "allergens": ""
       },
       {
         "item": "Stir Fried Vegetables",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/VegetableStirFry.jpg",
         "allergens": ""
       },
       {
         "item": "Thai Vegetable Curry Red/Green/Yellow",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/Thai-Red-Curry-vegetable.webp",
         "allergens": ""
       },
       {
         "item": "Veg Lasagne",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/roasted-vegetable-lasagna.jpeg",
         "allergens": ""
       },
       {
         "item": "Baked Vegetables",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/baked-veggies.jpg",
         "allergens": ""
       },
       {
         "item": "Aloo Gobhi",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/aloo-gobhi.jpg",
         "allergens": ""
       },
       {
         "item": "Chole Masala",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/Punjabi-Chole-Masala.jpg",
         "allergens": ""
       },
       {
         "item": "Rajma Masala",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/vegan-rajma-masala.jpg",
         "allergens": ""
       },
       {
         "item": "Kale Methi Palak",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/kale-methi-palak.jpeg",
         "allergens": ""
       }
     ],
     "NonVegetarian": [
       {
         "item": "Butter Chicken",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/butterchicken.jpg",
         "allergens": ""
       },
       {
         "item": "Chicken Curry",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/Indian-Chicken-Curry.jpg",
         "allergens": ""
       },
       {
         "item": "Stir Fried Chicken",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/stir-fried-chicken.webp",
         "allergens": ""
       },
       {
         "item": "Fish Curry",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/fish-curry.webp",
         "allergens": ""
       },
       {
         "item": "Thai Chicken Curry Red/Green/Yellow",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/Thai-Green-Curry.jpg",
         "allergens": ""
       },
       {
         "item": "Beef Lasagne",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/beef-lasagne.jpg",
         "allergens": ""
       },
       {
         "item": "Grilled Chicken Breast",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/Grilled-Chicken-breast.jpg",
         "allergens": ""
       },
       {
         "item": "Pan Fried Fish",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/Pan-Fried-Fish.jpg",
         "allergens": ""
       },
       {
         "item": "Fish n Chips",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/fish-and-chips.webp",
         "allergens": ""
       },
       {
         "item": "Lamb Curry",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/lamb-curry.jpg",
         "allergens": ""
       },
       {
         "item": "Chicken Biryani",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/chicken-biryani.webp",
         "allergens": ""
       },
       {
         "item": "Lamb Biryani",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/LambBiryani.webp",
         "allergens": ""
       },
       {
         "item": "Lamb Rogan Josh",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/lamb-rogan-josh.jpg",
         "allergens": ""
       },
       {
         "item": "Chicken Tikka Masala",
-        "image": "/placeholder.svg",
+        "image": "/menu/main-course/Chicken_Tikka_Masala.jpg",
         "allergens": ""
       }
     ]
