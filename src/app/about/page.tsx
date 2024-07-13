@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Card } from "@/components/ui/card";
 import { Metadata } from "next";
+import Founder from "@/components/Founder";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -26,32 +27,12 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <div className="flex flex-col items-center justify-center">
-                <Card>
-                  <Image
-                    src={vipul_pfp}
-                    alt="@vipulpopat"
-                    width={400}
-                    height={500}
-                    className="aspect-video object-cover rounded-md"
-                  />
-                </Card>
-                <h3 className="text-xl font-bold">Vipul Popat</h3>
-                <p className="text-muted-foreground">Co-Founder</p>
-              </div>
-              <div className="flex flex-col items-center justify-center">
-                <Card>
-                  <Image
-                    src={chef_pfp}
-                    alt="@narendrasharma"
-                    width={400}
-                    height={500}
-                    className="aspect-video object-cover rounded-md"
-                  />
-                </Card>
-                <h3 className="text-xl font-bold">Narendra Sharma</h3>
-                <p className="text-muted-foreground">Co-Founder and Chef</p>
-              </div>
+              <Founder role="Co Founder" photo={vipul_pfp} name="Vipul Popat" />
+              <Founder
+                role="Co Founder and Chef"
+                photo={chef_pfp}
+                name="Narendra Sharma"
+              />
             </div>
           </div>
         </div>

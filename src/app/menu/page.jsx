@@ -49,6 +49,9 @@ export default function Component() {
                     <TabsTrigger value="soup">Soups</TabsTrigger>
                     <TabsTrigger value="starter">Starters</TabsTrigger>
                     <TabsTrigger value="main">Main Courses</TabsTrigger>
+                    <TabsTrigger value="accompaniments">
+                      Accompaniments
+                    </TabsTrigger>
                     <TabsTrigger value="desert">Desserts</TabsTrigger>
                   </TabsList>
                   <div className="flex items-center gap-4 mb-6">
@@ -105,6 +108,13 @@ export default function Component() {
                   <TabsContent value="main">
                     <MenuItems
                       category="Main Course"
+                      filters={filters}
+                      items={items}
+                    />
+                  </TabsContent>
+                  <TabsContent value="accompaniments">
+                    <MenuItems
+                      category="Accompaniments"
                       filters={filters}
                       items={items}
                     />

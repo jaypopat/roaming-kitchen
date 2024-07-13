@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
 import { readdirSync } from "fs";
 import path from "path";
 import { Metadata } from "next";
 import ChefCarousel from "@/components/ChefCarousel";
+import Award from "@/components/Award";
 
 export const metadata: Metadata = {
   title: "Chef",
@@ -64,30 +64,18 @@ export default function ChefPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              <Card>
-                <CardContent className="flex flex-col items-center justify-center p-6">
-                  <h3 className="text-2xl font-bold">Best Chef 2022</h3>
-                  <p className="text-muted-foreground">
-                    Awarded by the National Culinary Association
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="flex flex-col items-center justify-center p-6">
-                  <h3 className="text-2xl font-bold">Top Rated Chef 2023</h3>
-                  <p className="text-muted-foreground">
-                    Voted by our loyal customers
-                  </p>
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="flex flex-col items-center justify-center p-6">
-                  <h3 className="text-2xl font-bold">Michelin Star 2024</h3>
-                  <p className="text-muted-foreground">
-                    Recognized for our exceptional cuisine
-                  </p>
-                </CardContent>
-              </Card>
+              <Award
+                title="Best Chef 2022"
+                description="Awarded by the National Culinary Association"
+              />
+              <Award
+                title="Top Rated Chef 2023"
+                description="Voted by our loyal customers"
+              />
+              <Award
+                title="Michelin Star 2024"
+                description="Recognized for our exceptional cuisine"
+              />
             </div>
             <ChefCarousel
               images={chef_achievments}
