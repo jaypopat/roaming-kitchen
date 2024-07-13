@@ -27,7 +27,7 @@
         "allergens": ""
       }
     ],
-    "Non-Vegetarian": [
+    "NonVegetarian": [
       {
         "item": "Cocktail Sausages",
         "image": "/menu/finger-foods/cocktail-sausages.jpeg",
@@ -103,7 +103,7 @@
         "allergens": ""
       }
     ],
-    "Non-Vegetarian": [
+    "NonVegetarian": [
       {
         "item": "Tom Yam Chicken",
         "image": "/menu/soups/tom-yam-chicken-soup.jpg",
@@ -179,7 +179,7 @@
         "allergens": ""
       }
     ],
-    "Non-Vegetarian": [
+    "NonVegetarian": [
       {
         "item": "Chicken Tikka",
         "image": "/placeholder.svg",
@@ -300,7 +300,7 @@
         "allergens": ""
       }
     ],
-    "Non-Vegetarian": [
+    "NonVegetarian": [
       {
         "item": "Butter Chicken",
         "image": "/placeholder.svg",
@@ -416,7 +416,7 @@
         "allergens": ""
       }
     ],
-    "Non-Vegetarian": [
+    "NonVegetarian": [
       {
         "item": "Selection of Pickles & Chutneys",
         "image": "/placeholder.svg",
@@ -457,7 +457,7 @@
         "allergens": ""
       }
     ],
-    "Non-Vegetarian": [
+    "NonVegetarian": [
       {
         "item": "Creme Brulee",
         "image": "/placeholder.svg",

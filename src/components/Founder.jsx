@@ -5,7 +5,7 @@ export default function Founder({ role, photo, name }) {
     <div className="flex flex-col items-center justify-center">
       <Card>
         <Image
-          alt=""
+          alt={name}
           src={photo}
           width={400}
           height={500}

@@ -138,7 +138,7 @@ export const MenuItems = ({ category, filters, items }) => {
           <MenuItem key={item.item} item={item} isVeg={true} />
         ))}
       {filters.nonVegetarian &&
-        items[category]["Non-Vegetarian"].map((item) => (
+        items[category].NonVegetarian.map((item) => (
           <MenuItem key={item.item} item={item} isVeg={false} />
         ))}
     </div>
