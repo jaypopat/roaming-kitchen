@@ -1,9 +1,9 @@
 {
-  "Appetizers": {
+  "Finger Foods": {
     "Vegetarian": [
       {
         "item": "Vegetable Spring Rolls",
-        "image": "/menu/finger-foods/chips-and-wedges.jpeg",
+        "image": "/menu/finger-foods/veg_spring_rolls.jpeg",
         "allergens": ["Gluten", "Soy"]
       },
       {
@@ -96,11 +96,6 @@
         "item": "Tom Yam",
         "image": "/menu/soups/tom-yam-veg-soup.jpg",
         "allergens": ""
-      },
-      {
-        "item": "Others on request",
-        "image": "",
-        "allergens": ""
       }
     ],
     "NonVegetarian": [
@@ -130,94 +125,94 @@
     "Vegetarian": [
       {
         "item": "Goat Cheese Tart",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/goat-cheese-tart.jpg",
         "allergens": ""
       },
       {
         "item": "Paneer Tikka",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/paneer-tikka-skewers.jpg",
         "allergens": ""
       },
       {
         "item": "Caprese Salad",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/caprese-salad.jpg",
         "allergens": ""
       },
       {
         "item": "Selection of Sushi",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/veggie-sushi-selection.jpg",
         "allergens": ""
       },
       {
         "item": "Caesar Salad",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/caesar-salad.jpg",
         "allergens": ""
       },
       {
         "item": "Quesdillas",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/Quesadillas.jpg",
         "allergens": ""
       },
       {
         "item": "Vegan Salad Bowl",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/vegan-salad-bowl.jpg",
         "allergens": ""
       },
       {
         "item": "Tandoori Aloo",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/tandoori-aloo.jpeg",
         "allergens": ""
       },
       {
         "item": "Dahi ke kabab",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/Dahi-Kebab.webp",
         "allergens": ""
       },
       {
         "item": "Honey Chilli Potato",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/honey-chilli-potato.jpg",
         "allergens": ""
       }
     ],
     "NonVegetarian": [
       {
         "item": "Chicken Tikka",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/chicken-tikka.jpg",
         "allergens": ""
       },
       {
         "item": "Fish Fingers",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/fish-fingers.jpg",
         "allergens": ""
       },
       {
         "item": "Crumb Fried Prawns",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/crumbed-fried-prawns.jpg",
         "allergens": ""
       },
       {
         "item": "Chicken Vol Au Vent",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/Chicken-and-Mushroom-Vol-au-Vents.jpg",
         "allergens": ""
       },
       {
         "item": "Selection of Sushi",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/sushi.webp",
         "allergens": ""
       },
       {
         "item": "Thai Chicken Satay",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/thai-chicken-satay.jpg",
         "allergens": ""
       },
       {
         "item": "Shrimp Cocktail",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/shrimp-cocktail.webp",
         "allergens": ""
       },
       {
         "item": "Salt n Pepper Chicken",
-        "image": "/placeholder.svg",
+        "image": "/menu/starters/Salt-and-pepper-chicken.jpg",
         "allergens": ""
       }
     ]
