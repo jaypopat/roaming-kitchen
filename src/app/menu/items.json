@@ -420,6 +420,13 @@
         "image": "/menu/accompaniments/indian-chutneys.jpeg",
         "allergens": ""
       }
+    ],
+    "NonVegetarian": [
+      {
+        "item": "Tasty Butter Chicken",
+        "image": "/menu/main-course/butterchicken.jpg",
+        "allergens": ""
+      }
     ]
   },
   "Deserts": {
