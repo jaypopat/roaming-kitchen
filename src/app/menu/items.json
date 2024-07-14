@@ -372,49 +372,52 @@
     "Vegetarian": [
       {
         "item": "Dahi Vada",
-        "image": "/placeholder.svg",
+        "image": "/menu/accompaniments/dahi-vada.webp",
         "allergens": ""
       },
       {
         "item": "Selection of Raita",
-        "image": "/placeholder.svg",
+        "image": "/menu/accompaniments/indian-raitas.jpg",
         "allergens": ""
       },
       {
         "item": "Pappadums",
-        "image": "/placeholder.svg",
+        "image": "/menu/accompaniments/pappadums.jpg",
         "allergens": ""
       },
       {
         "item": "Salad",
-        "image": "/placeholder.svg",
+        "image": "/menu/accompaniments/salads.jpg",
         "allergens": ""
       },
       {
         "item": "Puri",
-        "image": "/placeholder.svg",
+        "image": "/menu/accompaniments/poori.jpeg",
         "allergens": ""
       },
       {
         "item": "Paratha",
-        "image": "/placeholder.svg",
+        "image": "/menu/accompaniments/parathas.jpg",
         "allergens": ""
       },
       {
         "item": "Tawa Roti",
-        "image": "/placeholder.svg",
+        "image": "/menu/accompaniments/Tawa-Roti.jpg",
         "allergens": ""
       },
       {
         "item": "Selection of Parathas",
-        "image": "/placeholder.svg",
+        "image": "/menu/accompaniments/selection-of-parathas.jpg",
         "allergens": ""
-      }
-    ],
-    "NonVegetarian": [
+      },
       {
-        "item": "Selection of Pickles & Chutneys",
-        "image": "/placeholder.svg",
+        "item": "Selection of Pickles",
+        "image": "/menu/accompaniments/indian-pickles.jpeg",
+        "allergens": ""
+      },
+      {
+        "item": "Selection of Chutneys",
+        "image": "/menu/accompaniments/indian-chutneys.jpeg",
         "allergens": ""
       }
     ]
@@ -423,54 +426,54 @@
     "Vegetarian": [
       {
         "item": "Gajar ka Halwa",
-        "image": "/placeholder.svg",
+        "image": "/menu/deserts/carrot-halwa-recipe.jpg",
         "allergens": ""
       },
       {
         "item": "Kheer",
-        "image": "/placeholder.svg",
+        "image": "/menu/deserts/Rice-Kheer.webp",
         "allergens": ""
       },
       {
         "item": "Shrikhand",
-        "image": "/placeholder.svg",
+        "image": "/menu/deserts/shrikhand.webp",
         "allergens": ""
       },
       {
         "item": "Baked Yoghurt",
-        "image": "/placeholder.svg",
+        "image": "/menu/deserts/Baked-yogurt.webp",
         "allergens": ""
       },
       {
         "item": "Shahi Tukda",
-        "image": "/placeholder.svg",
+        "image": "/menu/deserts/shahi-tukda.jpg",
         "allergens": ""
       },
       {
         "item": "Mixed Fruits",
-        "image": "/placeholder.svg",
+        "image": "/menu/deserts/MixedFruitSalad.jpg",
         "allergens": ""
       }
     ],
     "NonVegetarian": [
       {
         "item": "Creme Brulee",
-        "image": "/placeholder.svg",
+        "image": "/menu/deserts/creme-brulee.jpg",
         "allergens": ""
       },
       {
         "item": "Chocolate Mouse",
-        "image": "/placeholder.svg",
+        "image": "/menu/deserts/chocolate-mousse.jpg",
         "allergens": ""
       },
       {
         "item": "Chocolate Brownie",
-        "image": "/placeholder.svg",
+        "image": "/menu/deserts/chocolate-brownie.jpg",
         "allergens": ""
       },
       {
         "item": "Apple Crumble Tart",
-        "image": "/placeholder.svg",
+        "image": "/menu/deserts/apple-crumble-tart.jpg",
         "allergens": ""
       }
     ]
