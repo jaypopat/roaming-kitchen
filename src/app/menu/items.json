@@ -36,7 +36,7 @@
       {
         "item": "Chicken Wings",
         "image": "/menu/finger-foods/RK_chicken_wings.jpg",
-        "allergens": [6, 7, 9, 11]
+        "allergens": [6, 7, 9]
       },
       {
         "item": "Fish Goujons",
@@ -60,27 +60,27 @@
       {
         "item": "Tomato & Basil",
         "image": "/menu/soups/tomato-and-basil-soup.jpeg",
-        "allergens": [6,7,8,9,11,12]
+        "allergens": [6,7,8,9,12]
       },
       {
         "item": "Potato & Leek",
         "image": "/menu/soups/potato-leek-soup.jpg",
-        "allergens": [6,7,8,9,11,12]
+        "allergens": [6,7,8,9,12]
       },
       {
         "item": "Carrot, Ginger, Orange",
         "image": "/menu/soups/RK_carrot_and_ginger_soup.jpg",
-        "allergens": [6,7,8,9,11,12]
+        "allergens": [6,7,8,9,12]
       },
       {
         "item": "Butternut Squash",
         "image": "/menu/soups/butternut-squash-soup.jpg",
-        "allergens": [6,7,8,9,11,12]
+        "allergens": [6,7,8,9,12]
       },
       {
         "item": "Mixed Vegetables",
         "image": "/menu/soups/mixed-vegetable-soup.jpg",
-        "allergens": [6,7,8,9,11,12]
+        "allergens": [6,7,8,9,12]
       },
       {
         "item": "Hot & Sour",
@@ -126,7 +126,7 @@
       {
         "item": "Goat Cheese Tart",
         "image": "/menu/starters/goat-cheese-tart.jpg",
-        "allergens": [6,7,11]
+        "allergens": [6,7]
       },
       {
         "item": "Paneer Tikka",
@@ -218,7 +218,7 @@
       {
         "item": "Salt n Pepper Chicken",
         "image": "/menu/starters/Salt-and-pepper-chicken.jpg",
-        "allergens": [6,7,8,11]
+        "allergens": [6,7,8]
       },
       {
         "item": "Caesar Chicken Salad",
@@ -282,7 +282,7 @@
       {
         "item": "Veg Lasagne",
         "image": "/menu/main-course/roasted-vegetable-lasagna.jpeg",
-        "allergens": [6,7,11,12]
+        "allergens": [6,7,12]
       },
       {
         "item": "Baked Vegetables",

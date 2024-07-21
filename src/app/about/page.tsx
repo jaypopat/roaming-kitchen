@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const chef_pfp = "/chef-portfolio/Narendra/awards/pfp.png";
-  const vipul_pfp = "/vipul/pfp.jpg";
+  const chef_pfp = "/founders/chef_narendra_image.jpg";
+  const vipul_pfp = "/founders/pfp.jpg";
 
   return (
     <>
