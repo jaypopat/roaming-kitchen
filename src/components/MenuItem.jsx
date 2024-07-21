@@ -1,6 +1,15 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { allergensIndex } from "../app/menu/allergensIndex";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { useState } from "react";
 
 export const MenuItems = ({ category, filters, items }) => {
   const cardSize = 350;
@@ -96,42 +105,73 @@ export const MenuItems = ({ category, filters, items }) => {
   };
 
   const MenuItem = ({ item, isVeg }) => (
-    <Card
-      key={item.item}
-      style={{
-        position: "relative",
-        overflow: "hidden",
-        width: `${cardSize}px`,
-        height: `${cardSize}px`,
-      }}
-    >
-      <CardContent className="p-0 h-full flex flex-col">
-        <div
+    <Dialog>
+      <DialogTrigger asChild>
+        <Card
+          key={item.item}
           style={{
             position: "relative",
-            height: `${cardSize - textHeight}px`,
             overflow: "hidden",
+            width: `${cardSize}px`,
+            height: `${cardSize}px`,
+            cursor: "pointer",
           }}
         >
+          <CardContent className="p-0 h-full flex flex-col">
+            <div
+              style={{
+                position: "relative",
+                height: `${cardSize - textHeight}px`,
+                overflow: "hidden",
+              }}
+            >
+              <Image
+                src={item.image}
+                alt={item.item}
+                layout="fill"
+                objectFit="cover"
+              />
+              <VegIndicator isVeg={isVeg} />
+              <AllergenIndicator allergens={item.allergens} />
+            </div>
+            <div
+              className="w-full text-center bg-white py-2 flex items-center justify-center"
+              style={{
+                height: `${textHeight}px`,
+              }}
+            >
+              <h3 className="text-lg font-semibold">{item.item}</h3>
+            </div>
+          </CardContent>
+        </Card>
+      </DialogTrigger>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>{item.item}</DialogTitle>
+          <DialogDescription>{item.description}</DialogDescription>
+        </DialogHeader>
+        <div>
           <Image
             src={item.image}
             alt={item.item}
-            layout="fill"
+            width={300}
+            height={200}
             objectFit="cover"
           />
-          <VegIndicator isVeg={isVeg} />
-          <AllergenIndicator allergens={item.allergens} />
+          <p>{item.description}</p>
+          <strong>Allergens:</strong>
+          <ul>
+            {(Array.isArray(item.allergens) ? item.allergens : []).map(
+              (allergen, index) => (
+                <li key={index}>
+                  {allergensIndex[allergen] || "Unknown allergen"}
+                </li>
+              ),
+            )}
+          </ul>
         </div>
-        <div
-          className="w-full text-center bg-white py-2 flex items-center justify-center"
-          style={{
-            height: `${textHeight}px`,
-          }}
-        >
-          <h3 className="text-lg font-semibold">{item.item}</h3>
-        </div>
-      </CardContent>
-    </Card>
+      </DialogContent>
+    </Dialog>
   );
 
   return (
