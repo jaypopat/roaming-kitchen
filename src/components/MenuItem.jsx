@@ -82,18 +82,36 @@ export const MenuItems = ({ category, filters, items }) => {
               backgroundColor: "white",
               border: "1px solid #ccc",
               borderRadius: "4px",
-              padding: "8px",
+              padding: "0px",
               zIndex: 20,
               minWidth: "150px",
               boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
             }}
           >
             <strong>Allergens:</strong>
-            <ul style={{ margin: "4px 0 0 0", paddingLeft: "20px" }}>
+            <ul
+              style={{
+                margin: "4px 0 0 0",
+                paddingLeft: "20px",
+                listStyleType: "disc",
+                fontSize: "14px",
+                width: "200px",
+                textAlign: "left",
+              }}
+            >
               {allergens.map((allergen) => {
                 const allergenName =
                   allergensIndex[allergen] || "Unknown allergen";
-                return <li key={allergen}>{allergenName}</li>;
+                return (
+                  <li
+                    key={allergen}
+                    style={{
+                      display: "block",
+                    }}
+                  >
+                    {allergenName}
+                  </li>
+                );
               })}
             </ul>
           </div>
