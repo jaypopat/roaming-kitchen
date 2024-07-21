@@ -90,7 +90,7 @@ export const MenuItems = ({ category, filters, items }) => {
           >
             <strong>Allergens:</strong>
             <ul style={{ margin: "4px 0 0 0", paddingLeft: "20px" }}>
-              {(Array.isArray(item.allergens) ? item.allergens : []).map(
+              {(Array.isArray(items.allergens) ? items.allergens : []).map(
                 (allergen, index) => (
                   <li key={index}>
                     {allergensIndex[allergen] || "Unknown allergen"}

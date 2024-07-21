@@ -45,6 +45,7 @@ export default function Component() {
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline" className="h-10 px-4 text-sm">
+            <FilterIcon className="h-3.5 w-3.5" />
             {activeTab}
           </Button>
         </DropdownMenuTrigger>
