@@ -3,7 +3,7 @@
     "Vegetarian": [
       {
         "item": "Vegetable Spring Rolls",
-        "image": "/menu/finger-foods/veg_spring_rolls.jpeg",
+        "image": "/menu/finger-foods/RK_spring_rolls.jpg",
         "allergens": ["Gluten", "Soy"]
       },
       {
@@ -35,7 +35,7 @@
       },
       {
         "item": "Chicken Wings",
-        "image": "/menu/finger-foods/chicken-wings.webp",
+        "image": "/menu/finger-foods/RK_chicken_wings.jpg",
         "allergens": ""
       },
       {
@@ -69,7 +69,7 @@
       },
       {
         "item": "Carrot, Ginger, Orange",
-        "image": "/menu/soups/carrot-orange-ginger-soup.jpeg",
+        "image": "/menu/soups/RK_carrot_and_ginger_soup.jpg",
         "allergens": ""
       },
       {
@@ -165,19 +165,24 @@
       },
       {
         "item": "Dahi ke kabab",
-        "image": "/menu/starters/Dahi-Kebab.webp",
+        "image": "/menu/starters/RK_dahi_ke_kebab.jpg",
         "allergens": ""
       },
       {
         "item": "Honey Chilli Potato",
         "image": "/menu/starters/honey-chilli-potato.jpg",
         "allergens": ""
+      },
+      {
+        "item": "Lebanese Platter",
+        "image": "/menu/starters/RK_lebanese_platter.jpg",
+        "allergens": ""
       }
     ],
     "NonVegetarian": [
       {
         "item": "Chicken Tikka",
-        "image": "/menu/starters/chicken-tikka.jpg",
+        "image": "/menu/starters/RK_chicken_tikka.jpg",
         "allergens": ""
       },
       {
@@ -192,7 +197,7 @@
       },
       {
         "item": "Chicken Vol Au Vent",
-        "image": "/menu/starters/Chicken-and-Mushroom-Vol-au-Vents.jpg",
+        "image": "/menu/starters/RK_chicken_voluvent.jpg",
         "allergens": ""
       },
       {
@@ -202,7 +207,7 @@
       },
       {
         "item": "Thai Chicken Satay",
-        "image": "/menu/starters/thai-chicken-satay.jpg",
+        "image": "/menu/starters/RK_chicken_satay.jpg",
         "allergens": ""
       },
       {
@@ -213,6 +218,16 @@
       {
         "item": "Salt n Pepper Chicken",
         "image": "/menu/starters/Salt-and-pepper-chicken.jpg",
+        "allergens": ""
+      },
+      {
+        "item": "Caesar Chicken Salad",
+        "image": "/menu/starters/RK_caesar_chicken_salad.jpg",
+        "allergens": ""
+      },
+      {
+        "item": "Fish Cake",
+        "image": "/menu/starters/RK_fish_cake.jpg",
         "allergens": ""
       }
     ]
@@ -231,7 +246,7 @@
       },
       {
         "item": "Pasta with Tomato or white sauce",
-        "image": "/menu/main-course/spaghetti-with-tomato-sauce.webp",
+        "image": "/menu/main-course/RK_pasta.jpg",
         "allergens": ""
       },
       {
@@ -308,7 +323,7 @@
       },
       {
         "item": "Stir Fried Chicken",
-        "image": "/menu/main-course/stir-fried-chicken.webp",
+        "image": "/menu/main-course/RK_stir_fry_chicken.jpg",
         "allergens": ""
       },
       {
@@ -338,7 +353,7 @@
       },
       {
         "item": "Fish n Chips",
-        "image": "/menu/main-course/fish-and-chips.webp",
+        "image": "/menu/main-course/RK_fish_and_chips.jpg",
         "allergens": ""
       },
       {
@@ -358,12 +373,27 @@
       },
       {
         "item": "Lamb Rogan Josh",
-        "image": "/menu/main-course/lamb-rogan-josh.jpg",
+        "image": "/menu/main-course/RK_lamb_rogan_josh.jpg",
         "allergens": ""
       },
       {
         "item": "Chicken Tikka Masala",
-        "image": "/menu/main-course/Chicken_Tikka_Masala.jpg",
+        "image": "/menu/main-course/RK_chicken_tikka_masala.jpg",
+        "allergens": ""
+      },
+      {
+        "item": "Slider Burgers",
+        "image": "/menu/main-course/RK_slider_burgers.jpg",
+        "allergens": ""
+      },
+      {
+        "item": "Chicken Burger",
+        "image": "/menu/main-course/RK_chicken_burger.jpg",
+        "allergens": ""
+      },
+      {
+        "item": "Beef Burger",
+        "image": "/menu/main-course/RK_beef_burger.jpg",
         "allergens": ""
       }
     ]
@@ -448,7 +478,7 @@
       },
       {
         "item": "Baked Yoghurt",
-        "image": "/menu/deserts/Baked-yogurt.webp",
+        "image": "/menu/deserts/RK_baked_yoghurt.jpg",
         "allergens": ""
       },
       {
@@ -465,7 +495,7 @@
     "NonVegetarian": [
       {
         "item": "Creme Brulee",
-        "image": "/menu/deserts/creme-brulee.jpg",
+        "image": "/menu/deserts/RK_creme_brulee.jpg",
         "allergens": ""
       },
       {
@@ -480,7 +510,7 @@
       },
       {
         "item": "Apple Crumble Tart",
-        "image": "/menu/deserts/apple-crumble-tart.jpg",
+        "image": "/menu/deserts/RK_apple_crumble_tart.jpg",
         "allergens": ""
       }
     ]
