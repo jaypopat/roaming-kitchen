@@ -43,11 +43,6 @@ export const MenuItems = ({ category, filters, items }) => {
     const [showTooltip, setShowTooltip] = useState(false);
     if (!allergens || allergens.length === 0) return null;
 
-    // Convert allergen numbers to allergen names using the map
-    const allergenNames = allergens.map(
-      (number) => allergensIndex[number] || "Unknown allergen",
-    );
-
     return (
       <div
         style={{
@@ -94,9 +89,13 @@ export const MenuItems = ({ category, filters, items }) => {
           >
             <strong>Allergens:</strong>
             <ul style={{ margin: "4px 0 0 0", paddingLeft: "20px" }}>
-              {allergens.map((allergen, index) => (
-                <li key={index}>{allergen}</li>
-              ))}
+              {(Array.isArray(item.allergens) ? item.allergens : []).map(
+                (allergen, index) => (
+                  <li key={index}>
+                    {allergensIndex[allergen] || "Unknown allergen"}
+                  </li>
+                ),
+              )}
             </ul>
           </div>
         )}
@@ -176,14 +175,25 @@ export const MenuItems = ({ category, filters, items }) => {
 
   return (
     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      {filters.vegetarian &&
+      {filters.vegetarian && items[category]?.Vegetarian?.length > 0 ? (
         items[category].Vegetarian.map((item) => (
           <MenuItem key={item.item} item={item} isVeg={true} />
-        ))}
-      {filters.nonVegetarian &&
+        ))
+      ) : filters.vegetarian ? (
+        <div className="col-span-full text-center text-gray-500">
+          No vegetarian items available.
+        </div>
+      ) : null}
+
+      {filters.nonVegetarian && items[category]?.NonVegetarian?.length > 0 ? (
         items[category].NonVegetarian.map((item) => (
           <MenuItem key={item.item} item={item} isVeg={false} />
-        ))}
+        ))
+      ) : filters.nonVegetarian ? (
+        <div className="col-span-full text-center text-gray-500">
+          No non-vegetarian items available.
+        </div>
+      ) : null}
     </div>
   );
 };
