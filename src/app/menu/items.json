@@ -9,49 +9,49 @@
       {
         "item": "Chips / Wedges",
         "image": "/menu/finger-foods/chips-and-wedges.jpeg",
-        "allergens": ["Gluten", "Soy"]
+        "allergens": [8,9]
       },
       {
         "item": "Garlic Mushrooms",
         "image": "/menu/finger-foods/garlic-mushrooms.jpg",
-        "allergens": ""
+        "allergens": [6,8,9,11,12]
       },
       {
         "item": "Mozarella Sticks",
         "image": "/menu/finger-foods/mozzarella-sticks.jpeg",
-        "allergens": ""
+        "allergens": [5,7,8,9,11]
       },
       {
         "item": "Crumb Fried Brie",
         "image": "/menu/finger-foods/crumb-fried-brie.webp",
-        "allergens": ""
+        "allergens": [5,7,8,9,11]
       }
     ],
     "NonVegetarian": [
       {
         "item": "Cocktail Sausages",
         "image": "/menu/finger-foods/cocktail-sausages.jpeg",
-        "allergens": ""
+        "allergens": [6,8,11]
       },
       {
         "item": "Chicken Wings",
         "image": "/menu/finger-foods/RK_chicken_wings.jpg",
-        "allergens": ""
+        "allergens": [6, 7, 9, 11]
       },
       {
         "item": "Fish Goujons",
         "image": "/menu/finger-foods/fish-goujons.png",
-        "allergens": ""
+        "allergens": [1,2,3,6,7,8,11]
       },
       {
         "item": "Chicken Goujons",
         "image": "/menu/finger-foods/chicken-goujons.jpg",
-        "allergens": ""
+        "allergens": [6,7,8,9,11]
       },
       {
         "item": "Spicy Cocktain Chicken Skewers",
         "image": "/menu/finger-foods/spicky-cocktail-chicken-skewers.jpg",
-        "allergens": ""
+        "allergens": [8,9,11]
       }
     ]
   },
@@ -60,64 +60,64 @@
       {
         "item": "Tomato & Basil",
         "image": "/menu/soups/tomato-and-basil-soup.jpeg",
-        "allergens": ""
+        "allergens": [6,7,8,9,11,12]
       },
       {
         "item": "Potato & Leek",
         "image": "/menu/soups/potato-leek-soup.jpg",
-        "allergens": ""
+        "allergens": [6,7,8,9,11,12]
       },
       {
         "item": "Carrot, Ginger, Orange",
         "image": "/menu/soups/RK_carrot_and_ginger_soup.jpg",
-        "allergens": ""
+        "allergens": [6,7,8,9,11,12]
       },
       {
         "item": "Butternut Squash",
         "image": "/menu/soups/butternut-squash-soup.jpg",
-        "allergens": ""
+        "allergens": [6,7,8,9,11,12]
       },
       {
         "item": "Mixed Vegetables",
         "image": "/menu/soups/mixed-vegetable-soup.jpg",
-        "allergens": ""
+        "allergens": [6,7,8,9,11,12]
       },
       {
         "item": "Hot & Sour",
         "image": "/menu/soups/Hot-and-Sour-Soup.jpg",
-        "allergens": ""
+        "allergens": [4,6,10,12]
       },
       {
         "item": "Manchow",
         "image": "/menu/soups/Veg-Manchow-Soup.jpg",
-        "allergens": ""
+        "allergens": [4,6,10,12]
       },
       {
         "item": "Tom Yam",
         "image": "/menu/soups/tom-yam-veg-soup.jpg",
-        "allergens": ""
+        "allergens": [4,6,10,12]
       }
     ],
     "NonVegetarian": [
       {
         "item": "Tom Yam Chicken",
         "image": "/menu/soups/tom-yam-chicken-soup.jpg",
-        "allergens": ""
+        "allergens": [4,6,10,12]
       },
       {
         "item": "Tom Kha Chicken",
         "image": "/menu/soups/tom-kha-chicken.jpeg",
-        "allergens": ""
+        "allergens": [4,6,10,12]
       },
       {
         "item": "Sea Food Chowder",
         "image": "/menu/soups/Seafood-Chowder.jpg",
-        "allergens": ""
+        "allergens": [1,2,3,6,7,12]
       },
       {
         "item": "Miso Soup",
         "image": "/menu/soups/Miso-Soup.jpg",
-        "allergens": ""
+        "allergens": [6,8,12]
       }
     ]
   },
@@ -126,109 +126,109 @@
       {
         "item": "Goat Cheese Tart",
         "image": "/menu/starters/goat-cheese-tart.jpg",
-        "allergens": ""
+        "allergens": [6,7,11]
       },
       {
         "item": "Paneer Tikka",
         "image": "/menu/starters/paneer-tikka-skewers.jpg",
-        "allergens": ""
+        "allergens": [7, 8]
       },
       {
         "item": "Caprese Salad",
         "image": "/menu/starters/caprese-salad.jpg",
-        "allergens": ""
+        "allergens": [7,8,12]
       },
       {
         "item": "Selection of Sushi",
         "image": "/menu/starters/veggie-sushi-selection.jpg",
-        "allergens": ""
+        "allergens": [8,10,12]
       },
       {
         "item": "Caesar Salad",
         "image": "/menu/starters/caesar-salad.jpg",
-        "allergens": ""
+        "allergens": [6,7,11,13]
       },
       {
         "item": "Quesdillas",
         "image": "/menu/starters/Quesadillas.jpg",
-        "allergens": ""
+        "allergens": [6,7,8,11,12]
       },
       {
         "item": "Vegan Salad Bowl",
         "image": "/menu/starters/vegan-salad-bowl.jpg",
-        "allergens": ""
+        "allergens": [6,8,12]
       },
       {
         "item": "Tandoori Aloo",
         "image": "/menu/starters/tandoori-aloo.jpeg",
-        "allergens": ""
+        "allergens": [7,8,9]
       },
       {
         "item": "Dahi ke kabab",
         "image": "/menu/starters/RK_dahi_ke_kebab.jpg",
-        "allergens": ""
+        "allergens": [7,8]
       },
       {
         "item": "Honey Chilli Potato",
         "image": "/menu/starters/honey-chilli-potato.jpg",
-        "allergens": ""
+        "allergens": [7,8,10,11,12]
       },
       {
         "item": "Lebanese Platter",
         "image": "/menu/starters/RK_lebanese_platter.jpg",
-        "allergens": ""
+        "allergens": [6,7,8]
       }
     ],
     "NonVegetarian": [
       {
         "item": "Chicken Tikka",
         "image": "/menu/starters/RK_chicken_tikka.jpg",
-        "allergens": ""
+        "allergens": [7,8,9]
       },
       {
         "item": "Fish Fingers",
         "image": "/menu/starters/fish-fingers.jpg",
-        "allergens": ""
+        "allergens": [1,2,3,6,7,8,9,11,12]
       },
       {
         "item": "Crumb Fried Prawns",
         "image": "/menu/starters/crumbed-fried-prawns.jpg",
-        "allergens": ""
+        "allergens": [1,2,3,6,7,8,11,12]
       },
       {
         "item": "Chicken Vol Au Vent",
         "image": "/menu/starters/RK_chicken_voluvent.jpg",
-        "allergens": ""
+        "allergens": [6,7,11,13]
       },
       {
         "item": "Selection of Sushi",
         "image": "/menu/starters/sushi.webp",
-        "allergens": ""
+        "allergens": [1,2,3,7,8,12]
       },
       {
         "item": "Thai Chicken Satay",
         "image": "/menu/starters/RK_chicken_satay.jpg",
-        "allergens": ""
+        "allergens": [4,7,8]
       },
       {
         "item": "Shrimp Cocktail",
         "image": "/menu/starters/shrimp-cocktail.webp",
-        "allergens": ""
+        "allergens": [1,2,3,7,11]
       },
       {
         "item": "Salt n Pepper Chicken",
         "image": "/menu/starters/Salt-and-pepper-chicken.jpg",
-        "allergens": ""
+        "allergens": [6,7,8,11]
       },
       {
         "item": "Caesar Chicken Salad",
         "image": "/menu/starters/RK_caesar_chicken_salad.jpg",
-        "allergens": ""
+        "allergens": [6,7,11,13]
       },
       {
         "item": "Fish Cake",
         "image": "/menu/starters/RK_fish_cake.jpg",
-        "allergens": ""
+        "allergens": [1,2,3,6,7,8,9,11,12]
       }
     ]
   },
@@ -237,62 +237,62 @@
       {
         "item": "Veg Biryani",
         "image": "/menu/main-course/Veg-Biryani.jpg",
-        "allergens": ""
+        "allergens": [7]
       },
       {
         "item": "Bhindi Masala",
         "image": "/menu/main-course/bhindi-masala.jpg",
-        "allergens": ""
+        "allergens": [8]
       },
       {
         "item": "Pasta with Tomato or white sauce",
         "image": "/menu/main-course/RK_pasta.jpg",
-        "allergens": ""
+        "allergens": [6, 7,11]
       },
       {
         "item": "Dal Makhani",
         "image": "/menu/main-course/dal-makhani.webp",
-        "allergens": ""
+        "allergens": [7,8]
       },
       {
         "item": "Dal Tadka",
         "image": "/menu/main-course/dal-tadka.jpg",
-        "allergens": ""
+        "allergens": [7,8]
       },
       {
         "item": "Paneer Butter Masala",
         "image": "/menu/main-course/paneer-butter-masala.webp",
-        "allergens": ""
+        "allergens": [7,8]
       },
       {
         "item": "Malai Kofta",
         "image": "/menu/main-course/malai-kofta.webp",
-        "allergens": ""
+        "allergens": [7,8]
       },
       {
         "item": "Stir Fried Vegetables",
         "image": "/menu/main-course/VegetableStirFry.jpg",
-        "allergens": ""
+        "allergens": [8,9,10,12]
       },
       {
         "item": "Thai Vegetable Curry Red/Green/Yellow",
         "image": "/menu/main-course/Thai-Red-Curry-vegetable.webp",
-        "allergens": ""
+        "allergens": [7,8,12]
       },
       {
         "item": "Veg Lasagne",
         "image": "/menu/main-course/roasted-vegetable-lasagna.jpeg",
-        "allergens": ""
+        "allergens": [6,7,11,12]
       },
       {
         "item": "Baked Vegetables",
         "image": "/menu/main-course/baked-veggies.jpg",
-        "allergens": ""
+        "allergens": [7,8]
       },
       {
         "item": "Aloo Gobhi",
         "image": "/menu/main-course/aloo-gobhi.jpg",
-        "allergens": ""
+        "allergens": [8]
       },
       {
         "item": "Chole Masala",
@@ -308,93 +308,98 @@
         "item": "Kale Methi Palak",
         "image": "/menu/main-course/kale-methi-palak.jpeg",
         "allergens": ""
+      },
+      {
+        "item": "Veg Burgers",
+        "image": "/menu/main-course/veg-burger.jpeg",
+        "allergens": [6,7,8,11]
       }
     ],
     "NonVegetarian": [
       {
         "item": "Butter Chicken",
         "image": "/menu/main-course/butterchicken.jpg",
-        "allergens": ""
+        "allergens": [7,8]
       },
       {
         "item": "Chicken Curry",
         "image": "/menu/main-course/RK_chicken_curry.jpg",
-        "allergens": ""
+        "allergens": [7,8]
       },
       {
         "item": "Stir Fried Chicken",
         "image": "/menu/main-course/RK_stir_fry_chicken.jpg",
-        "allergens": ""
+        "allergens": [[6,8,10,11,12]]
       },
       {
         "item": "Fish Curry",
         "image": "/menu/main-course/fish-curry.webp",
-        "allergens": ""
+        "allergens": [1,2,3,7,8]
       },
       {
         "item": "Thai Chicken Curry Red/Green/Yellow",
         "image": "/menu/main-course/Thai-Green-Curry.jpg",
-        "allergens": ""
+        "allergens": [7,8,12]
       },
       {
         "item": "Beef Lasagne",
         "image": "/menu/main-course/beef-lasagne.jpg",
-        "allergens": ""
+        "allergens": [6,7,11,12]
       },
       {
         "item": "Grilled Chicken Breast",
         "image": "/menu/main-course/Grilled-Chicken-breast.jpg",
-        "allergens": ""
+        "allergens": [7,8]
       },
       {
         "item": "Pan Fried Fish",
         "image": "/menu/main-course/Pan-Fried-Fish.jpg",
-        "allergens": ""
+        "allergens": [1,2,3,7,12]
       },
       {
         "item": "Fish n Chips",
         "image": "/menu/main-course/RK_fish_and_chips.jpg",
-        "allergens": ""
+        "allergens": [1,2,3,6,7,9,11]
       },
       {
         "item": "Lamb Curry",
         "image": "/menu/main-course/lamb-curry.jpg",
-        "allergens": ""
+        "allergens": [8,11]
       },
       {
         "item": "Chicken Biryani",
         "image": "/menu/main-course/chicken-biryani.webp",
-        "allergens": ""
+        "allergens": [7,11]
       },
       {
         "item": "Lamb Biryani",
         "image": "/menu/main-course/LambBiryani.webp",
-        "allergens": ""
+        "allergens": [7,11]
       },
       {
         "item": "Lamb Rogan Josh",
         "image": "/menu/main-course/RK_lamb_rogan_josh.jpg",
-        "allergens": ""
+        "allergens": [8]
       },
       {
         "item": "Chicken Tikka Masala",
         "image": "/menu/main-course/RK_chicken_tikka_masala.jpg",
-        "allergens": ""
+        "allergens": [7]
       },
       {
         "item": "Slider Burgers",
         "image": "/menu/main-course/RK_slider_burgers.jpg",
-        "allergens": ""
+        "allergens": [6,7,8,11]
       },
       {
         "item": "Chicken Burger",
         "image": "/menu/main-course/RK_chicken_burger.jpg",
-        "allergens": ""
+        "allergens": [6,7,8,11]
       },
       {
         "item": "Beef Burger",
         "image": "/menu/main-course/RK_beef_burger.jpg",
-        "allergens": ""
+        "allergens": [6,7,8,11]
       }
     ]
   },
@@ -403,52 +408,52 @@
       {
         "item": "Dahi Vada",
         "image": "/menu/accompaniments/dahi-vada.webp",
-        "allergens": ""
+        "allergens": 7
       },
       {
         "item": "Selection of Raita",
         "image": "/menu/accompaniments/indian-raitas.jpg",
-        "allergens": ""
+        "allergens": [7]
       },
       {
         "item": "Pappadums",
         "image": "/menu/accompaniments/pappadums.jpg",
-        "allergens": ""
+        "allergens": [8]
       },
       {
         "item": "Salad",
         "image": "/menu/accompaniments/salads.jpg",
-        "allergens": ""
+        "allergens": [6,7,8,12]
       },
       {
         "item": "Puri",
         "image": "/menu/accompaniments/poori.jpeg",
-        "allergens": ""
+        "allergens": [6,8]
       },
       {
         "item": "Paratha",
         "image": "/menu/accompaniments/parathas.jpg",
-        "allergens": ""
+        "allergens": [6,8]
       },
       {
         "item": "Tawa Roti",
         "image": "/menu/accompaniments/Tawa-Roti.jpg",
-        "allergens": ""
+        "allergens": [6,7,8]
       },
       {
         "item": "Selection of Parathas",
         "image": "/menu/accompaniments/selection-of-parathas.jpg",
-        "allergens": ""
+        "allergens": [6,7,8]
       },
       {
         "item": "Selection of Pickles",
         "image": "/menu/accompaniments/indian-pickles.jpeg",
-        "allergens": ""
+        "allergens": [8,13]
       },
       {
         "item": "Selection of Chutneys",
         "image": "/menu/accompaniments/indian-chutneys.jpeg",
-        "allergens": ""
+        "allergens": [8,13]
       }
     ]
   },
@@ -457,27 +462,27 @@
       {
         "item": "Gajar ka Halwa",
         "image": "/menu/deserts/carrot-halwa-recipe.jpg",
-        "allergens": ""
+        "allergens": [7]
       },
       {
         "item": "Kheer",
         "image": "/menu/deserts/Rice-Kheer.webp",
-        "allergens": ""
+        "allergens": [[15,7]
       },
       {
         "item": "Shrikhand",
         "image": "/menu/deserts/shrikhand.webp",
-        "allergens": ""
+        "allergens": [7]
       },
       {
         "item": "Baked Yoghurt",
         "image": "/menu/deserts/RK_baked_yoghurt.jpg",
-        "allergens": ""
+        "allergens": [7]
       },
       {
         "item": "Shahi Tukda",
         "image": "/menu/deserts/shahi-tukda.jpg",
-        "allergens": ""
+        "allergens": [6,15,7]
       },
       {
         "item": "Mixed Fruits",
@@ -489,22 +494,22 @@
       {
         "item": "Creme Brulee",
         "image": "/menu/deserts/RK_creme_brulee.jpg",
-        "allergens": ""
+        "allergens": [7,11]
       },
       {
         "item": "Chocolate Mouse",
         "image": "/menu/deserts/chocolate-mousse.jpg",
-        "allergens": ""
+        "allergens": [6,7,11]
       },
       {
         "item": "Chocolate Brownie",
         "image": "/menu/deserts/chocolate-brownie.jpg",
-        "allergens": ""
+        "allergens": [16,6,7,11]
       },
       {
         "item": "Apple Crumble Tart",
         "image": "/menu/deserts/RK_apple_crumble_tart.jpg",
-        "allergens": ""
+        "allergens": [6,7,11]
       }
     ]
   }
