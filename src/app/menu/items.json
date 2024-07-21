@@ -467,7 +467,7 @@
       {
         "item": "Kheer",
         "image": "/menu/deserts/Rice-Kheer.webp",
-        "allergens": [[15,7]
+        "allergens": [15,7]
       },
       {
         "item": "Shrikhand",
