@@ -90,13 +90,11 @@ export const MenuItems = ({ category, filters, items }) => {
           >
             <strong>Allergens:</strong>
             <ul style={{ margin: "4px 0 0 0", paddingLeft: "20px" }}>
-              {(Array.isArray(items.allergens) ? items.allergens : []).map(
-                (allergen, index) => (
-                  <li key={index}>
-                    {allergensIndex[allergen] || "Unknown allergen"}
-                  </li>
-                ),
-              )}
+              {allergens.map((allergen) => {
+                const allergenName =
+                  allergensIndex[allergen] || "Unknown allergen";
+                return <li key={allergen}>{allergenName}</li>;
+              })}
             </ul>
           </div>
         )}
