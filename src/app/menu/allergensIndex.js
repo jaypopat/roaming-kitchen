@@ -14,4 +14,5 @@ export const allergensIndex = {
   13: "Mustard",
   14: "Lupin",
   15: "Nuts (Almonds, Walnuts, Cashews)",
+  16: "Nuts (Walnuts)",
 };
