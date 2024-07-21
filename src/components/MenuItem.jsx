@@ -1,11 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
+import { allergensIndex } from "../app/menu/allergensIndex";
 
 export const MenuItems = ({ category, filters, items }) => {
   const cardSize = 350;
@@ -36,7 +31,13 @@ export const MenuItems = ({ category, filters, items }) => {
   );
 
   const AllergenIndicator = ({ allergens }) => {
+    const [showTooltip, setShowTooltip] = useState(false);
     if (!allergens || allergens.length === 0) return null;
+
+    // Convert allergen numbers to allergen names using the map
+    const allergenNames = allergens.map(
+      (number) => allergensIndex[number] || "Unknown allergen",
+    );
 
     return (
       <div
@@ -46,6 +47,8 @@ export const MenuItems = ({ category, filters, items }) => {
           left: "10px",
           zIndex: 10,
         }}
+        onMouseEnter={() => setShowTooltip(true)}
+        onMouseLeave={() => setShowTooltip(false)}
       >
         <div
           style={{
@@ -63,20 +66,31 @@ export const MenuItems = ({ category, filters, items }) => {
             cursor: "pointer",
           }}
         >
-          <TooltipProvider>
-            <Tooltip>
-              <TooltipTrigger>A</TooltipTrigger>
-              <TooltipContent>
-                <strong>Allergens:</strong>
-                <ul style={{ margin: "4px 0 0 0", paddingLeft: "20px" }}>
-                  {allergens.map((allergen, index) => (
-                    <li key={index}>{allergen}</li>
-                  ))}
-                </ul>
-              </TooltipContent>
-            </Tooltip>
-          </TooltipProvider>
+          !
         </div>
+        {showTooltip && (
+          <div
+            style={{
+              position: "absolute",
+              top: "100%",
+              left: "0",
+              backgroundColor: "white",
+              border: "1px solid #ccc",
+              borderRadius: "4px",
+              padding: "8px",
+              zIndex: 20,
+              minWidth: "150px",
+              boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
+            }}
+          >
+            <strong>Allergens:</strong>
+            <ul style={{ margin: "4px 0 0 0", paddingLeft: "20px" }}>
+              {allergens.map((allergen, index) => (
+                <li key={index}>{allergen}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     );
   };
