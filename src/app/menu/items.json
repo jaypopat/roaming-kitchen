@@ -4,7 +4,7 @@
       {
         "item": "Vegetable Spring Rolls",
         "image": "/menu/finger-foods/RK_spring_rolls.jpg",
-        "allergens": ["Gluten", "Soy"]
+        "allergens": [4, 5, 6, 7, 8, 10, 12]
       },
       {
         "item": "Chips / Wedges",
@@ -448,13 +448,6 @@
       {
         "item": "Selection of Chutneys",
         "image": "/menu/accompaniments/indian-chutneys.jpeg",
-        "allergens": ""
-      }
-    ],
-    "NonVegetarian": [
-      {
-        "item": "Tasty Butter Chicken",
-        "image": "/menu/main-course/butterchicken.jpg",
         "allergens": ""
       }
     ]
