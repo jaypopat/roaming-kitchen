@@ -23,7 +23,7 @@
       },
       {
         "item": "Crumb Fried Brie",
-        "image": "/menu/finger-foods/crumb-fried-brie.webp",
+        "image": "/menu/finger-foods/RK_brie.jpg",
         "allergens": [5,7,8,9,11]
       }
     ],
@@ -79,7 +79,7 @@
       },
       {
         "item": "Mixed Vegetables",
-        "image": "/menu/soups/mixed-vegetable-soup.jpg",
+        "image": "/menu/soups/RK_vegetable_soup.jpg",
         "allergens": [6,7,8,9,12]
       },
       {
@@ -135,7 +135,7 @@
       },
       {
         "item": "Caprese Salad",
-        "image": "/menu/starters/caprese-salad.jpg",
+        "image": "/menu/starters/RK_caprese_salad.jpg",
         "allergens": [7,8,12]
       },
       {
@@ -212,7 +212,7 @@
       },
       {
         "item": "Shrimp Cocktail",
-        "image": "/menu/starters/shrimp-cocktail.webp",
+        "image": "/menu/starters/RK_shrimp_cocktail.jpg",
         "allergens": [1,2,3,7,11]
       },
       {
@@ -373,7 +373,7 @@
       },
       {
         "item": "Lamb Biryani",
-        "image": "/menu/main-course/LambBiryani.webp",
+        "image": "/menu/main-course/RK_lamb_biryani.jpg",
         "allergens": [7,11]
       },
       {
