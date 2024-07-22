@@ -311,7 +311,7 @@
       },
       {
         "item": "Veg Burgers",
-        "image": "/menu/main-course/veg-burger.jpeg",
+        "image": "/menu/main-course/veg-burger.jpg",
         "allergens": [6,7,8,11]
       }
     ],
@@ -353,7 +353,7 @@
       },
       {
         "item": "Pan Fried Fish",
-        "image": "/menu/main-course/Pan-Fried-Fish.jpg",
+        "image": "/menu/main-course/RK_pan_fried_fish.jpg",
         "allergens": [1,2,3,7,12]
       },
       {
