@@ -7,8 +7,8 @@ export default function Founder({ role, photo, name }) {
         <Image
           alt={name}
           src={photo}
-          width={400}
-          height={500}
+          width={300}
+          height={600}
           className="aspect-video object-cover rounded-md"
         />
       </Card>
