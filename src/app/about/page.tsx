@@ -28,13 +28,13 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              <Founder role="Co Founder" photo={vipul_pfp} name="Vipul Popat" />
               <Founder
-                role="Co Founder and Chef"
+                role="Chef & Co Founder"
                 photo={chef_pfp}
                 name="Narendra Sharma"
               />
-            </div>
+              <Founder role="Co Founder" photo={vipul_pfp} name="Vipul Popat" />
+              </div>
           </div>
         </div>
       </section>
