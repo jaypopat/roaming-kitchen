@@ -512,5 +512,56 @@
         "allergens": [6,7,11]
       }
     ]
+  },
+  "Live Counters": {
+    "Vegetarian": [
+      {
+        "item": "Chhole Bhature/Puri Bhaji",
+        "image": "/menu/live-counters/chhole-bhature.jpg",
+        "allergens": [6,8]
+      },
+      {
+        "item": "South India Dosa/Uthappam",
+        "image": "/menu/live-counters/live-dosa.jpg",
+        "allergens": [6,7,8]
+      },
+      {
+        "item": "Chaat Station",
+        "image": "/menu/live-counters/chaat-station.webp",
+        "allergens": [7,8]
+      }
+    ],
+    "NonVegetarian": [
+      {
+        "item": "Pasta Station",
+        "image": "/menu/live-counters/live-pasta-station.jpg",
+        "allergens": [6,7,11,12]
+      },
+      {
+        "item": "Burgers Station",
+        "image": "/menu/live-counters/burger-station.jpeg",
+        "allergens": [6,7,8,11]
+      },
+      {
+        "item": "Mexican Station",
+        "image": "/menu/live-counters/mexican-station.jpg",
+        "allergens": [6,7,8,11,12]
+      },
+      {
+        "item": "Chinese Station",
+        "image": "/menu/live-counters/chinese-station.jpg",
+        "allergens": [6,8,9,12]
+      },
+      {
+        "item": "Pizza Parlour",
+        "image": "/menu/live-counters/live-pizzas.jpg",
+        "allergens": [6,7,8,11]
+      },
+      {
+        "item": "Thai Counter",
+        "image": "/menu/live-counters/thai-counter.webp",
+        "allergens": [7,8,12]
+      }
+    ]
   }
 }
