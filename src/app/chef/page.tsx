@@ -29,15 +29,16 @@ export default function ChefPage() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-xl font-bold tracking-tighter sm:text-5xl">
+              <h2 className="text-xl font-bold tracking-tighter sm:text-4xl">
                 Meet Our Chef
               </h2>
-              <p className="mt-4 max-w-[800px] text-muted-foreground md:text-2xl/relaxed lg:text-xl/relaxed xl:text-2xl/relaxed">
-                A culinary maestro with 25 years of experience leading top
-                kitchens. Chef Narendra creates dishes that delight,
-                orchestrates events for hundreds, and builds strong supplier
-                relationships for the freshest ingredients. Experience delicious
-                food and an unforgettable experience with Chef Narendra.
+              <p className="mt-4 max-w-[1000px] text-muted-foreground md:text-1xl/relaxed lg:text-xl/relaxed xl:text-1xl/relaxed">
+              With 25 years of leading top kitchens, Chef Narendra is a culinary maestro known for creating delightful dishes and 
+              orchestrating large-scale events. His expertise ensures  each meal is a memorable experience, combining exquisite 
+              flavors with impeccable presentation. Whether you're organizing a grand event or a casual gathering, Chef Narendra’s 
+              culinary creations promise to impress. Experience the artistry and passion of a seasoned chef dedicated to providing 
+              delicious food and unforgettable dining experiences. Chef Narendra brings his rich experience and innovative approach 
+              to every event, making each occasion truly special.
               </p>
             </div>
             <ChefCarousel
@@ -65,16 +66,16 @@ export default function ChefPage() {
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
               <Award
-                title="Best Chef 2022"
-                description="Awarded by the National Culinary Association"
+                title="Times Food Award 2007-2009"
+                description="Winner of TIMES FOOD AWARD for BestRestaurant in Delhi for 3 consecutive year (2007 – 2009)"
               />
               <Award
-                title="Top Rated Chef 2023"
-                description="Voted by our loyal customers"
+                title="Featured in Documentary Birmingham to Bombay"
+                description="This documentary was created by Food Archaeologist Alan Coxon, same was screened on the History Channel TV18, TLC in India"
               />
               <Award
-                title="Michelin Star 2024"
-                description="Recognized for our exceptional cuisine"
+                title="Featured in Magazine Vogue Living Jan 2016"
+                description="Chef Narendra, featured in Vogue Living, creates a month-by-month Ayurveda-driven menu, blending traditional wisdom with modern culinary techniques for holistic and delicious dining."
               />
             </div>
             <ChefCarousel
