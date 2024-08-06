@@ -4,17 +4,20 @@
       {
         "item": "Vegetable Spring Rolls",
         "image": "/menu/finger-foods/RK_spring_rolls.jpg",
-        "allergens": [4, 5, 6, 7, 8, 10, 12]
+        "allergens": [4, 5, 6, 7, 8, 10, 12],
+        "description" : "Our Vegetable Spring Rolls feature finely chopped carrots, cabbage, bell peppers, and bean sprouts sautéed with garlic and ginger. Wrapped in rice paper, they are lightly fried to a golden crisp. Served with a signature dipping sauce, these rolls offer a perfect balance of fresh, crunchy, and savory flavors."
       },
       {
         "item": "Chips / Wedges",
         "image": "/menu/finger-foods/chips-and-wedges.jpeg",
-        "allergens": [8,9]
+        "allergens": [8,9],
+        "description" : "Our chips and wedges are a perfect blend of crispy and savory. Potatoes are expertly sliced, then seasoned with a blend of herbs and spices. They are baked or fried to golden perfection, ensuring a crunchy exterior with a soft, fluffy interior. Served with a side of tangy dipping sauce, they make a deliciously satisfying snack."
       },
       {
         "item": "Garlic Mushrooms",
         "image": "/menu/finger-foods/garlic-mushrooms.jpg",
-        "allergens": [6,8,9,11,12]
+        "allergens": [6,8,9,11,12],
+        "description" : "Our Garlic Mushrooms are a savory delight. Fresh mushrooms are sautéed in a rich blend of garlic, butter, and herbs until tender and flavorful. Each bite offers a perfect balance of earthy mushroom taste and aromatic garlic. Served hot, they make an irresistible appetizer or side dish."
       },
       {
         "item": "Mozarella Sticks",
