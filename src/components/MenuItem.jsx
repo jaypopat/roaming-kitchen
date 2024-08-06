@@ -161,30 +161,35 @@ export const MenuItems = ({ category, filters, items }) => {
           </CardContent>
         </Card>
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent className="w-[60vw] max-w-[90vw] h-[60vh] max-h-[90vh]">
         <DialogHeader>
           <DialogTitle>{item.item}</DialogTitle>
           <DialogDescription>{item.description}</DialogDescription>
         </DialogHeader>
-        <div>
-          <Image
-            src={item.image}
-            alt={item.item}
-            width={300}
-            height={200}
-            objectFit="cover"
-          />
-          <p>{item.description}</p>
-          <strong>Allergens:</strong>
-          <ul>
-            {(Array.isArray(item.allergens) ? item.allergens : []).map(
-              (allergen, index) => (
-                <li key={index}>
-                  {allergensIndex[allergen] || "Unknown allergen"}
-                </li>
-              ),
-            )}
-          </ul>
+        <div className="flex flex-col md:flex-row h-full overflow-y-auto">
+          <div className="md:w-1/2 p-4">
+            <Image
+              src={item.image}
+              alt={item.item}
+              width={500}
+              height={300}
+              objectFit="cover"
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
+          <div className="md:w-1/2 p-4">
+            <p className="mb-4">{item.description}</p>
+            <strong>Allergens:</strong>
+            <ul className="list-disc pl-5 mt-2">
+              {(Array.isArray(item.allergens) ? item.allergens : []).map(
+                (allergen, index) => (
+                  <li key={index}>
+                    {allergensIndex[allergen] || "Unknown allergen"}
+                  </li>
+                ),
+              )}
+            </ul>
+          </div>
         </div>
       </DialogContent>
     </Dialog>

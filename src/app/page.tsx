@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Roaming Kitchen",
@@ -15,10 +16,14 @@ export default function Page() {
             <source src="/slideshow.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
-            <div className="space-y-2">
-              <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                Roaming Kitchen
-              </h1>
+            <div className="space-y-2 flex flex-col items-center">
+              <Image
+                height={220}
+                width={220}
+                src="/logo.png"
+                alt=""
+                className="mx-auto"
+              />
               <p className="max-w-[600px] md:text-xl">
                 Serving up delicious, freshly-prepared meals on the go.
               </p>
