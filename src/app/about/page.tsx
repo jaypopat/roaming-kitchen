@@ -34,7 +34,7 @@ export default function AboutPage() {
                 name="Narendra Sharma"
               />
               <Founder role="Co Founder" photo={vipul_pfp} name="Vipul Popat" />
-              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -55,11 +55,11 @@ export default function AboutPage() {
               </p>
             </div>
             <div className="flex items-center justify-center">
-              <img
-                src="https://www.renaultgroup.com/wp-content/uploads/2015/06/ft8.jpg"
+              <Image
+                src="/about-truck.jpeg"
                 width={550}
-                height={310}
-                alt="About Roaming Kitchen"
+                height={320}
+                alt="Truck Image"
                 className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
               />
             </div>
