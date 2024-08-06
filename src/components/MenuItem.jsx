@@ -178,7 +178,6 @@ export const MenuItems = ({ category, filters, items }) => {
             />
           </div>
           <div className="md:w-1/2 p-4">
-            <p className="mb-4">{item.description}</p>
             <strong>Allergens:</strong>
             <ul className="list-disc pl-5 mt-2">
               {(Array.isArray(item.allergens) ? item.allergens : []).map(
