@@ -60,7 +60,7 @@ export default function AboutPage() {
                 width={550}
                 height={320}
                 alt="Truck Image"
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover object-center sm:w-full"
+                className="mx-auto overflow-hidden rounded-xl object-cover object-center sm:w-full"
               />
             </div>
           </div>

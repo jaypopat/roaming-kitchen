@@ -15,7 +15,7 @@ export default function Founder({ role, photo, name }) {
           />
         </div>
       </div>
-      <h3 className="text-xl font-bold">{name}</h3>
+      <h3 className="text-xl font-bold mt-4">{name}</h3>
       <p className="text-muted-foreground">{role}</p>
     </div>
   );
