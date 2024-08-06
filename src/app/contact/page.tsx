@@ -51,13 +51,13 @@ export default function ContactForm() {
           </div>
           <div className="mx-auto w-full max-w-lg space-y-4">
             <div className="grid gap-4">
-              <div className="flex items-center gap-4">
+              <div className="flex items-left gap-4">
                 <LocateIcon className="h-6 w-6 text-muted-foreground" />
                 <p className="text-muted-foreground">
                   We are on wheels.. Tell us where to park or deliver
                 </p>
               </div>
-              <div className="flex items-center gap-4">
+              <div className="flex items-left gap-4">
                 <ClockIcon className="h-6 w-6 text-muted-foreground" />
                 <p className="text-muted-foreground">Weekdays & Weekends</p>
               </div>
