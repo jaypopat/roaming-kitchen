@@ -75,7 +75,7 @@ export default function ChefPage() {
               />
               <Award
                 title="Featured in Magazine Vogue Living Jan 2016"
-                description="Chef Narendra, featured in Vogue Living, creates a month-by-month Ayurveda-driven menu, blending traditional wisdom with modern culinary techniques for holistic and delicious dining."
+                description="Created a month-by-month Ayurveda-driven menu, blending traditional wisdom with modern culinary techniques for holistic and delicious dining."
               />
             </div>
             <ChefCarousel

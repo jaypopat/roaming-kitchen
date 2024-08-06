@@ -46,7 +46,7 @@ export default function Socials() {
         </Button>
       </a>
       <a
-        href="https://wa.me/+353870525564"
+        href="https://wa.me/+353894387275"
         target="_blank"
         rel="noopener noreferrer"
       >

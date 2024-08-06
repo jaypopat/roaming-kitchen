@@ -54,12 +54,12 @@ export default function ContactForm() {
               <div className="flex items-center gap-4">
                 <LocateIcon className="h-6 w-6 text-muted-foreground" />
                 <p className="text-muted-foreground">
-                  We are on wheels.. Tell us where to park
+                  We are on wheels.. Tell us where to park or deliver
                 </p>
               </div>
               <div className="flex items-center gap-4">
                 <ClockIcon className="h-6 w-6 text-muted-foreground" />
-                <p className="text-muted-foreground">Weekends</p>
+                <p className="text-muted-foreground">Weekdays & Weekends</p>
               </div>
             </div>
             <form className="flex flex-col gap-8" onSubmit={handleSubmit}>
@@ -74,7 +74,7 @@ export default function ContactForm() {
               <Input
                 type="tel"
                 name="phone"
-                placeholder="Enter phone number"
+                placeholder="Phone Number"
                 value={formData.phone}
                 onChange={handleChange}
               />
