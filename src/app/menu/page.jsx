@@ -17,6 +17,7 @@ import items from "./items.json";
 
 export default function Component() {
   const types = Object.keys(items);
+  console.log(types);
   const [activeTab, setActiveTab] = useState(types[0]);
   const [filters, setFilters] = useState({
     vegetarian: true,
@@ -44,8 +45,11 @@ export default function Component() {
     <div className="flex items-center gap-2 mb-6">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="outline" className="h-10 px-4 text-sm">
-            <FilterIcon className="h-3.5 w-3.5" />
+          <Button
+            variant="outline"
+            className="h-12 px-4 text-sm flex items-center gap-3"
+          >
+            <DropdownIcon className="h-5 w-5" />
             {activeTab}
           </Button>
         </DropdownMenuTrigger>
@@ -130,8 +134,11 @@ function FilterDropdown({ filters, handleFilterChange }) {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="h-10 gap-1 text-sm">
-          <FilterIcon className="h-3.5 w-3.5" />
+        <Button
+          variant="outline"
+          className="h-12 px-4 text-sm flex items-center gap-3"
+        >
+          <FilterIcon className="h-5 w-5" />
           <span>Filter</span>
         </Button>
       </DropdownMenuTrigger>
@@ -174,6 +181,25 @@ function FilterIcon(props) {
       strokeLinejoin="round"
     >
       <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
+    </svg>
+  );
+}
+
+function DropdownIcon(props) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <polyline points="6 9 12 15 18 9" />
     </svg>
   );
 }
