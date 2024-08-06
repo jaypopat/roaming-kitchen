@@ -18,8 +18,8 @@ export default function Page() {
           <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
             <div className="space-y-2 flex flex-col items-center">
               <Image
-                height={220}
-                width={220}
+                height={300}
+                width={300}
                 src="/logo.png"
                 alt=""
                 className="mx-auto"

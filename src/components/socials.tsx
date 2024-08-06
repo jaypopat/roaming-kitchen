@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 export default function Socials() {
   return (
-    <div className="fixed top-1/2 right-0 transform -translate-y-1/2 z-50 flex flex-col items-end gap-2 px-4 py-2 bg-background shadow-lg rounded-l-lg">
+    <div className="fixed top-1/2 right-0 transform -translate-y-1/2 z-50 flex flex-col items-end gap-2 px-1 py-1 bg-background shadow-lg rounded-l-lg">
       <a
         href="https://www.facebook.com/roamingkitchen"
         target="_blank"
