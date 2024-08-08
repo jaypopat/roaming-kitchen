@@ -2,6 +2,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { allergensIndex } from "../app/menu/allergensIndex";
+import { Badge } from "@/components/ui/badge";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import {
   Dialog,
   DialogContent,
@@ -41,82 +48,29 @@ export const MenuItems = ({ category, filters, items }) => {
   );
 
   const AllergenIndicator = ({ allergens }) => {
-    const [showTooltip, setShowTooltip] = useState(false);
-    if (!allergens || allergens.length === 0) return null;
+    if (!Array.isArray(allergens) || allergens.length === 0) return null;
+    const allergenIcon = "⚠️"; // Generic allergen icon
 
     return (
-      <div
-        style={{
-          position: "absolute",
-          top: "10px",
-          left: "10px",
-          zIndex: 10,
-        }}
-        onMouseEnter={() => setShowTooltip(true)}
-        onMouseLeave={() => setShowTooltip(false)}
-      >
-        <div
-          style={{
-            width: "30px",
-            height: "30px",
-            borderRadius: "50%",
-            backgroundColor: "#fbbf24",
-            border: "2px solid white",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            color: "white",
-            fontWeight: "bold",
-            fontSize: "16px",
-            cursor: "pointer",
-          }}
-        >
-          !
-        </div>
-        {showTooltip && (
-          <div
-            style={{
-              position: "absolute",
-              top: "100%",
-              left: "0",
-              backgroundColor: "white",
-              border: "1px solid #ccc",
-              borderRadius: "4px",
-              padding: "0px",
-              zIndex: 20,
-              minWidth: "150px",
-              boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
-            }}
-          >
-            <strong>Allergens:</strong>
-            <ul
-              style={{
-                margin: "4px 0 0 0",
-                paddingLeft: "20px",
-                listStyleType: "disc",
-                fontSize: "14px",
-                width: "200px",
-                textAlign: "left",
-              }}
-            >
-              {allergens.map((allergen) => {
-                const allergenName =
-                  allergensIndex[allergen] || "Unknown allergen";
-                return (
-                  <li
-                    key={allergen}
-                    style={{
-                      display: "block",
-                    }}
-                  >
-                    {allergenName}
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        )}
-      </div>
+      <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger asChild>
+            <div className="absolute top-2 left-2 z-10 w-8 h-8 rounded-full bg-amber-400 border-2 border-white flex items-center justify-center cursor-pointer hover:bg-amber-500 transition-colors">
+              <span className="text-white text-lg">{allergenIcon}</span>
+            </div>
+          </TooltipTrigger>
+          <TooltipContent side="bottom" align="start" className="w-64 p-2">
+            <div className="font-semibold mb-2">Allergens:</div>
+            <div className="flex flex-col gap-1">
+              {allergens.map((allergen) => (
+                <Badge key={allergen} variant="secondary" className="text-xs">
+                  {allergensIndex[allergen] || allergen}
+                </Badge>
+              ))}
+            </div>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
     );
   };
 
@@ -161,33 +115,42 @@ export const MenuItems = ({ category, filters, items }) => {
           </CardContent>
         </Card>
       </DialogTrigger>
-      <DialogContent className="w-[60vw] max-w-[90vw] h-[60vh] max-h-[90vh]">
-        <DialogHeader>
-          <DialogTitle>{item.item}</DialogTitle>
-          <DialogDescription>{item.description}</DialogDescription>
+      <DialogContent className="w-[90vw] max-w-[600px] h-[80vh] max-h-[600px] p-0 md:w-[50vw] md:h-[50vh]">
+        <DialogHeader className="p-4 bg-gray-50">
+          <DialogTitle className="text-2xl font-bold">{item.item}</DialogTitle>
         </DialogHeader>
-        <div className="flex flex-col md:flex-row h-full overflow-y-auto">
-          <div className="md:w-1/2 p-4">
-            <Image
-              src={item.image}
-              alt={item.item}
-              width={500}
-              height={300}
-              objectFit="cover"
-              className="w-full h-auto rounded-lg"
-            />
+        <div className="flex flex-col h-[calc(100%-64px)]">
+          <div className="relative w-full h-1/2">
+            <Image src={item.image} alt={item.item} width={600} height={300} />
+            <div className="absolute bottom-0 right-0 p-2 bg-white bg-opacity-80 rounded-tl-md">
+              <Badge variant={isVeg ? "success" : "destructive"}>
+                {isVeg ? "Vegetarian" : "Non-Vegetarian"}
+              </Badge>
+            </div>
           </div>
-          <div className="md:w-1/2 p-4">
-            <strong>Allergens:</strong>
-            <ul className="list-disc pl-5 mt-2">
-              {(Array.isArray(item.allergens) ? item.allergens : []).map(
-                (allergen, index) => (
-                  <li key={index}>
+          <div className="flex-1 p-4 overflow-y-auto">
+            {item.description && (
+              <>
+                <h3 className="text-lg font-semibold mb-2">Description</h3>
+                <p className="text-gray-700 mb-4">{item.description}</p>
+              </>
+            )}
+            <h3 className="text-lg font-semibold mb-2">Allergens</h3>
+            <div className="flex flex-wrap gap-2">
+              {item.allergens && item.allergens.length > 0 ? (
+                item.allergens.map((allergen) => (
+                  <Badge
+                    key={allergen}
+                    variant="outline"
+                    className="m-1 transition-colors hover:bg-gray-100"
+                  >
                     {allergensIndex[allergen] || "Unknown allergen"}
-                  </li>
-                ),
+                  </Badge>
+                ))
+              ) : (
+                <p className="text-gray-500 italic">No allergens listed</p>
               )}
-            </ul>
+            </div>
           </div>
         </div>
       </DialogContent>
