@@ -115,12 +115,19 @@ export const MenuItems = ({ category, filters, items }) => {
           </CardContent>
         </Card>
       </DialogTrigger>
-      <DialogContent className="w-[90vw] max-w-[600px] h-[80vh] max-h-[600px] p-0 md:w-[50vw] md:h-[50vh]">
-        <DialogHeader className="p-4 bg-gray-50">
-          <DialogTitle className="text-2xl font-bold">{item.item}</DialogTitle>
+      <DialogContent className="w-full h-[80vh] max-h-[600px] p-0 sm:max-w-[100vw] md:max-w-[50vw]">
+        <DialogHeader className="p-4 bg-gray-50 shrink-0">
+          <DialogTitle className="text-2xl font-bold">{item.item}</DialogTitle>{" "}
         </DialogHeader>
-        <div className="flex flex-col h-[calc(100%-64px)]">
-          <div className="relative w-full h-1/2">
+        <DialogDescription>
+          {item.description && (
+            <>
+              <p className="text-gray-700 mb-4">{item.description}</p>
+            </>
+          )}
+        </DialogDescription>
+        <div className="flex-grow overflow-y-auto">
+          <div className="relative w-full pb-[50%]">
             <Image src={item.image} alt={item.item} width={600} height={300} />
             <div className="absolute bottom-0 right-0 p-2 bg-white bg-opacity-80 rounded-tl-md">
               <Badge variant={isVeg ? "success" : "destructive"}>
@@ -128,21 +135,15 @@ export const MenuItems = ({ category, filters, items }) => {
               </Badge>
             </div>
           </div>
-          <div className="flex-1 p-4 overflow-y-auto">
-            {item.description && (
-              <>
-                <h3 className="text-lg font-semibold mb-2">Description</h3>
-                <p className="text-gray-700 mb-4">{item.description}</p>
-              </>
-            )}
+          <div className="p-4">
             <h3 className="text-lg font-semibold mb-2">Allergens</h3>
-            <div className="flex flex-wrap gap-2">
+            <div className="grid grid-cols-1 gap-2">
               {item.allergens && item.allergens.length > 0 ? (
                 item.allergens.map((allergen) => (
                   <Badge
                     key={allergen}
                     variant="outline"
-                    className="m-1 transition-colors hover:bg-gray-100"
+                    className="transition-colors hover:bg-gray-100 w-full text-left px-2 py-1"
                   >
                     {allergensIndex[allergen] || "Unknown allergen"}
                   </Badge>
