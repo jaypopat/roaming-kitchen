@@ -19,7 +19,7 @@ import { allergensIndex } from "../app/menu/allergensIndex";
 
 const CARD_SIZE = 350;
 const TEXT_HEIGHT = 50;
-const DIALOG_IMAGE_HEIGHT = 500;
+const DIALOG_IMAGE_HEIGHT = 400;
 
 const VegIndicator = ({ isVeg }) => (
   <div
