@@ -1,6 +1,5 @@
 type AllergensMap = {
-  index: number;
-  name: string;
+  [key: number]: string;
 };
 export const allergensIndex: AllergensMap = {
   1: "Crustaceans",

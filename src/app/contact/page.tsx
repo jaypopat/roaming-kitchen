@@ -1,18 +1,28 @@
 "use client";
-import { useState } from "react";
+import { useState, ChangeEvent, FormEvent } from "react";
 import axios from "axios";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+
+interface FormData {
+  name: string;
+  phone: string;
+  email: string;
+  message: string;
+}
+
 export default function ContactForm() {
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<FormData>({
     name: "",
     phone: "",
     email: "",
     message: "",
   });
 
-  const handleChange = (e: any) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -20,15 +30,15 @@ export default function ContactForm() {
     });
   };
 
-  const handleSubmit = async (e: any) => {
-    e.preventDefault(); // Prevent default form submission
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
 
     try {
       console.log(formData);
       const response = await axios.post("/api/mail", formData);
       if (response.status === 200) {
         alert("Thank you for your message! We will get back to you soon.");
-        setFormData({ name: "", phone: "", email: "", message: "" }); // Reset form
+        setFormData({ name: "", phone: "", email: "", message: "" });
       }
     } catch (error) {
       console.error("Error sending email:", error);
@@ -104,7 +114,7 @@ export default function ContactForm() {
   );
 }
 
-function ClockIcon(props: any) {
+function ClockIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -124,7 +134,7 @@ function ClockIcon(props: any) {
   );
 }
 
-function LocateIcon(props: any) {
+function LocateIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

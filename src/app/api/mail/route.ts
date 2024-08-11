@@ -16,7 +16,6 @@ export async function POST(request: NextRequest) {
       },
     });
 
-    // Define the email options
     const mailOptions = {
       from: process.env.GMAIL_USER,
       to: process.env.GMAIL_USER,
@@ -30,7 +29,6 @@ export async function POST(request: NextRequest) {
     };
 
     try {
-      // Send the email
       await transporter.sendMail(mailOptions);
       return new Response("Email sent successfully", { status: 200 });
     } catch (error) {
