@@ -9,7 +9,14 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
-export default function ChefCarousel({ images, dir, w, h }) {
+interface ChefCarouselProps {
+  images: string[];
+  dir: string;
+  w: number;
+  h: number;
+}
+
+export default function ChefCarousel({ images, dir, w, h }: ChefCarouselProps) {
   return (
     <Carousel
       className="w-full max-w-[50vw]"

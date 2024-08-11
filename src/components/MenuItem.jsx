@@ -22,6 +22,7 @@ import { useState } from "react";
 export const MenuItems = ({ category, filters, items }) => {
   const cardSize = 350;
   const textHeight = 50;
+  const dialogImageHeight = 500;
 
   const VegIndicator = ({ isVeg }) => (
     <div
@@ -127,8 +128,18 @@ export const MenuItems = ({ category, filters, items }) => {
           )}
         </DialogDescription>
         <div className="flex-grow overflow-y-auto">
-          <div className="relative w-full pb-[50%]">
-            <Image src={item.image} alt={item.item} width={600} height={300} />
+          <div
+            className="relative w-full"
+            style={{
+              height: `${dialogImageHeight}px`,
+            }}
+          >
+            <Image
+              src={item.image}
+              alt={item.item}
+              layout="fill"
+              objectFit="cover"
+            />
             <div className="absolute bottom-0 right-0 p-2 bg-white bg-opacity-80 rounded-tl-md">
               <Badge variant={isVeg ? "success" : "destructive"}>
                 {isVeg ? "Vegetarian" : "Non-Vegetarian"}

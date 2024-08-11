@@ -1,6 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
 
-export default function Award({ title, description }) {
+interface AwardProps {
+  title: string;
+  description: string;
+}
+
+export default function Award({ title, description }: AwardProps) {
   return (
     <Card>
       <CardContent className="flex flex-col items-center justify-center p-6">

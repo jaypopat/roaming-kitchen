@@ -1,6 +1,12 @@
 import Image from "next/image";
 import { Card } from "./ui/card";
-export default function Founder({ role, photo, name }) {
+
+interface FounderProps {
+  role: string;
+  photo: string;
+  name: string;
+}
+export default function Founder({ role, photo, name }: FounderProps) {
   return (
     <div className="flex flex-col items-center justify-center">
       <div className="w-[300px] h-[400px] overflow-hidden rounded-md">
