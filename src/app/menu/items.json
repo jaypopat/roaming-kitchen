@@ -548,54 +548,64 @@
       {
         "item": "Gajar ka Halwa",
         "image": "/menu/deserts/carrot-halwa-recipe.jpg",
-        "allergens": [7]
+        "allergens": [7],
+        "description": "Gajar ka Halwa is a traditional Indian dessert made from grated carrots cooked in milk and ghee, sweetened with sugar, and flavored with cardamom, garnished with nuts."
       },
       {
         "item": "Kheer",
         "image": "/menu/deserts/Rice-Kheer.webp",
-        "allergens": [15,7]
+        "allergens": [15,7],
+        "description": "Kheer is a traditional Indian rice pudding made by simmering rice in milk, sweetened with sugar, flavored with cardamom, and garnished with nuts and saffron for a rich dessert."
       },
       {
         "item": "Shrikhand",
         "image": "/menu/deserts/shrikhand.webp",
-        "allergens": [7]
+        "allergens": [7],
+        "description": "Shrikhand is a creamy Indian dessert made from strained yogurt, sweetened with sugar, flavored with cardamom and saffron, and garnished with nuts, creating a rich and refreshing treat."
       },
       {
         "item": "Baked Yoghurt",
         "image": "/menu/deserts/RK_baked_yoghurt.jpg",
-        "allergens": [7]
+        "allergens": [7],
+        "description": "Baked Yoghurt is a creamy dessert made by mixing yogurt, condensed milk, and vanilla, then baking in a water bath until set, often garnished with fruits or nuts."
       },
       {
         "item": "Shahi Tukda",
         "image": "/menu/deserts/shahi-tukda.jpg",
-        "allergens": [6,15,7]
+        "allergens": [6,15,7],
+        "description": "Shahi Tukda is a rich, royal dessert made with ghee-fried bread slices soaked in cardamom-rose sugar syrup, topped with creamy saffron-flavored thickened milk (rabri) and garnished with nuts."
       },
       {
         "item": "Mixed Fruits",
         "image": "/menu/deserts/MixedFruitSalad.jpg",
-        "allergens": ""
+        "allergens": "",
+        "description": "Mixed Fruits is a refreshing salad made by combining a variety of fresh fruits, often dressed with lime or honey, creating a colorful and nutritious dish perfect for any occasion."
       }
     ],
     "NonVegetarian": [
       {
         "item": "Creme Brulee",
         "image": "/menu/deserts/RK_creme_brulee.jpg",
-        "allergens": [7,11]
+        "allergens": [7,11],
+        "description": "Crème Brûlée is a classic French dessert made with rich vanilla custard topped with a caramelized sugar crust, creating a delightful contrast between creamy and crunchy textures."
       },
       {
         "item": "Chocolate Mouse",
         "image": "/menu/deserts/chocolate-mousse.jpg",
-        "allergens": [6,7,11]
+        "allergens": [6,7,11],
+        "description": "Chocolate Mousse is a rich and airy dessert made by folding melted chocolate into whipped cream and beaten egg whites, creating a light, creamy texture that melts in your mouth."
       },
       {
         "item": "Chocolate Brownie",
         "image": "/menu/deserts/chocolate-brownie.jpg",
-        "allergens": [16,6,7,11]
+        "allergens": [16,6,7,11],
+        "description": "Chocolate Brownies are rich, fudgy treats made by mixing melted chocolate and butter with sugar, eggs, and flour, then baking until gooey and topped with a crackly crust."
       },
       {
         "item": "Apple Crumble Tart",
         "image": "/menu/deserts/RK_apple_crumble_tart.jpg",
-        "allergens": [6,7,11]
+        "allergens": [6,7,11],
+        "description": "Apple Crumble Tart features a crisp sweet pastry shell filled with spiced apples, topped with a buttery crumble topping, baked until golden, and served warm with a dollop of cream or custard."
       }
     ]
   }
