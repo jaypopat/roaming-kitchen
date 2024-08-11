@@ -122,7 +122,7 @@ export const MenuItems = ({ category, filters, items }) => {
         <DialogDescription>
           {item.description && (
             <>
-              <p className="text-gray-700 mb-4">{item.description}</p>
+              <p className="text-gray-700 mb-4 text-justify">{item.description}</p>
             </>
           )}
         </DialogDescription>
