@@ -460,62 +460,6 @@
       }
     ]
   },
-  "Deserts": {
-    "Vegetarian": [
-      {
-        "item": "Gajar ka Halwa",
-        "image": "/menu/deserts/carrot-halwa-recipe.jpg",
-        "allergens": [7]
-      },
-      {
-        "item": "Kheer",
-        "image": "/menu/deserts/Rice-Kheer.webp",
-        "allergens": [15,7]
-      },
-      {
-        "item": "Shrikhand",
-        "image": "/menu/deserts/shrikhand.webp",
-        "allergens": [7]
-      },
-      {
-        "item": "Baked Yoghurt",
-        "image": "/menu/deserts/RK_baked_yoghurt.jpg",
-        "allergens": [7]
-      },
-      {
-        "item": "Shahi Tukda",
-        "image": "/menu/deserts/shahi-tukda.jpg",
-        "allergens": [6,15,7]
-      },
-      {
-        "item": "Mixed Fruits",
-        "image": "/menu/deserts/MixedFruitSalad.jpg",
-        "allergens": ""
-      }
-    ],
-    "NonVegetarian": [
-      {
-        "item": "Creme Brulee",
-        "image": "/menu/deserts/RK_creme_brulee.jpg",
-        "allergens": [7,11]
-      },
-      {
-        "item": "Chocolate Mouse",
-        "image": "/menu/deserts/chocolate-mousse.jpg",
-        "allergens": [6,7,11]
-      },
-      {
-        "item": "Chocolate Brownie",
-        "image": "/menu/deserts/chocolate-brownie.jpg",
-        "allergens": [16,6,7,11]
-      },
-      {
-        "item": "Apple Crumble Tart",
-        "image": "/menu/deserts/RK_apple_crumble_tart.jpg",
-        "allergens": [6,7,11]
-      }
-    ]
-  },
   "Live Counters": {
     "Vegetarian": [
       {
