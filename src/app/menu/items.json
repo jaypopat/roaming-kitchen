@@ -411,7 +411,7 @@
       {
         "item": "Dahi Vada",
         "image": "/menu/accompaniments/dahi-vada.webp",
-        "allergens": 7
+        "allergens": [7]
       },
       {
         "item": "Selection of Raita",
@@ -460,54 +460,59 @@
       }
     ]
   },
-  "Live Counters": {
+  "Deserts": {
     "Vegetarian": [
       {
-        "item": "Chhole Bhature/Puri Bhaji",
-        "image": "/menu/live-counters/chhole-bhature.jpg",
-        "allergens": [6,8]
+        "item": "Gajar ka Halwa",
+        "image": "/menu/deserts/carrot-halwa-recipe.jpg",
+        "allergens": [7]
       },
       {
-        "item": "South India Dosa/Uthappam",
-        "image": "/menu/live-counters/live-dosa.jpg",
-        "allergens": [6,7,8]
+        "item": "Kheer",
+        "image": "/menu/deserts/Rice-Kheer.webp",
+        "allergens": [15,7]
       },
       {
-        "item": "Chaat Station",
-        "image": "/menu/live-counters/chaat-station.webp",
-        "allergens": [7,8]
+        "item": "Shrikhand",
+        "image": "/menu/deserts/shrikhand.webp",
+        "allergens": [7]
+      },
+      {
+        "item": "Baked Yoghurt",
+        "image": "/menu/deserts/RK_baked_yoghurt.jpg",
+        "allergens": [7]
+      },
+      {
+        "item": "Shahi Tukda",
+        "image": "/menu/deserts/shahi-tukda.jpg",
+        "allergens": [6,15,7]
+      },
+      {
+        "item": "Mixed Fruits",
+        "image": "/menu/deserts/MixedFruitSalad.jpg",
+        "allergens": ""
       }
     ],
     "NonVegetarian": [
       {
-        "item": "Pasta Station",
-        "image": "/menu/live-counters/live-pasta-station.jpg",
-        "allergens": [6,7,11,12]
+        "item": "Creme Brulee",
+        "image": "/menu/deserts/RK_creme_brulee.jpg",
+        "allergens": [7,11]
       },
       {
-        "item": "Burgers Station",
-        "image": "/menu/live-counters/burger-station.jpeg",
-        "allergens": [6,7,8,11]
+        "item": "Chocolate Mouse",
+        "image": "/menu/deserts/chocolate-mousse.jpg",
+        "allergens": [6,7,11]
       },
       {
-        "item": "Mexican Station",
-        "image": "/menu/live-counters/mexican-station.jpg",
-        "allergens": [6,7,8,11,12]
+        "item": "Chocolate Brownie",
+        "image": "/menu/deserts/chocolate-brownie.jpg",
+        "allergens": [16,6,7,11]
       },
       {
-        "item": "Chinese Station",
-        "image": "/menu/live-counters/chinese-station.jpg",
-        "allergens": [6,8,9,12]
-      },
-      {
-        "item": "Pizza Parlour",
-        "image": "/menu/live-counters/live-pizzas.jpg",
-        "allergens": [6,7,8,11]
-      },
-      {
-        "item": "Thai Counter",
-        "image": "/menu/live-counters/thai-counter.webp",
-        "allergens": [7,8,12]
+        "item": "Apple Crumble Tart",
+        "image": "/menu/deserts/RK_apple_crumble_tart.jpg",
+        "allergens": [6,7,11]
       }
     ]
   }
