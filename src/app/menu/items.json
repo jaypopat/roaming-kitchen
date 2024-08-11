@@ -22,39 +22,46 @@
       {
         "item": "Mozarella Sticks",
         "image": "/menu/finger-foods/mozzarella-sticks.jpeg",
-        "allergens": [5,7,8,9,11]
+        "allergens": [5,7,8,9,11],
+        "description" : "Handcrafted Mozzarella Sticks: premium cheese, double-breaded, and flash-fried to golden perfection. Crispy outside, irresistibly gooey inside. Served piping hot with our signature marinara sauce for the ultimate cheesy indulgence."
       },
       {
         "item": "Crumb Fried Brie",
         "image": "/menu/finger-foods/RK_brie.jpg",
-        "allergens": [5,7,8,9,11]
+        "allergens": [5,7,8,9,11],
+        "description": "Creamy French cheese encased in a golden, herb-flecked crust. Crisp exterior gives way to a molten center. Served with tangy berry compote for a perfect sweet-savory balance."
       }
     ],
     "NonVegetarian": [
       {
         "item": "Cocktail Sausages",
         "image": "/menu/finger-foods/cocktail-sausages.jpeg",
-        "allergens": [6,8,11]
+        "allergens": [6,8,11],
+        "description" : "Juicy, bite-sized sausages simmered in a sweet and tangy glaze. Perfectly seasoned and caramelized for a flavorful punch. Skewered for easy enjoyment, these savory morsels make an irresistible appetizer or snack."
       },
       {
         "item": "Chicken Wings",
         "image": "/menu/finger-foods/RK_chicken_wings.jpg",
-        "allergens": [6, 7, 9]
+        "allergens": [6, 7, 9],
+        "description" : "Crispy, tender chicken wings tossed in our signature spicy sauce. Perfectly fried for a satisfying crunch, with meat that falls off the bone. Served with cool ranch dip to balance the heat."
       },
       {
         "item": "Fish Goujons",
         "image": "/menu/finger-foods/fish-goujons.png",
-        "allergens": [1,2,3,6,7,8,11]
+        "allergens": [1,2,3,6,7,8,11],
+        "description" : "Fresh white fish fillets are cut into strips, dipped in seasoned flour, dredged in beaten egg, then coated in crispy breadcrumbs. Fried to golden perfection until crispy on the outside and tender inside."
       },
       {
         "item": "Chicken Goujons",
         "image": "/menu/finger-foods/chicken-goujons.jpg",
-        "allergens": [6,7,8,9,11]
+        "allergens": [6,7,8,9,11],
+        "description": "Chicken tenders are dipped in seasoned flour, dredged in beaten egg, then coated in crispy breadcrumbs and panko. Baked until golden and crispy on the outside, tender inside"
       },
       {
         "item": "Spicy Cocktail Chicken Skewers",
         "image": "/menu/finger-foods/spicky-cocktail-chicken-skewers.jpg",
-        "allergens": [8,9,11]
+        "allergens": [8,9,11],
+        "description": "Chicken pieces are marinated in a blend of olive oil, garlic, lemon juice, and spices. Skewered and grilled until charred, they are served with a zesty dipping sauce."
       }
     ]
   },
@@ -63,64 +70,76 @@
       {
         "item": "Tomato & Basil",
         "image": "/menu/soups/tomato-and-basil-soup.jpeg",
-        "allergens": [6,7,8,9,12]
+        "allergens": [6,7,8,9,12],
+        "description": "Ripe tomatoes are sautéed with onions and garlic, then simmered with vegetable broth. Blended until smooth, it’s finished with fresh basil and a drizzle of olive oil for flavor."
       },
       {
         "item": "Potato & Leek",
         "image": "/menu/soups/potato-leek-soup.jpg",
-        "allergens": [6,7,8,9,12]
+        "allergens": [6,7,8,9,12],
+        "description": "Potatoes and leeks are sautéed with onions and garlic, then simmered in vegetable broth until tender. Blended until smooth and creamy, it's seasoned with salt, pepper and herbs."
       },
       {
         "item": "Carrot, Ginger, Orange",
         "image": "/menu/soups/RK_carrot_and_ginger_soup.jpg",
-        "allergens": [6,7,8,9,12]
+        "allergens": [6,7,8,9,12],
+        "description": "Carrots, onions, and garlic are sautéed with fresh ginger, then simmered in vegetable broth. Blended until smooth, it’s finished with orange juice for a bright, zesty flavor."
       },
       {
         "item": "Butternut Squash",
         "image": "/menu/soups/butternut-squash-soup.jpg",
-        "allergens": [6,7,8,9,12]
+        "allergens": [6,7,8,9,12],
+        "description": "utternut squash is roasted until tender, then blended with sautéed onions, garlic, and spices. Simmered in vegetable broth, it's pureed until creamy and seasoned for a comforting, flavorful soup"
       },
       {
         "item": "Mixed Vegetables",
         "image": "/menu/soups/RK_vegetable_soup.jpg",
-        "allergens": [6,7,8,9,12]
+        "allergens": [6,7,8,9,12],
+        "description": "Seasonal vegetables like carrots, peas, and green beans are sautéed with onions and garlic, then simmered in vegetable broth. Seasoned with herbs, it’s a hearty, nutritious, and colorful soup."
       },
       {
         "item": "Hot & Sour",
         "image": "/menu/soups/Hot-and-Sour-Soup.jpg",
-        "allergens": [4,6,10,12]
+        "allergens": [4,6,10,12],
+        "description": "Vegetable broth is simmered with mushrooms, bamboo shoots, and tofu, then thickened with cornstarch. Finished with vinegar and spices for a tangy flavor."
       },
       {
         "item": "Manchow",
         "image": "/menu/soups/Veg-Manchow-Soup.jpg",
-        "allergens": [4,6,10,12]
+        "allergens": [4,6,10,12],
+        "description": "Finely chopped vegetables like carrots, beans, and cabbage are stir-fried with ginger and garlic, then simmered in a spicy broth with soy sauce and vinegar, thickened with cornstarch."
       },
       {
         "item": "Tom Yam",
         "image": "/menu/soups/tom-yam-veg-soup.jpg",
-        "allergens": [4,6,10,12]
+        "allergens": [4,6,10,12],
+        "description": "Lemongrass, galangal, kaffir lime leaves, and Thai red curry paste are simmered in vegetable broth. Mushrooms, tomatoes, tofu, and mixed veggies are added, finished with lime juice, soy sauce, and cilantro for a spicy, tangy flavor."
       }
     ],
     "NonVegetarian": [
       {
         "item": "Tom Yam Chicken",
         "image": "/menu/soups/tom-yam-chicken-soup.jpg",
-        "allergens": [4,6,10,12]
+        "allergens": [4,6,10,12],
+        "description": "Chicken broth is simmered with lemongrass, galangal, kaffir lime leaves, fish sauce, and Thai chili paste. Chicken, mushrooms, tomatoes, and lime juice are added for a spicy, sour, and aromatic soup."
       },
       {
         "item": "Tom Kha Chicken",
         "image": "/menu/soups/tom-kha-chicken.jpeg",
-        "allergens": [4,6,10,12]
+        "allergens": [4,6,10,12],
+        "description": "Chicken broth is simmered with coconut milk, lemongrass, galangal, kaffir lime leaves, fish sauce and Thai chilies. Chicken, mushrooms and lime juice are added for a rich, creamy, aromatic Thai soup."
       },
       {
         "item": "Sea Food Chowder",
         "image": "/menu/soups/Seafood-Chowder.jpg",
-        "allergens": [1,2,3,6,7,12]
+        "allergens": [1,2,3,6,7,12],
+        "description": "Bacon is cooked until crisp, then onions and celery are sautéed. Flour is added to create a roux, followed by seafood stock, potatoes, and assorted seafood, finished with cream."
       },
       {
         "item": "Miso Soup",
         "image": "/menu/soups/Miso-Soup.jpg",
-        "allergens": [6,8,12]
+        "allergens": [6,8,12],
+        "description": "Dashi broth is simmered with miso paste until dissolved. Silky tofu, wakame seaweed, and green onions are added for texture and flavor. It's a simple, comforting Japanese soup."
       }
     ]
   },
