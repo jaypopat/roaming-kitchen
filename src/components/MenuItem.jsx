@@ -154,7 +154,10 @@ const MenuItem = ({ item, isVeg }) => (
             <h3 className="text-lg font-semibold mr-4">Allergens</h3>
             <Image src="/allergens.png" alt="" height={40} width={40} />
           </div>
-          <div className="grid grid-cols-1 gap-2">
+          <div
+            className="grid gap-2"
+            style={{ gridTemplateColumns: "repeat(2, 1fr)" }}
+          >
             {item.allergens && item.allergens.length > 0 ? (
               item.allergens.map((allergen) => (
                 <Badge
