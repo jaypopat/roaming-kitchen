@@ -484,52 +484,62 @@
       {
         "item": "Dahi Vada",
         "image": "/menu/accompaniments/dahi-vada.webp",
-        "allergens": [7]
+        "allergens": [7],
+        "description": "Dahi Vada features soft, fluffy lentil fritters soaked in chilled yogurt, drizzled with sweet tamarind chutney and spicy green chutney, then sprinkled with chaat masala and sev."
       },
       {
         "item": "Selection of Raita",
         "image": "/menu/accompaniments/indian-raitas.jpg",
-        "allergens": [7]
+        "allergens": [7],
+        "description": "Raita is a cooling yogurt-based side dish from Indian cuisine, featuring various ingredients like vegetables, fruits, and spices, perfect for balancing spicy dishes and enhancing flavors in meals."
       },
       {
         "item": "Pappadums",
         "image": "/menu/accompaniments/pappadums.jpg",
-        "allergens": [8]
+        "allergens": [8],
+        "description": "Pappadums are thin, crispy Indian crackers made from seasoned lentil flour, rolled out and dried, then fried or roasted until crunchy, often served as a snack or accompaniment."
       },
       {
         "item": "Salad",
         "image": "/menu/accompaniments/salads.jpg",
-        "allergens": [6,7,8,12]
+        "allergens": [6,7,8,12],
+        "description": "Salads are versatile dishes combining fresh greens, vegetables, fruits, grains, and proteins, dressed with flavorful vinaigrettes or creamy dressings, perfect as sides for any meal."
       },
       {
         "item": "Puri",
         "image": "/menu/accompaniments/poori.jpeg",
-        "allergens": [6,8]
+        "allergens": [6,8],
+        "description": "Puri is a deep-fried Indian bread made from whole wheat flour, rolled into discs, and fried until puffed and golden, often served with curries or enjoyed as a snack."
       },
       {
         "item": "Paratha",
         "image": "/menu/accompaniments/parathas.jpg",
-        "allergens": [6,8]
+        "allergens": [6,8],
+        "description": "Paratha is a flaky, layered Indian flatbread made from whole wheat flour, rolled out, cooked on a skillet with ghee or oil, and often stuffed with various fillings."
       },
       {
         "item": "Tawa Roti",
         "image": "/menu/accompaniments/Tawa-Roti.jpg",
-        "allergens": [6,7,8]
+        "allergens": [6,7,8],
+        "description": "Tawa Roti is a soft Indian flatbread made from whole wheat flour, rolled out and cooked on a hot tawa (griddle), often served with curries or vegetables."
       },
       {
         "item": "Selection of Parathas",
         "image": "/menu/accompaniments/selection-of-parathas.jpg",
-        "allergens": [6,7,8]
+        "allergens": [6,7,8],
+        "description": "A selection of Parathas includes various flaky, layered flatbreads made from whole wheat flour, often stuffed with diverse fillings like potatoes, paneer, or vegetables, served hot with yogurt and pickles."
       },
       {
         "item": "Selection of Pickles",
         "image": "/menu/accompaniments/indian-pickles.jpeg",
-        "allergens": [8,13]
+        "allergens": [8,13],
+        "description": "Indian Pickles are spicy, tangy, and flavorful condiments made by fermenting or pickling various vegetables, fruits, or herbs in oil, vinegar, and spices, often served as accompaniments to enhance meals."
       },
       {
         "item": "Selection of Chutneys",
         "image": "/menu/accompaniments/indian-chutneys.jpeg",
-        "allergens": [8,13]
+        "allergens": [8,13],
+        "description": "Indian Chutneys are flavorful, spicy, or sweet condiments made from a variety of ingredients like herbs, fruits, or vegetables, often served as dips or accompaniments to enhance the taste of dishes."
       }
     ]
   },
