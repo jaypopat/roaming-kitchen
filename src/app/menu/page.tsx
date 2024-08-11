@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   DropdownMenu,
@@ -15,18 +15,27 @@ import { Button } from "@/components/ui/button";
 import { MenuItems } from "@/components/MenuItem";
 import items from "./items.json";
 
-export default function Component() {
-  const types = Object.keys(items);
-  console.log(types);
-  const [activeTab, setActiveTab] = useState(types[0]);
-  const [filters, setFilters] = useState({
+interface Filters {
+  vegetarian: boolean;
+  nonVegetarian: boolean;
+}
+
+interface FilterDropdownProps {
+  filters: Filters;
+  handleFilterChange: (filter: keyof Filters, checked: boolean) => void;
+}
+
+export default function Component(): JSX.Element {
+  const types: string[] = Object.keys(items);
+  const [activeTab, setActiveTab] = useState<string>(types[0]);
+  const [filters, setFilters] = useState<Filters>({
     vegetarian: true,
     nonVegetarian: true,
   });
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   useEffect(() => {
-    const checkMobile = () => {
+    const checkMobile = (): void => {
       setIsMobile(window.innerWidth < 768);
     };
     checkMobile();
@@ -34,14 +43,14 @@ export default function Component() {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const handleFilterChange = (filter, checked) => {
+  const handleFilterChange = (filter: keyof Filters, checked: boolean): void => {
     setFilters((prevFilters) => ({
       ...prevFilters,
       [filter]: checked,
     }));
   };
 
-  const MobileView = () => (
+  const MobileView = (): JSX.Element => (
     <div className="flex items-center gap-2 mb-6">
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
@@ -68,7 +77,7 @@ export default function Component() {
     </div>
   );
 
-  const DesktopView = () => (
+  const DesktopView = (): JSX.Element => (
     <div className="flex flex-col items-center gap-4">
       <Tabs value={activeTab} onValueChange={setActiveTab}>
         <TabsList className="flex gap-4">
@@ -130,7 +139,7 @@ export default function Component() {
   );
 }
 
-function FilterDropdown({ filters, handleFilterChange }) {
+function FilterDropdown({ filters, handleFilterChange }: FilterDropdownProps): JSX.Element {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -166,7 +175,7 @@ function FilterDropdown({ filters, handleFilterChange }) {
   );
 }
 
-function FilterIcon(props) {
+function FilterIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg
       {...props}
@@ -185,7 +194,7 @@ function FilterIcon(props) {
   );
 }
 
-function DropdownIcon(props) {
+function DropdownIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg
       {...props}

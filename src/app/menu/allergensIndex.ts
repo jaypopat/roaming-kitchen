@@ -1,4 +1,8 @@
-export const allergensIndex = {
+type AllergensMap = {
+  index: number;
+  name: string;
+};
+export const allergensIndex: AllergensMap = {
   1: "Crustaceans",
   2: "Molluscs",
   3: "Fish",
