@@ -44,6 +44,7 @@ const VegIndicator = ({ isVeg }) => (
     {isVeg ? "VEG" : "NON"}
   </div>
 );
+
 const AllergenIndicator = ({ allergens }) => {
   if (!Array.isArray(allergens) || allergens.length === 0) return null;
 
@@ -52,7 +53,7 @@ const AllergenIndicator = ({ allergens }) => {
       <Tooltip>
         <TooltipTrigger asChild>
           <div className="absolute top-2 left-2 z-10 w-8 h-8 rounded-full bg-amber-400 border-2 border-white flex items-center justify-center cursor-pointer hover:bg-amber-500 transition-colors">
-            <img src="/allergens.png" alt="" />
+            <Image src="/allergens.png" alt="" height={50} width={50} />
           </div>
         </TooltipTrigger>
         <TooltipContent side="bottom" align="start" className="w-64 p-2">
@@ -108,7 +109,21 @@ const MenuItem = ({ item, isVeg }) => (
         </CardContent>
       </Card>
     </DialogTrigger>
-    <DialogContent className="w-full h-[80vh] max-h-[600px] p-0 sm:max-w-[100vw] md:max-w-[50vw]">
+    <DialogContent
+      className="h-[80vh] max-h-[600px] p-0 w-full sm:w-full"
+      style={{
+        width: "80%",
+        maxWidth: "800px",
+        "@media (min-width: 1024px)": {
+          width: "70%",
+          maxWidth: "1000px",
+        },
+        "@media (min-width: 1280px)": {
+          width: "60%",
+          maxWidth: "1200px",
+        },
+      }}
+    >
       <DialogHeader className="p-4 bg-gray-50 shrink-0">
         <DialogTitle className="text-2xl font-bold">{item.item}</DialogTitle>
       </DialogHeader>
@@ -135,26 +150,26 @@ const MenuItem = ({ item, isVeg }) => (
           </div>
         </div>
         <div className="p-4">
-  <div className="flex items-center mb-2">
-    <h3 className="text-lg font-semibold mr-4">Allergens</h3>
-    <img src="/allergens.png" alt="Allergens icon" className="h-6 w-6" />
-  </div>
-  <div className="grid grid-cols-1 gap-2">
-    {item.allergens && item.allergens.length > 0 ? (
-      item.allergens.map((allergen) => (
-        <Badge
-          key={allergen}
-          variant="outline"
-          className="transition-colors hover:bg-gray-100 w-full text-left px-2 py-1"
-        >
-          {allergensIndex[allergen] || "Unknown allergen"}
-        </Badge>
-      ))
-    ) : (
-      <p className="text-gray-500 italic">No allergens listed</p>
-    )}
-  </div>
-</div>
+          <div className="flex items-center mb-2">
+            <h3 className="text-lg font-semibold mr-4">Allergens</h3>
+            <Image src="/allergens.png" alt="" height={40} width={40} />
+          </div>
+          <div className="grid grid-cols-1 gap-2">
+            {item.allergens && item.allergens.length > 0 ? (
+              item.allergens.map((allergen) => (
+                <Badge
+                  key={allergen}
+                  variant="outline"
+                  className="transition-colors hover:bg-gray-100 w-full text-left px-2 py-1"
+                >
+                  {allergensIndex[allergen] || "Unknown allergen"}
+                </Badge>
+              ))
+            ) : (
+              <p className="text-gray-500 italic">No allergens listed</p>
+            )}
+          </div>
+        </div>
       </div>
     </DialogContent>
   </Dialog>
