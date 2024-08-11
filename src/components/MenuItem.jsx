@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/dialog";
 import { allergensIndex } from "../app/menu/allergensIndex";
 
-const CARD_SIZE = 350;
+const CARD_SIZE = 400;
 const TEXT_HEIGHT = 50;
 const DIALOG_IMAGE_HEIGHT = 400;
 
