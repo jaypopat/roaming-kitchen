@@ -52,7 +52,7 @@ const AllergenIndicator = ({ allergens }) => {
       <Tooltip>
         <TooltipTrigger asChild>
           <div className="absolute top-2 left-2 z-10 w-8 h-8 rounded-full bg-amber-400 border-2 border-white flex items-center justify-center cursor-pointer hover:bg-amber-500 transition-colors">
-            <span className="text-white text-lg">⚠️</span>
+            <img src="/allergens.png" alt="" />
           </div>
         </TooltipTrigger>
         <TooltipContent side="bottom" align="start" className="w-64 p-2">
@@ -135,23 +135,26 @@ const MenuItem = ({ item, isVeg }) => (
           </div>
         </div>
         <div className="p-4">
-          <h3 className="text-lg font-semibold mb-2">Allergens</h3>
-          <div className="grid grid-cols-1 gap-2">
-            {item.allergens && item.allergens.length > 0 ? (
-              item.allergens.map((allergen) => (
-                <Badge
-                  key={allergen}
-                  variant="outline"
-                  className="transition-colors hover:bg-gray-100 w-full text-left px-2 py-1"
-                >
-                  {allergensIndex[allergen] || "Unknown allergen"}
-                </Badge>
-              ))
-            ) : (
-              <p className="text-gray-500 italic">No allergens listed</p>
-            )}
-          </div>
-        </div>
+  <div className="flex items-center mb-2">
+    <h3 className="text-lg font-semibold mr-4">Allergens</h3>
+    <img src="/allergens.png" alt="Allergens icon" className="h-6 w-6" />
+  </div>
+  <div className="grid grid-cols-1 gap-2">
+    {item.allergens && item.allergens.length > 0 ? (
+      item.allergens.map((allergen) => (
+        <Badge
+          key={allergen}
+          variant="outline"
+          className="transition-colors hover:bg-gray-100 w-full text-left px-2 py-1"
+        >
+          {allergensIndex[allergen] || "Unknown allergen"}
+        </Badge>
+      ))
+    ) : (
+      <p className="text-gray-500 italic">No allergens listed</p>
+    )}
+  </div>
+</div>
       </div>
     </DialogContent>
   </Dialog>
