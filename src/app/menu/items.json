@@ -614,49 +614,58 @@
       {
         "item": "Chhole Bhature/Puri Bhaji",
         "image": "/menu/live-counters/chhole-bhature.jpg",
-        "allergens": [6, 8]
+        "allergens": [6, 8],
+        "description": "We can organize a delightful experience featuring Puri Bhaji and Chhole Bhature! Watch our chef prepare these iconic dishes at our live counter. Enjoy crispy puris with spiced potato bhaji or fluffy bhature with tangy chhole for an unforgettable culinary experience!"
       },
       {
         "item": "South India Dosa/Uthappam",
         "image": "/menu/live-counters/live-dosa.jpg",
-        "allergens": [6, 7, 8]
+        "allergens": [6, 7, 8],
+        "description": "We can organize a delightful experience featuring authentic South Indian dishes like Dosa and Uttapam! Watch our skilled chef prepare these iconic dishes at our live counter. Enjoy crispy dosas filled with spiced potato masala or fluffy uttapam topped with onions, tomatoes, and curry leaves for an unforgettable culinary journey!"
       },
       {
         "item": "Chaat Station",
         "image": "/menu/live-counters/chaat-station.webp",
-        "allergens": [7, 8]
+        "allergens": [7, 8],
+        "description": "We can organize a vibrant Chaat Station for your event, bringing the lively flavors of Indian street food to your guests! Watch our skilled chef prepare a variety of delicious chaats right before your eyes."
       }
     ],
     "NonVegetarian": [
       {
         "item": "Pasta Station",
         "image": "/menu/live-counters/live-pasta-station.jpg",
-        "allergens": [6, 7, 11, 12]
+        "allergens": [6, 7, 11, 12],
+        "description": "We can organize an exciting Pasta Station for your event, offering a delectable array of freshly prepared pasta dishes. Watch our talented chef cook up your favorite pasta varieties right before your eyes, creating a truly interactive dining experience."
       },
       {
         "item": "Burgers Station",
         "image": "/menu/live-counters/burger-station.jpeg",
-        "allergens": [6, 7, 8, 11]
+        "allergens": [6, 7, 8, 11],
+        "description": "We can organize a dynamic Burger Station for your event, offering a mouthwatering selection of gourmet burgers made to order. Watch our skilled chef grill juicy patties right before your eyes, providing an interactive and delicious experience for your guests."
       },
       {
         "item": "Mexican Station",
         "image": "/menu/live-counters/mexican-station.jpg",
-        "allergens": [6, 7, 8, 11, 12]
+        "allergens": [6, 7, 8, 11, 12],
+        "description": "We can organize an enticing Mexican Station for your event, featuring a vibrant array of authentic dishes. Watch our skilled chef prepare mouthwatering favorites like Tacos, Quesadillas, and Nachos right before your eyes, creating an interactive and flavorful experience for your guests."
       },
       {
         "item": "Chinese Station",
         "image": "/menu/live-counters/chinese-station.jpg",
-        "allergens": [6, 8, 9, 12]
+        "allergens": [6, 8, 9, 12],
+        "description": "We can organize an enticing Chinese Station for your event, featuring a delicious selection of authentic dishes. Watch our skilled chef prepare favorites like Stir-Fried Noodles, Dumplings, and Fried Rice right before your eyes, creating an interactive and flavorful experience for your guests."
       },
       {
         "item": "Pizza Parlour",
         "image": "/menu/live-counters/live-pizzas.jpg",
-        "allergens": [6, 7, 8, 11]
+        "allergens": [6, 7, 8, 11],
+        "description": "We can organize an exciting Pizza Parlour for your event, offering a mouthwatering selection of freshly baked pizzas. Watch our skilled chef prepare a variety of pizzas right before your eyes, creating an interactive and delicious experience for your guests."
       },
       {
         "item": "Thai Counter",
         "image": "/menu/live-counters/thai-counter.webp",
-        "allergens": [7, 8, 12]
+        "allergens": [7, 8, 12],
+        "description": "We can organize a captivating Thai Counter for your event, offering a delightful selection of authentic Thai dishes. Watch our skilled chef prepare favorites like Pad Thai, Thai Curries, and Spring Rolls right before your eyes, creating an interactive and flavorful experience for your guests."
       }
     ]
   }
