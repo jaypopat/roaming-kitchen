@@ -62,7 +62,7 @@ export default function LiveEventFood() {
               />
               <div className="w-full">
                 <MenuItems
-                  category="Live Counter"
+                  category="Live Counters"
                   filters={filters}
                   items={items}
                 />

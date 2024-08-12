@@ -5,30 +5,30 @@
         "item": "Vegetable Spring Rolls",
         "image": "/menu/finger-foods/RK_spring_rolls.jpg",
         "allergens": [4, 5, 6, 7, 8, 10, 12],
-        "description" : "Our Vegetable Spring Rolls feature finely chopped carrots, cabbage, bell peppers, and bean sprouts sautéed with garlic and ginger. Wrapped in rice paper, they are lightly fried to a golden crisp. Served with a signature dipping sauce, these rolls offer a perfect balance of fresh, crunchy, and savory flavors."
+        "description": "Our Vegetable Spring Rolls feature finely chopped carrots, cabbage, bell peppers, and bean sprouts sautéed with garlic and ginger. Wrapped in rice paper, they are lightly fried to a golden crisp. Served with a signature dipping sauce, these rolls offer a perfect balance of fresh, crunchy, and savory flavors."
       },
       {
         "item": "Chips / Wedges",
         "image": "/menu/finger-foods/chips-and-wedges.jpeg",
-        "allergens": [8,9],
-        "description" : "Our chips and wedges are a perfect blend of crispy and savory. Potatoes are expertly sliced, then seasoned with a blend of herbs and spices. They are baked or fried to golden perfection, ensuring a crunchy exterior with a soft, fluffy interior. Served with a side of tangy dipping sauce, they make a deliciously satisfying snack."
+        "allergens": [8, 9],
+        "description": "Our chips and wedges are a perfect blend of crispy and savory. Potatoes are expertly sliced, then seasoned with a blend of herbs and spices. They are baked or fried to golden perfection, ensuring a crunchy exterior with a soft, fluffy interior. Served with a side of tangy dipping sauce, they make a deliciously satisfying snack."
       },
       {
         "item": "Garlic Mushrooms",
         "image": "/menu/finger-foods/garlic-mushrooms.jpg",
-        "allergens": [6,8,9,11,12],
-        "description" : "Our Garlic Mushrooms are a savory delight. Fresh mushrooms are sautéed in a rich blend of garlic, butter, and herbs until tender and flavorful. Each bite offers a perfect balance of earthy mushroom taste and aromatic garlic. Served hot, they make an irresistible appetizer or side dish."
+        "allergens": [6, 8, 9, 11, 12],
+        "description": "Our Garlic Mushrooms are a savory delight. Fresh mushrooms are sautéed in a rich blend of garlic, butter, and herbs until tender and flavorful. Each bite offers a perfect balance of earthy mushroom taste and aromatic garlic. Served hot, they make an irresistible appetizer or side dish."
       },
       {
         "item": "Mozarella Sticks",
         "image": "/menu/finger-foods/mozzarella-sticks.jpeg",
-        "allergens": [5,7,8,9,11],
-        "description" : "Handcrafted Mozzarella Sticks: premium cheese, double-breaded, and flash-fried to golden perfection. Crispy outside, irresistibly gooey inside. Served piping hot with our signature marinara sauce for the ultimate cheesy indulgence."
+        "allergens": [5, 7, 8, 9, 11],
+        "description": "Handcrafted Mozzarella Sticks: premium cheese, double-breaded, and flash-fried to golden perfection. Crispy outside, irresistibly gooey inside. Served piping hot with our signature marinara sauce for the ultimate cheesy indulgence."
       },
       {
         "item": "Crumb Fried Brie",
         "image": "/menu/finger-foods/RK_brie.jpg",
-        "allergens": [5,7,8,9,11],
+        "allergens": [5, 7, 8, 9, 11],
         "description": "Creamy French cheese encased in a golden, herb-flecked crust. Crisp exterior gives way to a molten center. Served with tangy berry compote for a perfect sweet-savory balance."
       }
     ],
@@ -36,31 +36,31 @@
       {
         "item": "Cocktail Sausages",
         "image": "/menu/finger-foods/cocktail-sausages.jpeg",
-        "allergens": [6,8,11],
-        "description" : "Juicy, bite-sized sausages simmered in a sweet and tangy glaze. Perfectly seasoned and caramelized for a flavorful punch. Skewered for easy enjoyment, these savory morsels make an irresistible appetizer or snack."
+        "allergens": [6, 8, 11],
+        "description": "Juicy, bite-sized sausages simmered in a sweet and tangy glaze. Perfectly seasoned and caramelized for a flavorful punch. Skewered for easy enjoyment, these savory morsels make an irresistible appetizer or snack."
       },
       {
         "item": "Chicken Wings",
         "image": "/menu/finger-foods/RK_chicken_wings.jpg",
         "allergens": [6, 7, 9],
-        "description" : "Crispy, tender chicken wings tossed in our signature spicy sauce. Perfectly fried for a satisfying crunch, with meat that falls off the bone. Served with cool ranch dip to balance the heat."
+        "description": "Crispy, tender chicken wings tossed in our signature spicy sauce. Perfectly fried for a satisfying crunch, with meat that falls off the bone. Served with cool ranch dip to balance the heat."
       },
       {
         "item": "Fish Goujons",
         "image": "/menu/finger-foods/fish-goujons.png",
-        "allergens": [1,2,3,6,7,8,11],
-        "description" : "Fresh white fish fillets are cut into strips, dipped in seasoned flour, dredged in beaten egg, then coated in crispy breadcrumbs. Fried to golden perfection until crispy on the outside and tender inside."
+        "allergens": [1, 2, 3, 6, 7, 8, 11],
+        "description": "Fresh white fish fillets are cut into strips, dipped in seasoned flour, dredged in beaten egg, then coated in crispy breadcrumbs. Fried to golden perfection until crispy on the outside and tender inside."
       },
       {
         "item": "Chicken Goujons",
         "image": "/menu/finger-foods/chicken-goujons.jpg",
-        "allergens": [6,7,8,9,11],
+        "allergens": [6, 7, 8, 9, 11],
         "description": "Chicken tenders are dipped in seasoned flour, dredged in beaten egg, then coated in crispy breadcrumbs and panko. Baked until golden and crispy on the outside, tender inside"
       },
       {
         "item": "Spicy Cocktail Chicken Skewers",
         "image": "/menu/finger-foods/spicky-cocktail-chicken-skewers.jpg",
-        "allergens": [8,9,11],
+        "allergens": [8, 9, 11],
         "description": "Chicken pieces are marinated in a blend of olive oil, garlic, lemon juice, and spices. Skewered and grilled until charred, they are served with a zesty dipping sauce."
       }
     ]
@@ -70,49 +70,49 @@
       {
         "item": "Tomato & Basil",
         "image": "/menu/soups/tomato-and-basil-soup.jpeg",
-        "allergens": [6,7,8,9,12],
+        "allergens": [6, 7, 8, 9, 12],
         "description": "Ripe tomatoes are sautéed with onions and garlic, then simmered with vegetable broth. Blended until smooth, it’s finished with fresh basil and a drizzle of olive oil for flavor."
       },
       {
         "item": "Potato & Leek",
         "image": "/menu/soups/potato-leek-soup.jpg",
-        "allergens": [6,7,8,9,12],
+        "allergens": [6, 7, 8, 9, 12],
         "description": "Potatoes and leeks are sautéed with onions and garlic, then simmered in vegetable broth until tender. Blended until smooth and creamy, it's seasoned with salt, pepper and herbs."
       },
       {
         "item": "Carrot, Ginger, Orange",
         "image": "/menu/soups/RK_carrot_and_ginger_soup.jpg",
-        "allergens": [6,7,8,9,12],
+        "allergens": [6, 7, 8, 9, 12],
         "description": "Carrots, onions, and garlic are sautéed with fresh ginger, then simmered in vegetable broth. Blended until smooth, it’s finished with orange juice for a bright, zesty flavor."
       },
       {
         "item": "Butternut Squash",
         "image": "/menu/soups/butternut-squash-soup.jpg",
-        "allergens": [6,7,8,9,12],
+        "allergens": [6, 7, 8, 9, 12],
         "description": "utternut squash is roasted until tender, then blended with sautéed onions, garlic, and spices. Simmered in vegetable broth, it's pureed until creamy and seasoned for a comforting, flavorful soup"
       },
       {
         "item": "Mixed Vegetables",
         "image": "/menu/soups/RK_vegetable_soup.jpg",
-        "allergens": [6,7,8,9,12],
+        "allergens": [6, 7, 8, 9, 12],
         "description": "Seasonal vegetables like carrots, peas, and green beans are sautéed with onions and garlic, then simmered in vegetable broth. Seasoned with herbs, it’s a hearty, nutritious, and colorful soup."
       },
       {
         "item": "Hot & Sour",
         "image": "/menu/soups/Hot-and-Sour-Soup.jpg",
-        "allergens": [4,6,10,12],
+        "allergens": [4, 6, 10, 12],
         "description": "Vegetable broth is simmered with mushrooms, bamboo shoots, and tofu, then thickened with cornstarch. Finished with vinegar and spices for a tangy flavor."
       },
       {
         "item": "Manchow",
         "image": "/menu/soups/Veg-Manchow-Soup.jpg",
-        "allergens": [4,6,10,12],
+        "allergens": [4, 6, 10, 12],
         "description": "Finely chopped vegetables like carrots, beans, and cabbage are stir-fried with ginger and garlic, then simmered in a spicy broth with soy sauce and vinegar, thickened with cornstarch."
       },
       {
         "item": "Tom Yam",
         "image": "/menu/soups/tom-yam-veg-soup.jpg",
-        "allergens": [4,6,10,12],
+        "allergens": [4, 6, 10, 12],
         "description": "Lemongrass, galangal, kaffir lime leaves, and Thai red curry paste are simmered in vegetable broth. Mushrooms, tomatoes, tofu, and mixed veggies are added, finished with lime juice, soy sauce, and cilantro for a spicy, tangy flavor."
       }
     ],
@@ -120,25 +120,25 @@
       {
         "item": "Tom Yam Chicken",
         "image": "/menu/soups/tom-yam-chicken-soup.jpg",
-        "allergens": [4,6,10,12],
+        "allergens": [4, 6, 10, 12],
         "description": "Chicken broth is simmered with lemongrass, galangal, kaffir lime leaves, fish sauce, and Thai chili paste. Chicken, mushrooms, tomatoes, and lime juice are added for a spicy, sour, and aromatic soup."
       },
       {
         "item": "Tom Kha Chicken",
         "image": "/menu/soups/tom-kha-chicken.jpeg",
-        "allergens": [4,6,10,12],
+        "allergens": [4, 6, 10, 12],
         "description": "Chicken broth is simmered with coconut milk, lemongrass, galangal, kaffir lime leaves, fish sauce and Thai chilies. Chicken, mushrooms and lime juice are added for a rich, creamy, aromatic Thai soup."
       },
       {
         "item": "Sea Food Chowder",
         "image": "/menu/soups/Seafood-Chowder.jpg",
-        "allergens": [1,2,3,6,7,12],
+        "allergens": [1, 2, 3, 6, 7, 12],
         "description": "Bacon is cooked until crisp, then onions and celery are sautéed. Flour is added to create a roux, followed by seafood stock, potatoes, and assorted seafood, finished with cream."
       },
       {
         "item": "Miso Soup",
         "image": "/menu/soups/Miso-Soup.jpg",
-        "allergens": [6,8,12],
+        "allergens": [6, 8, 12],
         "description": "Dashi broth is simmered with miso paste until dissolved. Silky tofu, wakame seaweed, and green onions are added for texture and flavor. It's a simple, comforting Japanese soup."
       }
     ]
@@ -148,7 +148,7 @@
       {
         "item": "Goat Cheese Tart",
         "image": "/menu/starters/goat-cheese-tart.jpg",
-        "allergens": [6,7],
+        "allergens": [6, 7],
         "description": "Creamy goat cheese is mixed with eggs, cream, herbs and vegetables. The mixture is poured into a buttery shortcrust pastry shell and baked until set. Served warm or chilled."
       },
       {
@@ -160,55 +160,55 @@
       {
         "item": "Caprese Salad",
         "image": "/menu/starters/RK_caprese_salad.jpg",
-        "allergens": [7,8,12],
+        "allergens": [7, 8, 12],
         "description": "Fresh mozzarella is layered with ripe tomatoes and basil leaves, drizzled with extra-virgin olive oil, and seasoned with salt and pepper for a simple, refreshing Italian salad."
       },
       {
         "item": "Selection of Sushi",
         "image": "/menu/starters/veggie-sushi-selection.jpg",
-        "allergens": [8,10,12],
+        "allergens": [8, 10, 12],
         "description": "Sushi rice is seasoned with rice vinegar and sugar. Sheets of nori are layered with the rice, then filled with vegetables like avocado, cucumber, carrots, and pickled radish. Rolled up tightly and sliced into pieces."
       },
       {
         "item": "Caesar Salad",
         "image": "/menu/starters/caesar-salad.jpg",
-        "allergens": [6,7,11,13],
+        "allergens": [6, 7, 11, 13],
         "description": "Romaine lettuce is chopped and tossed with homemade croutons and shaved Parmesan. A creamy dressing made from mayonnaise, lemon juice, garlic, and Dijon mustard is drizzled on top."
       },
       {
         "item": "Quesdillas",
         "image": "/menu/starters/Quesadillas.jpg",
-        "allergens": [6,7,8,11,12],
+        "allergens": [6, 7, 8, 11, 12],
         "description": "Tortillas are filled with sautéed vegetables, black beans, and cheese, then folded and cooked on a skillet until golden and crispy. Served with salsa or sour cream for dipping."
       },
       {
         "item": "Vegan Salad Bowl",
         "image": "/menu/starters/vegan-salad-bowl.jpg",
-        "allergens": [6,8,12],
+        "allergens": [6, 8, 12],
         "description": "A base of mixed greens is topped with grains like quinoa or couscous, colorful vegetables, beans, and avocado, drizzled with a flavorful dressing for a nutritious, satisfying meal."
       },
       {
         "item": "Tandoori Aloo",
         "image": "/menu/starters/tandoori-aloo.jpeg",
-        "allergens": [7,8,9],
+        "allergens": [7, 8, 9],
         "description": "Baby potatoes are parboiled, then marinated in a spiced yogurt mixture. Skewered and grilled or baked until charred, they are served with mint chutney and sprinkled with chaat masala."
       },
       {
         "item": "Dahi ke kabab",
         "image": "/menu/starters/RK_dahi_ke_kebab.jpg",
-        "allergens": [7,8],
+        "allergens": [7, 8],
         "description": "Hung yogurt is mixed with spices, herbs, and gram flour, shaped into patties, then shallow-fried until golden and crisp. Served hot with mint chutney for a flavorful appetizer."
       },
       {
         "item": "Honey Chilli Potato",
         "image": "/menu/starters/honey-chilli-potato.jpg",
-        "allergens": [7,8,10,11,12],
+        "allergens": [7, 8, 10, 11, 12],
         "description": "Potato wedges are deep-fried until crispy, then tossed in a sweet and spicy sauce made with honey, soy sauce, and chili sauce, garnished with sesame seeds and spring onions."
       },
       {
         "item": "Lebanese Platter",
         "image": "/menu/starters/RK_lebanese_platter.jpg",
-        "allergens": [6,7,8],
+        "allergens": [6, 7, 8],
         "description": "A colorful assortment of hummus, baba ganoush, tabbouleh, stuffed grape leaves, and falafel is served with warm pita bread, marinated olives, and fresh veggies for a delightful mezze experience."
       }
     ],
@@ -216,61 +216,61 @@
       {
         "item": "Chicken Tikka",
         "image": "/menu/starters/RK_chicken_tikka.jpg",
-        "allergens": [7,8,9],
+        "allergens": [7, 8, 9],
         "description": "Chicken pieces are marinated in yogurt and spices, skewered, and grilled until charred. Served hot with mint chutney, it’s a flavorful Indian appetizer perfect for any occasion."
       },
       {
         "item": "Fish Fingers",
         "image": "/menu/starters/fish-fingers.jpg",
-        "allergens": [1,2,3,6,7,8,9,11,12],
+        "allergens": [1, 2, 3, 6, 7, 8, 9, 11, 12],
         "description": "White fish fillets are cut into strips, coated in a seasoned batter, then breaded with crispy panko crumbs. Baked or fried until golden, they're a classic kid-friendly dish."
       },
       {
         "item": "Crumb Fried Prawns",
         "image": "/menu/starters/crumbed-fried-prawns.jpg",
-        "allergens": [1,2,3,6,7,8,11,12],
+        "allergens": [1, 2, 3, 6, 7, 8, 11, 12],
         "description": "Prawns are marinated in spices, dipped in flour and beaten egg, then coated with breadcrumbs. Deep-fried until golden and crispy, served hot with dipping sauce and lemon wedges."
       },
       {
         "item": "Chicken Vol Au Vent",
         "image": "/menu/starters/RK_chicken_voluvent.jpg",
-        "allergens": [6,7,11,13],
+        "allergens": [6, 7, 11, 13],
         "description": "Puff pastry cases are baked until golden, then filled with a creamy mixture of sautéed chicken, onions, and herbs, creating a rich and elegant dish perfect for any occasion."
       },
       {
         "item": "Selection of Sushi",
         "image": "/menu/starters/sushi.webp",
-        "allergens": [1,2,3,7,8,12],
+        "allergens": [1, 2, 3, 7, 8, 12],
         "description": "Sushi rice is seasoned with rice vinegar and sugar. Sheets of nori are layered with the rice, then filled with a variety of ingredients like raw fish, cooked shrimp, avocado, cucumber, and pickled ginger. Rolled up tightly and sliced into pieces."
       },
       {
         "item": "Thai Chicken Satay",
         "image": "/menu/starters/RK_chicken_satay.jpg",
-        "allergens": [4,7,8],
+        "allergens": [4, 7, 8],
         "description": "Thai Chicken Satay is a popular appetizer featuring marinated chicken skewers grilled to perfection and served with a creamy peanut dipping sauce."
       },
       {
         "item": "Shrimp Cocktail",
         "image": "/menu/starters/RK_shrimp_cocktail.jpg",
-        "allergens": [1,2,3,7,11],
+        "allergens": [1, 2, 3, 7, 11],
         "description": "Shrimp are boiled in seasoned water until pink, then chilled. Served with a homemade cocktail sauce made from ketchup, horseradish, lemon juice, and Worcestershire sauce for dipping"
       },
       {
         "item": "Salt n Pepper Chicken",
         "image": "/menu/starters/Salt-and-pepper-chicken.jpg",
-        "allergens": [6,7,8],
+        "allergens": [6, 7, 8],
         "description": "Chicken pieces are coated in cornstarch and seasoned with salt and pepper, then deep-fried until crispy. Stir-fried with garlic, chilies, and onions, it’s served hot as a flavorful dish."
       },
       {
         "item": "Caesar Chicken Salad",
         "image": "/menu/starters/RK_caesar_chicken_salad.jpg",
-        "allergens": [6,7,11,13],
+        "allergens": [6, 7, 11, 13],
         "description": "Romaine lettuce is tossed with grilled chicken, croutons, Parmesan, and a creamy Caesar dressing made with mayonnaise, garlic, anchovies, lemon juice, and Dijon mustard for a classic salad."
       },
       {
         "item": "Fish Cake",
         "image": "/menu/starters/RK_fish_cake.jpg",
-        "allergens": [1,2,3,6,7,8,9,11,12],
+        "allergens": [1, 2, 3, 6, 7, 8, 9, 11, 12],
         "description": "Flaked cooked fish is mixed with mashed potatoes, herbs, and spices, shaped into patties, coated in breadcrumbs, and pan-fried until golden brown. Served with tartar sauce or lemon."
       }
     ]
@@ -292,55 +292,55 @@
       {
         "item": "Pasta with Tomato or white sauce",
         "image": "/menu/main-course/RK_pasta.jpg",
-        "allergens": [6, 7,11],
+        "allergens": [6, 7, 11],
         "description": "Pasta is cooked al dente, then tossed with a rich tomato sauce or creamy white sauce made from butter, flour, milk, and cheese. Garnished with herbs for flavor."
       },
       {
         "item": "Dal Makhani",
         "image": "/menu/main-course/dal-makhani.webp",
-        "allergens": [7,8],
+        "allergens": [7, 8],
         "description": "Dal Makhani is a rich, creamy and flavorful lentil dish originating from the Punjab region of India. It is made by slow cooking whole black lentils (urad dal) and red kidney beans (rajma) in a spiced onion-tomato gravy, with generous amounts of butter and cream."
       },
       {
         "item": "Dal Tadka",
         "image": "/menu/main-course/dal-tadka.jpg",
-        "allergens": [7,8],
+        "allergens": [7, 8],
         "description": "Dal Tadka is a flavorful lentil dish made with cooked toor dal, tempered with spices, onions, and tomatoes, finished with a tadka of garlic and cumin for added aroma."
       },
       {
         "item": "Paneer Butter Masala",
         "image": "/menu/main-course/paneer-butter-masala.webp",
-        "allergens": [7,8],
+        "allergens": [7, 8],
         "description": "Paneer cubes are simmered in a rich, creamy tomato sauce with spices and butter, creating a mildly sweet and flavorful dish, often garnished with cream and served with naan."
       },
       {
         "item": "Malai Kofta",
         "image": "/menu/main-course/malai-kofta.webp",
-        "allergens": [7,8],
+        "allergens": [7, 8],
         "description": "Malai Kofta features fried balls of paneer and potato in a rich, creamy tomato-based gravy, flavored with spices and garnished with cream, served with naan or rice."
       },
       {
         "item": "Stir Fried Vegetables",
         "image": "/menu/main-course/VegetableStirFry.jpg",
-        "allergens": [8,9,10,12],
+        "allergens": [8, 9, 10, 12],
         "description": "Colorful vegetables are quickly sautéed in oil with garlic and ginger, seasoned with soy sauce and sesame oil, creating a vibrant, crunchy dish that retains nutrients and flavor."
       },
       {
         "item": "Thai Vegetable Curry Red/Green/Yellow",
         "image": "/menu/main-course/Thai-Red-Curry-vegetable.webp",
-        "allergens": [7,8,12],
+        "allergens": [7, 8, 12],
         "description": "Vegetables are simmered in a fragrant coconut milk-based sauce, flavored with red, green, or yellow curry paste, and served over rice for a delicious and aromatic Thai dish."
       },
       {
         "item": "Veg Lasagne",
         "image": "/menu/main-course/roasted-vegetable-lasagna.jpeg",
-        "allergens": [6,7,12],
+        "allergens": [6, 7, 12],
         "description": "Veg Lasagne layers sheets of pasta with roasted vegetables, ricotta, and marinara sauce, topped with mozzarella and baked until bubbly, creating a comforting and hearty vegetarian dish."
       },
       {
         "item": "Baked Vegetables",
         "image": "/menu/main-course/baked-veggies.jpg",
-        "allergens": [7,8],
+        "allergens": [7, 8],
         "description": "Baked vegetables are seasoned, tossed with olive oil, and roasted in the oven until tender and caramelized, creating a flavorful side dish that enhances the natural sweetness of the veggies"
       },
       {
@@ -370,7 +370,7 @@
       {
         "item": "Veg Burgers",
         "image": "/menu/main-course/veg-burger.jpg",
-        "allergens": [6,7,8,11],
+        "allergens": [6, 7, 8, 11],
         "description": "Veg Burgers feature patties made from a mix of roasted vegetables, beans, nuts, and spices, pan-fried or baked until crisp, then served on buns with desired toppings for a flavorful vegetarian burger."
       }
     ],
@@ -378,73 +378,73 @@
       {
         "item": "Butter Chicken",
         "image": "/menu/main-course/butterchicken.jpg",
-        "allergens": [7,8],
+        "allergens": [7, 8],
         "description": "Chicken is marinated in yogurt, spices, and lemon, then simmered in a rich, creamy tomato-based sauce with butter, ginger, garlic, and aromatic spices for a flavorful curry."
       },
       {
         "item": "Chicken Curry",
         "image": "/menu/main-course/RK_chicken_curry.jpg",
-        "allergens": [7,8],
+        "allergens": [7, 8],
         "description": "Chicken Curry features tender chicken simmered in a spiced onion-tomato gravy, enriched with yogurt or cream, and seasoned with aromatic spices, served with rice or bread for a hearty meal."
       },
       {
         "item": "Stir Fried Chicken",
         "image": "/menu/main-course/RK_stir_fry_chicken.jpg",
-        "allergens": [6,8,10,11,12],
+        "allergens": [6, 8, 10, 11, 12],
         "description": "Stir Fried Chicken features bite-sized chicken pieces sautéed with colorful vegetables in a savory sauce, creating a quick and flavorful dish served over rice or noodles."
       },
       {
         "item": "Fish Curry",
         "image": "/menu/main-course/fish-curry.webp",
-        "allergens": [1,2,3,7,8],
+        "allergens": [1, 2, 3, 7, 8],
         "description": "Fish Curry features tender fish simmered in a spiced coconut milk or tomato-based sauce, infused with aromatic spices, and served with rice or bread for a comforting meal."
       },
       {
         "item": "Thai Chicken Curry Red/Green/Yellow",
         "image": "/menu/main-course/Thai-Green-Curry.jpg",
-        "allergens": [7,8,12],
+        "allergens": [7, 8, 12],
         "description": "Thai Chicken Curry features tender chicken simmered in a fragrant coconut milk-based sauce with red, green, or yellow curry paste, infused with vegetables and served with rice for a flavorful meal."
       },
       {
         "item": "Beef Lasagne",
         "image": "/menu/main-course/beef-lasagne.jpg",
-        "allergens": [6,7,11,12],
+        "allergens": [6, 7, 11, 12],
         "description": "Layers of pasta are alternated with a rich meat sauce made from ground beef, onions, garlic, tomatoes and herbs, a creamy béchamel sauce, and grated cheese, then baked until golden and bubbly."
       },
       {
         "item": "Grilled Chicken Breast",
         "image": "/menu/main-course/Grilled-Chicken-breast.jpg",
-        "allergens": [7,8],
+        "allergens": [7, 8],
         "description": "Chicken breasts are pounded thin, marinated in a flavorful mixture of olive oil, garlic, herbs and spices, then grilled until charred and juicy, resulting in tender, well-seasoned grilled chicken."
       },
       {
         "item": "Pan Fried Fish",
         "image": "/menu/main-course/RK_pan_fried_fish.jpg",
-        "allergens": [1,2,3,7,12],
+        "allergens": [1, 2, 3, 7, 12],
         "description": "Pan Fried Fish features seasoned fish fillets dredged in flour, cooked in a hot skillet with oil, achieving a crispy exterior and tender, flaky interior, perfect for a quick meal."
       },
       {
         "item": "Fish n Chips",
         "image": "/menu/main-course/RK_fish_and_chips.jpg",
-        "allergens": [1,2,3,6,7,9,11],
+        "allergens": [1, 2, 3, 6, 7, 9, 11],
         "description": "Fish and Chips consists of battered and deep-fried fish served with crispy, golden fries, often accompanied by tartar sauce and lemon wedges for a classic British meal."
       },
       {
         "item": "Lamb Curry",
         "image": "/menu/main-course/lamb-curry.jpg",
-        "allergens": [8,11],
+        "allergens": [8, 11],
         "description": "Lamb Curry features tender lamb pieces simmered in a rich, spiced gravy made with onions, tomatoes, and aromatic spices, served with rice or bread for a hearty meal."
       },
       {
         "item": "Chicken Biryani",
         "image": "/menu/main-course/chicken-biryani.webp",
-        "allergens": [7,11],
+        "allergens": [7, 11],
         "description": "Chicken Biryani is a fragrant one-pot dish made with marinated chicken, layered with basmati rice and aromatic spices, then cooked together to create a flavorful and hearty meal."
       },
       {
         "item": "Lamb Biryani",
         "image": "/menu/main-course/RK_lamb_biryani.jpg",
-        "allergens": [7,11],
+        "allergens": [7, 11],
         "description": "Lamb Biryani is a fragrant, layered dish made with marinated lamb, basmati rice, and aromatic spices, cooked together to create a flavorful and hearty one-pot meal."
       },
       {
@@ -462,19 +462,19 @@
       {
         "item": "Slider Burgers",
         "image": "/menu/main-course/RK_slider_burgers.jpg",
-        "allergens": [6,7,8,11],
+        "allergens": [6, 7, 8, 11],
         "description": "Slider Burgers are mini beef patties seasoned and cooked, served on small buns with cheese and toppings, making them perfect for parties or casual gatherings as bite-sized treats."
       },
       {
         "item": "Chicken Burger",
         "image": "/menu/main-course/RK_chicken_burger.jpg",
-        "allergens": [6,7,8,11],
+        "allergens": [6, 7, 8, 11],
         "description": "Chicken Burgers feature seasoned chicken patties, grilled or pan-fried, served on soft buns with toppings like lettuce, tomato, and garlic mayo, creating a delicious and satisfying meal."
       },
       {
         "item": "Beef Burger",
         "image": "/menu/main-course/RK_beef_burger.jpg",
-        "allergens": [6,7,8,11],
+        "allergens": [6, 7, 8, 11],
         "description": "Beef Burgers feature seasoned ground beef patties grilled or pan-fried, served on soft buns with toppings like cheese, lettuce, and tomato, creating a classic and satisfying meal."
       }
     ]
@@ -502,43 +502,43 @@
       {
         "item": "Salad",
         "image": "/menu/accompaniments/salads.jpg",
-        "allergens": [6,7,8,12],
+        "allergens": [6, 7, 8, 12],
         "description": "Salads are versatile dishes combining fresh greens, vegetables, fruits, grains, and proteins, dressed with flavorful vinaigrettes or creamy dressings, perfect as sides for any meal."
       },
       {
         "item": "Puri",
         "image": "/menu/accompaniments/poori.jpeg",
-        "allergens": [6,8],
+        "allergens": [6, 8],
         "description": "Puri is a deep-fried Indian bread made from whole wheat flour, rolled into discs, and fried until puffed and golden, often served with curries or enjoyed as a snack."
       },
       {
         "item": "Paratha",
         "image": "/menu/accompaniments/parathas.jpg",
-        "allergens": [6,8],
+        "allergens": [6, 8],
         "description": "Paratha is a flaky, layered Indian flatbread made from whole wheat flour, rolled out, cooked on a skillet with ghee or oil, and often stuffed with various fillings."
       },
       {
         "item": "Tawa Roti",
         "image": "/menu/accompaniments/Tawa-Roti.jpg",
-        "allergens": [6,7,8],
+        "allergens": [6, 7, 8],
         "description": "Tawa Roti is a soft Indian flatbread made from whole wheat flour, rolled out and cooked on a hot tawa (griddle), often served with curries or vegetables."
       },
       {
         "item": "Selection of Parathas",
         "image": "/menu/accompaniments/selection-of-parathas.jpg",
-        "allergens": [6,7,8],
+        "allergens": [6, 7, 8],
         "description": "A selection of Parathas includes various flaky, layered flatbreads made from whole wheat flour, often stuffed with diverse fillings like potatoes, paneer, or vegetables, served hot with yogurt and pickles."
       },
       {
         "item": "Selection of Pickles",
         "image": "/menu/accompaniments/indian-pickles.jpeg",
-        "allergens": [8,13],
+        "allergens": [8, 13],
         "description": "Indian Pickles are spicy, tangy, and flavorful condiments made by fermenting or pickling various vegetables, fruits, or herbs in oil, vinegar, and spices, often served as accompaniments to enhance meals."
       },
       {
         "item": "Selection of Chutneys",
         "image": "/menu/accompaniments/indian-chutneys.jpeg",
-        "allergens": [8,13],
+        "allergens": [8, 13],
         "description": "Indian Chutneys are flavorful, spicy, or sweet condiments made from a variety of ingredients like herbs, fruits, or vegetables, often served as dips or accompaniments to enhance the taste of dishes."
       }
     ]
@@ -554,7 +554,7 @@
       {
         "item": "Kheer",
         "image": "/menu/deserts/Rice-Kheer.webp",
-        "allergens": [15,7],
+        "allergens": [15, 7],
         "description": "Kheer is a traditional Indian rice pudding made by simmering rice in milk, sweetened with sugar, flavored with cardamom, and garnished with nuts and saffron for a rich dessert."
       },
       {
@@ -572,7 +572,7 @@
       {
         "item": "Shahi Tukda",
         "image": "/menu/deserts/shahi-tukda.jpg",
-        "allergens": [6,15,7],
+        "allergens": [6, 15, 7],
         "description": "Shahi Tukda is a rich, royal dessert made with ghee-fried bread slices soaked in cardamom-rose sugar syrup, topped with creamy saffron-flavored thickened milk (rabri) and garnished with nuts."
       },
       {
@@ -586,26 +586,77 @@
       {
         "item": "Creme Brulee",
         "image": "/menu/deserts/RK_creme_brulee.jpg",
-        "allergens": [7,11],
+        "allergens": [7, 11],
         "description": "Crème Brûlée is a classic French dessert made with rich vanilla custard topped with a caramelized sugar crust, creating a delightful contrast between creamy and crunchy textures."
       },
       {
         "item": "Chocolate Mouse",
         "image": "/menu/deserts/chocolate-mousse.jpg",
-        "allergens": [6,7,11],
+        "allergens": [6, 7, 11],
         "description": "Chocolate Mousse is a rich and airy dessert made by folding melted chocolate into whipped cream and beaten egg whites, creating a light, creamy texture that melts in your mouth."
       },
       {
         "item": "Chocolate Brownie",
         "image": "/menu/deserts/chocolate-brownie.jpg",
-        "allergens": [16,6,7,11],
+        "allergens": [16, 6, 7, 11],
         "description": "Chocolate Brownies are rich, fudgy treats made by mixing melted chocolate and butter with sugar, eggs, and flour, then baking until gooey and topped with a crackly crust."
       },
       {
         "item": "Apple Crumble Tart",
         "image": "/menu/deserts/RK_apple_crumble_tart.jpg",
-        "allergens": [6,7,11],
+        "allergens": [6, 7, 11],
         "description": "Apple Crumble Tart features a crisp sweet pastry shell filled with spiced apples, topped with a buttery crumble topping, baked until golden, and served warm with a dollop of cream or custard."
+      }
+    ]
+  },
+  "Live Counters": {
+    "Vegetarian": [
+      {
+        "item": "Chhole Bhature/Puri Bhaji",
+        "image": "/menu/live-counters/chhole-bhature.jpg",
+        "allergens": [6, 8]
+      },
+      {
+        "item": "South India Dosa/Uthappam",
+        "image": "/menu/live-counters/live-dosa.jpg",
+        "allergens": [6, 7, 8]
+      },
+      {
+        "item": "Chaat Station",
+        "image": "/menu/live-counters/chaat-station.webp",
+        "allergens": [7, 8]
+      }
+    ],
+    "NonVegetarian": [
+      {
+        "item": "Pasta Station",
+        "image": "/menu/live-counters/live-pasta-station.jpg",
+        "allergens": [6, 7, 11, 12]
+      },
+      {
+        "item": "Burgers Station",
+        "image": "/menu/live-counters/burger-station.jpeg",
+        "allergens": [6, 7, 8, 11]
+      },
+      {
+        "item": "Mexican Station",
+        "image": "/menu/live-counters/mexican-station.jpg",
+        "allergens": [6, 7, 8, 11, 12]
+      },
+      {
+        "item": "Chinese Station",
+        "image": "/menu/live-counters/chinese-station.jpg",
+        "allergens": [6, 8, 9, 12]
+      },
+      {
+        "item": "Pizza Parlour",
+        "image": "/menu/live-counters/live-pizzas.jpg",
+        "allergens": [6, 7, 8, 11]
+      },
+      {
+        "item": "Thai Counter",
+        "image": "/menu/live-counters/thai-counter.webp",
+        "allergens": [7, 8, 12]
       }
     ]
   }
