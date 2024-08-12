@@ -11,10 +11,6 @@ export default function Header() {
       href: "/menu",
     },
     {
-      name: "Live Counter",
-      href: "/live-counter",
-    },
-    {
       name: "About",
       href: "/about",
     },
