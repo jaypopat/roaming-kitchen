@@ -22,12 +22,12 @@ export default function ChefPage() {
 
   const chef_images = readDirectory(chef_portfolio_dir).map((file) => ({
     src: file,
-    text: `Description for ${file}`, // Replace with actual descriptions
+    text: `${file.split(".")[0]}`,
   }));
 
   const chef_achievements = readDirectory(chef_awards_dir).map((file) => ({
     src: file,
-    text: `Achievement related to ${file}`, // Replace with actual descriptions
+    text: `${file.split(".")[0]}`,
   }));
 
   return (
