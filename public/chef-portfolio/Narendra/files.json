@@ -1,0 +1,36 @@
+{
+  "files": [
+    {
+      "filename": "01-ANANDA.jpg",
+      "description": "Image of Ananda"
+    },
+    {
+      "filename": "03-BIPASHA-BASU.JPG",
+      "description": "Image of Bipasha Basu"
+    },
+    {
+      "filename": "04-CHARLES-PRINCE.jpg",
+      "description": "Image of Prince Charles"
+    },
+    {
+      "filename": "05-MR.MAHADEVAN.jpeg",
+      "description": "Image of Mr. Mahadevan"
+    },
+    {
+      "filename": "06-MR.TATA.JPG",
+      "description": "Image of Mr. Tata"
+    },
+    {
+      "filename": "07-OPERAH-WINFREY.jpg",
+      "description": "Image of Oprah Winfrey"
+    },
+    {
+      "filename": "08-SONU-NIGAM.JPG",
+      "description": "Image of Sonu Nigam"
+    },
+    {
+      "filename": "02-ANUSHKA-SHARMA.jpg",
+      "description": "Image of Anushka Sharma"
+    }
+  ]
+}
