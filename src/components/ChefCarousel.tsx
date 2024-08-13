@@ -9,8 +9,13 @@ import {
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
+interface CarouselImage {
+  src: string;
+  text: string;
+}
+
 interface ChefCarouselProps {
-  images: string[];
+  images: CarouselImage[];
   dir: string;
   w: number;
   h: number;
@@ -28,15 +33,18 @@ export default function ChefCarousel({ images, dir, w, h }: ChefCarouselProps) {
     >
       <CarouselContent>
         {images.map((image) => (
-          <CarouselItem key={image}>
-            <div className="flex justify-center items-center">
+          <CarouselItem key={image.src}>
+            <div className="relative flex justify-center items-center">
               <Image
-                src={`${dir}/${image}`}
+                src={`${dir}/${image.src}`}
                 width={w}
                 height={h}
-                alt={image}
+                alt={image.src}
                 className="aspect-video object-cover rounded-md"
               />
+              <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded-md">
+                {image.text}
+              </div>
             </div>
           </CarouselItem>
         ))}

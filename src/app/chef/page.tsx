@@ -20,8 +20,15 @@ export default function ChefPage() {
     return files.filter((file) => /\.(jpg|jpeg|png|gif)$/.test(file));
   };
 
-  let chef_images = readDirectory(chef_portfolio_dir);
-  let chef_achievments = readDirectory(chef_awards_dir);
+  const chef_images = readDirectory(chef_portfolio_dir).map((file) => ({
+    src: file,
+    text: `Description for ${file}`, // Replace with actual descriptions
+  }));
+
+  const chef_achievements = readDirectory(chef_awards_dir).map((file) => ({
+    src: file,
+    text: `Achievement related to ${file}`, // Replace with actual descriptions
+  }));
 
   return (
     <>
@@ -84,7 +91,7 @@ export default function ChefPage() {
               />
             </div>
             <ChefCarousel
-              images={chef_achievments}
+              images={chef_achievements}
               dir={chef_awards_dir}
               w={600}
               h={300}
