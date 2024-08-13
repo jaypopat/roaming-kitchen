@@ -33,12 +33,17 @@ export default function ChefPage() {
                 Meet Our Chef
               </h2>
               <p className="mt-4 max-w-[1000px] text-muted-foreground md:text-1xl/relaxed lg:text-xl/relaxed xl:text-1xl/relaxed">
-              With 25 years of leading top kitchens, Chef Narendra is a culinary maestro known for creating delightful dishes and 
-              orchestrating large-scale events. His expertise ensures  each meal is a memorable experience, combining exquisite 
-              flavors with impeccable presentation. Whether you're organizing a grand event or a casual gathering, Chef Narendra’s 
-              culinary creations promise to impress. Experience the artistry and passion of a seasoned chef dedicated to providing 
-              delicious food and unforgettable dining experiences. Chef Narendra brings his rich experience and innovative approach 
-              to every event, making each occasion truly special.
+                With 25 years of leading top kitchens, Chef Narendra is a
+                culinary maestro known for creating delightful dishes and
+                orchestrating large-scale events. His expertise ensures each
+                meal is a memorable experience, combining exquisite flavors with
+                impeccable presentation. Whether you're organizing a grand event
+                or a casual gathering, Chef Narendra’s culinary creations
+                promise to impress. Experience the artistry and passion of a
+                seasoned chef dedicated to providing delicious food and
+                unforgettable dining experiences. Chef Narendra brings his rich
+                experience and innovative approach to every event, making each
+                occasion truly special.
               </p>
             </div>
             <ChefCarousel

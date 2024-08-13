@@ -19,7 +19,7 @@ interface ChefCarouselProps {
 export default function ChefCarousel({ images, dir, w, h }: ChefCarouselProps) {
   return (
     <Carousel
-      className="w-full max-w-[50vw]"
+      className="w-full max-w-[90vw] md:max-w-[1100px] mx-auto"
       plugins={[
         Autoplay({
           delay: 6000,
