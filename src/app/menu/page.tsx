@@ -2,6 +2,8 @@
 
 import React, { useState, useEffect } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { MobileMenu } from "@/components/MobileMenu";
+import "react-tabs-scrollable/dist/rts.css";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -43,39 +45,42 @@ export default function Component(): JSX.Element {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const handleFilterChange = (filter: keyof Filters, checked: boolean): void => {
+  const handleFilterChange = (
+    filter: keyof Filters,
+    checked: boolean,
+  ): void => {
     setFilters((prevFilters) => ({
       ...prevFilters,
       [filter]: checked,
     }));
   };
 
-  const MobileView = (): JSX.Element => (
-    <div className="flex items-center gap-2 mb-6">
-      <DropdownMenu>
-        <DropdownMenuTrigger asChild>
-          <Button
-            variant="outline"
-            className="h-12 px-4 text-sm flex items-center gap-3"
-          >
-            <DropdownIcon className="h-5 w-5" />
-            {activeTab}
-          </Button>
-        </DropdownMenuTrigger>
-        <DropdownMenuContent>
-          {types.map((type) => (
-            <DropdownMenuItem key={type} onSelect={() => setActiveTab(type)}>
-              {type}
-            </DropdownMenuItem>
-          ))}
-        </DropdownMenuContent>
-      </DropdownMenu>
-      <FilterDropdown
-        filters={filters}
-        handleFilterChange={handleFilterChange}
-      />
-    </div>
-  );
+  // const MobileView = (): JSX.Element => (
+  //   <div className="flex items-center gap-2 mb-6">
+  //     <DropdownMenu>
+  //       <DropdownMenuTrigger asChild>
+  //         <Button
+  //           variant="outline"
+  //           className="h-12 px-4 text-sm flex items-center gap-3"
+  //         >
+  //           <DropdownIcon className="h-5 w-5" />
+  //           {activeTab}
+  //         </Button>
+  //       </DropdownMenuTrigger>
+  //       <DropdownMenuContent>
+  //         {types.map((type) => (
+  //           <DropdownMenuItem key={type} onSelect={() => setActiveTab(type)}>
+  //             {type}
+  //           </DropdownMenuItem>
+  //         ))}
+  //       </DropdownMenuContent>
+  //     </DropdownMenu>
+  //     <FilterDropdown
+  //       filters={filters}
+  //       handleFilterChange={handleFilterChange}
+  //     />
+  //   </div>
+  // );
 
   const DesktopView = (): JSX.Element => (
     <div className="flex flex-col items-center gap-4">
@@ -123,7 +128,7 @@ export default function Component(): JSX.Element {
                   Explore our delicious selection of street food favorites.
                 </p>
               </div>
-              {isMobile ? <MobileView /> : <DesktopView />}
+              {isMobile ? <MobileMenu /> : <DesktopView />}
               <div className="w-full">
                 <MenuItems
                   category={activeTab}
@@ -139,7 +144,10 @@ export default function Component(): JSX.Element {
   );
 }
 
-function FilterDropdown({ filters, handleFilterChange }: FilterDropdownProps): JSX.Element {
+function FilterDropdown({
+  filters,
+  handleFilterChange,
+}: FilterDropdownProps): JSX.Element {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
