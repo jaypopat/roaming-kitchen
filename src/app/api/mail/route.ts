@@ -2,23 +2,18 @@ import { NextRequest } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(request: NextRequest) {
+  let user = process.env.GMAIL_USER;
+  let pass = process.env.GMAIL_PWD;
   try {
-    console.log("endpoint got hit");
-    const formData = await request.json();
-
-    const { name, phone, email, message } = formData;
-
+    const { name, phone, email, message } = await request.json();
     const transporter = nodemailer.createTransport({
       service: "Gmail",
-      auth: {
-        user: process.env.GMAIL_USER,
-        pass: process.env.GMAIL_PWD,    
-      },
+      auth: { user, pass },
     });
 
     const mailOptions = {
-      from: process.env.GMAIL_USER,
-      to: process.env.GMAIL_USER,
+      from: user,
+      to: user,
       subject: `New Contact Form Submission from ${name}`,
       text: `
           Name: ${name}

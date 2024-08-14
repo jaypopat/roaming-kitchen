@@ -42,7 +42,7 @@ export default function ChefCarousel({ images, dir, w, h }: ChefCarouselProps) {
                 alt={image.src}
                 className="aspect-video object-cover rounded-md"
               />
-              <div className="absolute bottom-4 left-4 bg-black bg-opacity-50 text-white p-2 rounded-md">
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white p-2 rounded-md">
                 {image.text}
               </div>
             </div>
