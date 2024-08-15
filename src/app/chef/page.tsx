@@ -4,30 +4,45 @@ import path from "path";
 import { Metadata } from "next";
 import ChefCarousel from "@/components/ChefCarousel";
 import Award from "@/components/Award";
+import portfolioData from "./portfolio_description.json";
+import awardsData from "./awards_description.json";
 
 export const metadata: Metadata = {
   title: "Chef",
   description: "Meet our chef and check out his proudest accomplishments.",
 };
+type FileData = {
+  filename: string;
+  description: string;
+};
+
+type JSONData = {
+  files: FileData[];
+};
 
 export default function ChefPage() {
+  function findDescription(data: JSONData, filename: string): string | null {
+    const file = data.files.find((item) => item.filename === filename);
+    return file ? file.description : null;
+  }
+
   const chef_portfolio_dir = "/chef-portfolio/Narendra";
-  const chef_awards_dir = "/chef-portfolio/Narendra/awards";
+  const chef_awards_dir = `${chef_portfolio_dir}/awards`;
 
   const readDirectory = (dir: string) => {
     const directoryPath = path.join("public", dir);
     const files = readdirSync(directoryPath);
-    return files.filter((file) => /\.(jpg|jpeg|png|gif)$/.test(file));
+    return files.filter((file) => /\.(jpg|JPG|jpeg|png|gif)$/.test(file));
   };
 
   const chef_images = readDirectory(chef_portfolio_dir).map((file) => ({
     src: file,
-    text: `${file.split(".")[0]}`,
+    text: `${findDescription(portfolioData, file)}`,
   }));
 
   const chef_achievements = readDirectory(chef_awards_dir).map((file) => ({
     src: file,
-    text: `${file.split(".")[0]}`,
+    text: `${findDescription(awardsData, file)}`,
   }));
 
   return (

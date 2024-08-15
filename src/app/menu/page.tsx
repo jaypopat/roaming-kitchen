@@ -14,6 +14,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { MenuItems } from "@/components/MenuItem";
 import items from "./items.json";
+import { Analytics, track } from "@vercel/analytics/react";
 
 interface Filters {
   vegetarian: boolean;
@@ -33,6 +34,11 @@ export default function Component(): JSX.Element {
     nonVegetarian: true,
   });
   const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  const handleTabChange = (tab: string): void => {
+    setActiveTab(tab);
+    track("Menu Tab Selected", { tabName: tab });
+  };
 
   useEffect(() => {
     const checkMobile = (): void => {
@@ -61,7 +67,7 @@ export default function Component(): JSX.Element {
             key={type}
             variant={activeTab === type ? "default" : "outline"}
             className="mr-2 whitespace-nowrap"
-            onClick={() => setActiveTab(type)}
+            onClick={() => handleTabChange(type)}
           >
             {type}
           </Button>
@@ -75,7 +81,7 @@ export default function Component(): JSX.Element {
   );
   const DesktopView = (): JSX.Element => (
     <div className="flex flex-col items-center gap-4">
-      <Tabs value={activeTab} onValueChange={setActiveTab}>
+      <Tabs value={activeTab} onValueChange={handleTabChange}>
         <TabsList className="flex gap-4">
           {types.map((type) => (
             <TabsTrigger key={type} value={type}>

@@ -16,6 +16,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { allergensIndex } from "../app/menu/allergensIndex";
+import { Analytics, track } from "@vercel/analytics/react";
 
 const CARD_SIZE = 400;
 const TEXT_HEIGHT = 50;
@@ -71,25 +72,76 @@ const AllergenIndicator = ({ allergens }) => {
   );
 };
 
-const MenuItem = ({ item, isVeg }) => (
-  <Dialog>
-    <DialogTrigger asChild>
-      <Card
+const MenuItem = ({ item, isVeg }) => {
+  const handleDialogOpen = () => {
+    track("Item Dialog Opened", { itemName: item.item, isVegetarian: isVeg });
+  };
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Card
+          onClick={handleDialogOpen}
+          style={{
+            position: "relative",
+            overflow: "hidden",
+            width: `${CARD_SIZE}px`,
+            height: `${CARD_SIZE}px`,
+            cursor: "pointer",
+          }}
+        >
+          <CardContent className="p-0 h-full flex flex-col">
+            <div
+              style={{
+                position: "relative",
+                height: `${CARD_SIZE - TEXT_HEIGHT}px`,
+                overflow: "hidden",
+              }}
+            >
+              <Image
+                src={item.image}
+                alt={item.item}
+                layout="fill"
+                objectFit="cover"
+              />
+              <VegIndicator isVeg={isVeg} />
+              <AllergenIndicator allergens={item.allergens} />
+            </div>
+            <div
+              className="w-full text-center bg-white py-2 flex items-center justify-center"
+              style={{ height: `${TEXT_HEIGHT}px` }}
+            >
+              <h3 className="text-lg font-semibold">{item.item}</h3>
+            </div>
+          </CardContent>
+        </Card>
+      </DialogTrigger>
+      <DialogContent
+        className="h-[80vh] max-h-[600px] p-0 w-full sm:w-full"
         style={{
-          position: "relative",
-          overflow: "hidden",
-          width: `${CARD_SIZE}px`,
-          height: `${CARD_SIZE}px`,
-          cursor: "pointer",
+          width: "80%",
+          maxWidth: "800px",
+          "@media (min-width: 1024px)": {
+            width: "70%",
+            maxWidth: "1000px",
+          },
+          "@media (min-width: 1280px)": {
+            width: "60%",
+            maxWidth: "1200px",
+          },
         }}
       >
-        <CardContent className="p-0 h-full flex flex-col">
+        <DialogHeader className="p-4 bg-gray-50 shrink-0">
+          <DialogTitle className="text-2xl font-bold">{item.item}</DialogTitle>
+        </DialogHeader>
+        <DialogDescription>
+          {item.description && (
+            <p className="text-gray-700 mb-4">{item.description}</p>
+          )}
+        </DialogDescription>
+        <div className="flex-grow overflow-y-auto">
           <div
-            style={{
-              position: "relative",
-              height: `${CARD_SIZE - TEXT_HEIGHT}px`,
-              overflow: "hidden",
-            }}
+            className="relative w-full"
+            style={{ height: `${DIALOG_IMAGE_HEIGHT}px` }}
           >
             <Image
               src={item.image}
@@ -97,86 +149,41 @@ const MenuItem = ({ item, isVeg }) => (
               layout="fill"
               objectFit="cover"
             />
-            <VegIndicator isVeg={isVeg} />
-            <AllergenIndicator allergens={item.allergens} />
+            <div className="absolute bottom-0 right-0 p-2 bg-white bg-opacity-80 rounded-tl-md">
+              <Badge variant={isVeg ? "success" : "destructive"}>
+                {isVeg ? "Vegetarian" : "Non-Vegetarian"}
+              </Badge>
+            </div>
           </div>
-          <div
-            className="w-full text-center bg-white py-2 flex items-center justify-center"
-            style={{ height: `${TEXT_HEIGHT}px` }}
-          >
-            <h3 className="text-lg font-semibold">{item.item}</h3>
-          </div>
-        </CardContent>
-      </Card>
-    </DialogTrigger>
-    <DialogContent
-      className="h-[80vh] max-h-[600px] p-0 w-full sm:w-full"
-      style={{
-        width: "80%",
-        maxWidth: "800px",
-        "@media (min-width: 1024px)": {
-          width: "70%",
-          maxWidth: "1000px",
-        },
-        "@media (min-width: 1280px)": {
-          width: "60%",
-          maxWidth: "1200px",
-        },
-      }}
-    >
-      <DialogHeader className="p-4 bg-gray-50 shrink-0">
-        <DialogTitle className="text-2xl font-bold">{item.item}</DialogTitle>
-      </DialogHeader>
-      <DialogDescription>
-        {item.description && (
-          <p className="text-gray-700 mb-4">{item.description}</p>
-        )}
-      </DialogDescription>
-      <div className="flex-grow overflow-y-auto">
-        <div
-          className="relative w-full"
-          style={{ height: `${DIALOG_IMAGE_HEIGHT}px` }}
-        >
-          <Image
-            src={item.image}
-            alt={item.item}
-            layout="fill"
-            objectFit="cover"
-          />
-          <div className="absolute bottom-0 right-0 p-2 bg-white bg-opacity-80 rounded-tl-md">
-            <Badge variant={isVeg ? "success" : "destructive"}>
-              {isVeg ? "Vegetarian" : "Non-Vegetarian"}
-            </Badge>
+          <div className="p-4">
+            <div className="flex items-center mb-2">
+              <h3 className="text-lg font-semibold mr-4">Allergens</h3>
+              <Image src="/allergens.png" alt="" height={40} width={40} />
+            </div>
+            <div
+              className="grid gap-2"
+              style={{ gridTemplateColumns: "repeat(2, 1fr)" }}
+            >
+              {item.allergens && item.allergens.length > 0 ? (
+                item.allergens.map((allergen) => (
+                  <Badge
+                    key={allergen}
+                    variant="outline"
+                    className="transition-colors hover:bg-gray-100 w-full text-left px-2 py-1"
+                  >
+                    {allergensIndex[allergen] || "Unknown allergen"}
+                  </Badge>
+                ))
+              ) : (
+                <p className="text-gray-500 italic">No allergens listed</p>
+              )}
+            </div>
           </div>
         </div>
-        <div className="p-4">
-          <div className="flex items-center mb-2">
-            <h3 className="text-lg font-semibold mr-4">Allergens</h3>
-            <Image src="/allergens.png" alt="" height={40} width={40} />
-          </div>
-          <div
-            className="grid gap-2"
-            style={{ gridTemplateColumns: "repeat(2, 1fr)" }}
-          >
-            {item.allergens && item.allergens.length > 0 ? (
-              item.allergens.map((allergen) => (
-                <Badge
-                  key={allergen}
-                  variant="outline"
-                  className="transition-colors hover:bg-gray-100 w-full text-left px-2 py-1"
-                >
-                  {allergensIndex[allergen] || "Unknown allergen"}
-                </Badge>
-              ))
-            ) : (
-              <p className="text-gray-500 italic">No allergens listed</p>
-            )}
-          </div>
-        </div>
-      </div>
-    </DialogContent>
-  </Dialog>
-);
+      </DialogContent>
+    </Dialog>
+  );
+};
 
 export const MenuItems = ({ category, filters, items }) => {
   const renderItems = (itemList, isVeg) =>

@@ -11,7 +11,7 @@ import Image from "next/image";
 
 interface CarouselImage {
   src: string;
-  text: string;
+  text?: string;
 }
 
 interface ChefCarouselProps {
@@ -43,7 +43,11 @@ export default function ChefCarousel({ images, dir, w, h }: ChefCarouselProps) {
                 className="aspect-video object-cover rounded-md"
               />
               <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white p-2 rounded-md">
-                {image.text}
+                {image.text && (
+                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-md whitespace-nowrap text-center">
+                    {image.text}
+                  </div>
+                )}
               </div>
             </div>
           </CarouselItem>
