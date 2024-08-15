@@ -33,7 +33,7 @@ export default function Component(): JSX.Element {
     vegetarian: true,
     nonVegetarian: true,
   });
-  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 768);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
   const handleTabChange = (tab: string): void => {
     console.log("Changing tab to:", tab);
@@ -53,8 +53,13 @@ export default function Component(): JSX.Element {
 
   useEffect(() => {
     const checkMobile = (): void => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(typeof window !== "undefined" && window.innerWidth < 768);
     };
+
+    // Run on initial load
+    checkMobile();
+
+    // Add resize event listener
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
