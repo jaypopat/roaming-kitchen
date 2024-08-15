@@ -2,8 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { MobileMenu } from "@/components/MobileMenu";
-import "react-tabs-scrollable/dist/rts.css";
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -55,33 +53,26 @@ export default function Component(): JSX.Element {
     }));
   };
 
-  // const MobileView = (): JSX.Element => (
-  //   <div className="flex items-center gap-2 mb-6">
-  //     <DropdownMenu>
-  //       <DropdownMenuTrigger asChild>
-  //         <Button
-  //           variant="outline"
-  //           className="h-12 px-4 text-sm flex items-center gap-3"
-  //         >
-  //           <DropdownIcon className="h-5 w-5" />
-  //           {activeTab}
-  //         </Button>
-  //       </DropdownMenuTrigger>
-  //       <DropdownMenuContent>
-  //         {types.map((type) => (
-  //           <DropdownMenuItem key={type} onSelect={() => setActiveTab(type)}>
-  //             {type}
-  //           </DropdownMenuItem>
-  //         ))}
-  //       </DropdownMenuContent>
-  //     </DropdownMenu>
-  //     <FilterDropdown
-  //       filters={filters}
-  //       handleFilterChange={handleFilterChange}
-  //     />
-  //   </div>
-  // );
-
+  const MobileView = (): JSX.Element => (
+    <div className="flex flex-col items-start gap-4 mb-6 w-full">
+      <div className="flex overflow-x-auto pb-2 w-full">
+        {types.map((type) => (
+          <Button
+            key={type}
+            variant={activeTab === type ? "default" : "outline"}
+            className="mr-2 whitespace-nowrap"
+            onClick={() => setActiveTab(type)}
+          >
+            {type}
+          </Button>
+        ))}
+      </div>
+      <FilterDropdown
+        filters={filters}
+        handleFilterChange={handleFilterChange}
+      />
+    </div>
+  );
   const DesktopView = (): JSX.Element => (
     <div className="flex flex-col items-center gap-4">
       <Tabs value={activeTab} onValueChange={setActiveTab}>
@@ -128,7 +119,7 @@ export default function Component(): JSX.Element {
                   Explore our delicious selection of street food favorites.
                 </p>
               </div>
-              {isMobile ? <MobileMenu /> : <DesktopView />}
+              {isMobile ? <MobileView /> : <DesktopView />}
               <div className="w-full">
                 <MenuItems
                   category={activeTab}
@@ -153,10 +144,10 @@ function FilterDropdown({
       <DropdownMenuTrigger asChild>
         <Button
           variant="outline"
-          className="h-12 px-4 text-sm flex items-center gap-3"
+          className="h-12 px-4 text-sm flex items-center gap-3 w-full"
         >
           <FilterIcon className="h-5 w-5" />
-          <span>Filter</span>
+          <span>Set Dietary Preferences</span>
         </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
