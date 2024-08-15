@@ -1,4 +1,5 @@
 "use client";
+import React, { useState, useEffect, useRef } from "react";
 import {
   Carousel,
   CarouselContent,
@@ -21,6 +22,34 @@ interface ChefCarouselProps {
   h: number;
 }
 
+const TextOverlay = ({ text }: { text: string }) => {
+  const [isOverflowing, setIsOverflowing] = useState(false);
+  const textRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    if (textRef.current) {
+      const element = textRef.current;
+      setIsOverflowing(element.scrollWidth > element.clientWidth);
+    }
+  }, [text]);
+
+  return (
+    <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-md max-w-[80%] overflow-hidden">
+      <div
+        ref={textRef}
+        className={`text-center ${isOverflowing ? "animate-slide" : ""}`}
+        style={{
+          whiteSpace: isOverflowing ? "nowrap" : "normal",
+          display: "inline-block",
+          paddingLeft: isOverflowing ? "100%" : "0",
+        }}
+      >
+        {text}
+      </div>
+    </div>
+  );
+};
+
 export default function ChefCarousel({ images, dir, w, h }: ChefCarouselProps) {
   return (
     <Carousel
@@ -42,13 +71,7 @@ export default function ChefCarousel({ images, dir, w, h }: ChefCarouselProps) {
                 alt={image.src}
                 className="aspect-video object-cover rounded-md"
               />
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white p-2 rounded-md">
-                {image.text && (
-                  <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-md whitespace-nowrap text-center">
-                    {image.text}
-                  </div>
-                )}
-              </div>
+              {image.text && <TextOverlay text={image.text} />}
             </div>
           </CarouselItem>
         ))}
