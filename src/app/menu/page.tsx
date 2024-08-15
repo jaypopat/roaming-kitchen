@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
   DropdownMenu,
@@ -14,7 +14,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { MenuItems } from "@/components/MenuItem";
 import items from "./items.json";
-import { Analytics, track } from "@vercel/analytics/react";
+import { track } from "@vercel/analytics/react";
 
 interface Filters {
   vegetarian: boolean;
@@ -33,18 +33,28 @@ export default function Component(): JSX.Element {
     vegetarian: true,
     nonVegetarian: true,
   });
-  const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [isMobile, setIsMobile] = useState<boolean>(window.innerWidth < 768);
 
   const handleTabChange = (tab: string): void => {
+    console.log("Changing tab to:", tab);
     setActiveTab(tab);
     track("Menu Tab Selected", { tabName: tab });
+
+    if (window.innerWidth < 768) {
+      // Mobile check
+      setTimeout(() => {
+        const tabElement = document.getElementById(`tab-${tab}`);
+        if (tabElement) {
+          tabElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        }
+      }, 100);
+    }
   };
 
   useEffect(() => {
     const checkMobile = (): void => {
       setIsMobile(window.innerWidth < 768);
     };
-    checkMobile();
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
@@ -64,6 +74,7 @@ export default function Component(): JSX.Element {
       <div className="flex overflow-x-auto pb-2 w-full">
         {types.map((type) => (
           <Button
+            id={`tab-${type}`}
             key={type}
             variant={activeTab === type ? "default" : "outline"}
             className="mr-2 whitespace-nowrap"
@@ -81,15 +92,17 @@ export default function Component(): JSX.Element {
   );
   const DesktopView = (): JSX.Element => (
     <div className="flex flex-col items-center gap-4">
-      <Tabs value={activeTab} onValueChange={handleTabChange}>
-        <TabsList className="flex gap-4">
-          {types.map((type) => (
-            <TabsTrigger key={type} value={type}>
-              {type}
-            </TabsTrigger>
-          ))}
-        </TabsList>
-      </Tabs>
+      <div className="flex justify-center gap-2 mb-4">
+        {types.map((type) => (
+          <Button
+            key={type}
+            variant={activeTab === type ? "default" : "outline"}
+            onClick={() => handleTabChange(type)}
+          >
+            {type}
+          </Button>
+        ))}
+      </div>
       <FilterDropdown
         filters={filters}
         handleFilterChange={handleFilterChange}
@@ -195,25 +208,6 @@ function FilterIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
       strokeLinejoin="round"
     >
       <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
-    </svg>
-  );
-}
-
-function DropdownIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polyline points="6 9 12 15 18 9" />
     </svg>
   );
 }
