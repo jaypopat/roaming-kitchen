@@ -2,7 +2,6 @@
 import { useState, ChangeEvent, FormEvent } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
 import { Button } from "@/components/ui/button";
 
 interface FormData {
@@ -21,7 +20,7 @@ export default function ContactForm() {
   });
 
   const handleChange = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
     setFormData({
@@ -54,8 +53,12 @@ export default function ContactForm() {
       alert("Error sending email");
     }
   };
+
   return (
-    <section id="contact" className="w-full py-24 md:py-48 lg:py-64 bg-muted">
+    <section
+      id="contact"
+      className="w-full min-h-screen py-24 md:py-48 lg:py-64 bg-muted"
+    >
       <div className="container px-8 md:px-12 lg:px-16">
         <div className="flex flex-col items-center justify-center space-y-8 text-center">
           <div className="space-y-4">

@@ -1,16 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
-import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuCheckboxItem,
-  DropdownMenuItem,
-} from "@/components/ui/dropdown-menu";
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { MenuItems } from "@/components/MenuItem";
 import items from "./items.json";
@@ -21,9 +11,17 @@ interface Filters {
   nonVegetarian: boolean;
 }
 
-interface FilterDropdownProps {
-  filters: Filters;
-  handleFilterChange: (filter: keyof Filters, checked: boolean) => void;
+interface TabContainerProps {
+  types: string[];
+  isMobile: boolean;
+  activeTab: string;
+  setActiveTab: React.Dispatch<React.SetStateAction<string>>;
+}
+
+interface TabButtonsProps {
+  types: string[];
+  activeTab: string;
+  setActiveTab: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export default function Component(): JSX.Element {
@@ -31,89 +29,25 @@ export default function Component(): JSX.Element {
   const [activeTab, setActiveTab] = useState<string>(types[0]);
   const [filters, setFilters] = useState<Filters>({
     vegetarian: true,
-    nonVegetarian: true,
+    nonVegetarian: false,
   });
   const [isMobile, setIsMobile] = useState<boolean>(false);
 
-  const handleTabChange = (tab: string): void => {
-    console.log("Changing tab to:", tab);
-    setActiveTab(tab);
-    track("Menu Tab Selected", { tabName: tab });
-
-    if (window.innerWidth < 768) {
-      // Mobile check
-      setTimeout(() => {
-        const tabElement = document.getElementById(`tab-${tab}`);
-        if (tabElement) {
-          tabElement.scrollIntoView({ behavior: "smooth", block: "nearest" });
-        }
-      }, 100);
-    }
-  };
-
   useEffect(() => {
     const checkMobile = (): void => {
-      setIsMobile(typeof window !== "undefined" && window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 768);
     };
-
-    // Run on initial load
     checkMobile();
-
-    // Add resize event listener
     window.addEventListener("resize", checkMobile);
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const handleFilterChange = (
-    filter: keyof Filters,
-    checked: boolean,
-  ): void => {
+  const toggleFilter = (filter: keyof Filters): void => {
     setFilters((prevFilters) => ({
-      ...prevFilters,
-      [filter]: checked,
+      vegetarian: filter === "vegetarian",
+      nonVegetarian: filter === "nonVegetarian",
     }));
   };
-
-  const MobileView = (): JSX.Element => (
-    <div className="flex flex-col items-start gap-4 mb-6 w-full">
-      <div className="flex overflow-x-auto pb-2 w-full">
-        {types.map((type) => (
-          <Button
-            id={`tab-${type}`}
-            key={type}
-            variant={activeTab === type ? "default" : "outline"}
-            className="mr-2 whitespace-nowrap"
-            onClick={() => handleTabChange(type)}
-          >
-            {type}
-          </Button>
-        ))}
-      </div>
-      <FilterDropdown
-        filters={filters}
-        handleFilterChange={handleFilterChange}
-      />
-    </div>
-  );
-  const DesktopView = (): JSX.Element => (
-    <div className="flex flex-col items-center gap-4">
-      <div className="flex justify-center gap-2 mb-4">
-        {types.map((type) => (
-          <Button
-            key={type}
-            variant={activeTab === type ? "default" : "outline"}
-            onClick={() => handleTabChange(type)}
-          >
-            {type}
-          </Button>
-        ))}
-      </div>
-      <FilterDropdown
-        filters={filters}
-        handleFilterChange={handleFilterChange}
-      />
-    </div>
-  );
 
   return (
     <div className="grid grid-rows-[auto_1fr] min-h-screen">
@@ -143,8 +77,27 @@ export default function Component(): JSX.Element {
                   Explore our delicious selection of street food favorites.
                 </p>
               </div>
-              {isMobile ? <MobileView /> : <DesktopView />}
               <div className="w-full">
+                <TabContainer
+                  types={types}
+                  isMobile={isMobile}
+                  activeTab={activeTab}
+                  setActiveTab={setActiveTab}
+                />
+                <div className="flex justify-center gap-4 mb-8">
+                  <Button
+                    variant={filters.vegetarian ? "default" : "outline"}
+                    onClick={() => toggleFilter("vegetarian")}
+                  >
+                    Vegetarian
+                  </Button>
+                  <Button
+                    variant={filters.nonVegetarian ? "default" : "outline"}
+                    onClick={() => toggleFilter("nonVegetarian")}
+                  >
+                    Non-Vegetarian
+                  </Button>
+                </div>
                 <MenuItems
                   category={activeTab}
                   filters={filters}
@@ -159,60 +112,50 @@ export default function Component(): JSX.Element {
   );
 }
 
-function FilterDropdown({
-  filters,
-  handleFilterChange,
-}: FilterDropdownProps): JSX.Element {
-  return (
-    <DropdownMenu>
-      <DropdownMenuTrigger asChild>
-        <Button
-          variant="outline"
-          className="h-12 px-4 text-sm flex items-center gap-3 w-full"
-        >
-          <FilterIcon className="h-5 w-5" />
-          <span>Set Dietary Preferences</span>
-        </Button>
-      </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
-        <DropdownMenuLabel>Filter by</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        <DropdownMenuCheckboxItem
-          checked={filters.vegetarian}
-          onCheckedChange={(checked) =>
-            handleFilterChange("vegetarian", checked)
-          }
-        >
-          Vegetarian
-        </DropdownMenuCheckboxItem>
-        <DropdownMenuCheckboxItem
-          checked={filters.nonVegetarian}
-          onCheckedChange={(checked) =>
-            handleFilterChange("nonVegetarian", checked)
-          }
-        >
-          Non-Vegetarian
-        </DropdownMenuCheckboxItem>
-      </DropdownMenuContent>
-    </DropdownMenu>
-  );
-}
+const TabContainer = ({
+  types,
+  isMobile,
+  activeTab,
+  setActiveTab,
+}: TabContainerProps) => {
+  if (isMobile) {
+    return (
+      <div className="flex overflow-x-auto pb-2 w-full">
+        <div className="flex">
+          <TabButtons
+            types={types}
+            activeTab={activeTab}
+            setActiveTab={setActiveTab}
+          />
+        </div>
+      </div>
+    );
+  }
 
-function FilterIcon(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
-    </svg>
+    <div className="flex justify-center gap-2 mb-8 flex-wrap">
+      <TabButtons
+        types={types}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
+    </div>
   );
-}
+};
+
+const TabButtons = ({ types, activeTab, setActiveTab }: TabButtonsProps) => {
+  return types.map((type) => (
+    <Button
+      key={type}
+      data-tab={type}
+      variant={activeTab === type ? "default" : "outline"}
+      className="mr-2 whitespace-nowrap flex-shrink-0"
+      onClick={() => {
+        setActiveTab(type);
+        track("Menu Tab Selected", { tabName: type });
+      }}
+    >
+      {type}
+    </Button>
+  ));
+};
