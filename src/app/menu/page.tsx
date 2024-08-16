@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { MenuItems } from "@/components/MenuItem";
 import items from "./items.json";
 import { track } from "@vercel/analytics/react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 
 interface Filters {
   vegetarian: boolean;
@@ -42,11 +43,22 @@ export default function Component(): JSX.Element {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const toggleFilter = (filter: keyof Filters): void => {
-    setFilters((prevFilters) => ({
-      vegetarian: filter === "vegetarian",
-      nonVegetarian: filter === "nonVegetarian",
-    }));
+  const x = useMotionValue(0);
+  const background = useTransform(
+    x,
+    [-100, 0, 100],
+    ["#22c55e", "#d1d5db", "#ef4444"],
+  );
+
+  const vegetarianOpacity = useTransform(x, [-100, 0], [1, 0.3]);
+  const nonVegetarianOpacity = useTransform(x, [0, 100], [0.3, 1]);
+
+  const updateFilters = () => {
+    const currentX = x.get();
+    setFilters({
+      vegetarian: currentX <= 0,
+      nonVegetarian: currentX > 0,
+    });
   };
 
   return (
@@ -57,23 +69,10 @@ export default function Component(): JSX.Element {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center text-center gap-8">
               <div className="space-y-4">
-                <h2
-                  style={{
-                    fontSize: "clamp(2.5rem, 5vw, 4rem)",
-                    fontWeight: "bold",
-                    lineHeight: "1.1",
-                    letterSpacing: "-0.02em",
-                  }}
-                >
+                <h2 className="text-4xl font-bold tracking-tighter sm:text-5xl">
                   Our Menu
                 </h2>
-                <p
-                  style={{
-                    fontSize: "clamp(1rem, 2vw, 1.25rem)",
-                    maxWidth: "600px",
-                    color: "var(--muted-foreground)",
-                  }}
-                >
+                <p className="max-w-[600px] text-zinc-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-zinc-400">
                   Explore our delicious selection of street food favorites.
                 </p>
               </div>
@@ -84,19 +83,35 @@ export default function Component(): JSX.Element {
                   activeTab={activeTab}
                   setActiveTab={setActiveTab}
                 />
-                <div className="flex justify-center gap-4 mb-8">
-                  <Button
-                    variant={filters.vegetarian ? "default" : "outline"}
-                    onClick={() => toggleFilter("vegetarian")}
+                <div className="flex flex-col items-center justify-center mb-8">
+                  <motion.div
+                    className="w-64 h-16 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer relative overflow-hidden"
+                    style={{ background }}
                   >
-                    Vegetarian
-                  </Button>
-                  <Button
-                    variant={filters.nonVegetarian ? "default" : "outline"}
-                    onClick={() => toggleFilter("nonVegetarian")}
-                  >
-                    Non-Vegetarian
-                  </Button>
+                    <motion.div
+                      className="w-14 h-14 bg-white rounded-full flex items-center justify-center shadow-lg absolute"
+                      drag="x"
+                      dragConstraints={{ left: -100, right: 100 }}
+                      style={{ x }}
+                      onDragEnd={updateFilters}
+                    >
+                      <span role="img" aria-label="food" className="text-2xl">
+                        🍽️
+                      </span>
+                    </motion.div>
+                    <motion.div
+                      className="absolute left-4 text-2xl"
+                      style={{ opacity: vegetarianOpacity }}
+                    ></motion.div>
+                    <motion.div
+                      className="absolute right-4 text-2xl"
+                      style={{ opacity: nonVegetarianOpacity }}
+                    ></motion.div>
+                  </motion.div>
+                  <p className="mt-4 text-sm text-gray-600">
+                    Slide to choose between vegetarian and non-vegetarian
+                    options
+                  </p>
                 </div>
                 <MenuItems
                   category={activeTab}
@@ -111,6 +126,8 @@ export default function Component(): JSX.Element {
     </div>
   );
 }
+
+// ... (TabContainer and TabButtons components remain the same)
 
 const TabContainer = ({
   types,
