@@ -74,7 +74,7 @@ export default function ContactForm() {
             <div className="grid gap-4">
               <div className="flex items-left gap-4">
                 <LocateIcon className="h-6 w-6 text-muted-foreground" />
-                <p className="text-muted-foreground">
+                <p className="text-muted-foreground whitespace-nowrap">
                   We are on wheels.. Tell us where to park or deliver
                 </p>
               </div>

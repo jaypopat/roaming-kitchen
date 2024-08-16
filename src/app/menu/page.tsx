@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { MenuItems } from "@/components/MenuItem";
 import items from "./items.json";
 import { track } from "@vercel/analytics/react";
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 
 interface Filters {
   vegetarian: boolean;
@@ -44,25 +44,39 @@ export default function Component(): JSX.Element {
   }, []);
 
   const x = useMotionValue(0);
-  const background = useTransform(
-    x,
-    [-100, 0, 100],
-    ["#22c55e", "#d1d5db", "#ef4444"],
-  );
+  const xInput = [-100, 0, 100]; // Adjusted for three states
+  const background = useTransform(x, xInput, ["#22c55e", "#fbbf24", "#ef4444"]);
+  const dragX = useSpring(x, { stiffness: 1000, damping: 50 });
 
-  const vegetarianOpacity = useTransform(x, [-100, 0], [1, 0.3]);
-  const nonVegetarianOpacity = useTransform(x, [0, 100], [0.3, 1]);
+  const vegetarianOpacity = useTransform(x, xInput, [1, 0.5, 0]);
+  const bothOpacity = useTransform(x, xInput, [0, 1, 0]);
+  const nonVegetarianOpacity = useTransform(x, xInput, [0, 0.5, 1]);
 
   const updateFilters = () => {
     const currentX = x.get();
-    setFilters({
-      vegetarian: currentX <= 0,
-      nonVegetarian: currentX > 0,
-    });
+    if (currentX <= -33) {
+      // Left position for Vegetarian
+      setFilters({
+        vegetarian: true,
+        nonVegetarian: false,
+      });
+    } else if (currentX >= 33) {
+      // Right position for Non-Vegetarian
+      setFilters({
+        vegetarian: false,
+        nonVegetarian: true,
+      });
+    } else {
+      // Center position for Both
+      setFilters({
+        vegetarian: true,
+        nonVegetarian: true,
+      });
+    }
   };
 
   return (
-    <div className="grid grid-rows-[auto_1fr] min-h-screen">
+    <div className="grid grid-rows-[auto_1fr] min-h-screen bg-gray-50">
       <header className="h-14"></header>
       <main className="overflow-y-auto">
         <section className="py-12 md:py-20">
@@ -85,7 +99,7 @@ export default function Component(): JSX.Element {
                 />
                 <div className="flex flex-col items-center justify-center mb-8">
                   <motion.div
-                    className="w-64 h-16 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer relative overflow-hidden"
+                    className="w-64 h-16 bg-gray-200 rounded-full flex items-center justify-center cursor-pointer relative overflow-hidden shadow-lg"
                     style={{ background }}
                   >
                     <motion.div
@@ -96,20 +110,34 @@ export default function Component(): JSX.Element {
                       onDragEnd={updateFilters}
                     >
                       <span role="img" aria-label="food" className="text-2xl">
-                        🍽️
+                        {filters.vegetarian
+                          ? "🥗" // Vegetarian
+                          : filters.nonVegetarian
+                            ? "🍖" // Non-Vegetarian
+                            : "🍽️"}{" "}
                       </span>
                     </motion.div>
                     <motion.div
                       className="absolute left-4 text-2xl"
                       style={{ opacity: vegetarianOpacity }}
-                    ></motion.div>
+                    >
+                      🥗
+                    </motion.div>
+                    <motion.div
+                      className="absolute left-1/2 text-2xl"
+                      style={{ opacity: bothOpacity }}
+                    >
+                      🍽️
+                    </motion.div>
                     <motion.div
                       className="absolute right-4 text-2xl"
                       style={{ opacity: nonVegetarianOpacity }}
-                    ></motion.div>
+                    >
+                      🍖
+                    </motion.div>
                   </motion.div>
                   <p className="mt-4 text-sm text-gray-600">
-                    Slide to choose between vegetarian and non-vegetarian
+                    Slide to choose between Vegetarian, Both, and Non-Vegetarian
                     options
                   </p>
                 </div>

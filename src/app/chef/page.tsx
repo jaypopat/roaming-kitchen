@@ -54,7 +54,7 @@ export default function ChefPage() {
               <h2 className="text-xl font-bold tracking-tighter sm:text-4xl">
                 Meet Our Chef
               </h2>
-              <p className="mt-4 max-w-[1000px] text-muted-foreground md:text-1xl/relaxed lg:text-xl/relaxed xl:text-1xl/relaxed">
+              <p className="mt-4 max-w-[1000px] text-muted-foreground text-left md:text-xl lg:text-xl xl:text-xl">
                 With 25 years of leading top kitchens, Chef Narendra is a
                 culinary maestro known for creating delightful dishes and
                 orchestrating large-scale events. His expertise ensures each
