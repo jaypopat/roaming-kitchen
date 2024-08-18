@@ -2,47 +2,58 @@
     "files": [
       {
         "filename": "02-CHRISTMAS COOK OFF 3.jpg",
-        "description": "Narendra competed in a Christmas cooking contest held in Carrick-on-Shannon, displaying his culinary talents during the festive season."
+        "description": "Narendra competed in a Christmas cooking contest held in Carrick-on-Shannon, displaying his culinary talents during the festive season.",
+        "order" : 1
       },
       {
         "filename": "01-CHRISTMAS COOK OFF 1.jpg",
-        "description": "Narendra participated in a Christmas cooking competition, showcasing his culinary skills against other contestants during the festive season."
+        "description": "Narendra participated in a Christmas cooking competition, showcasing his culinary skills against other contestants during the festive season.",,
+        "order" : 2
       },
       {
         "filename": "03-CLAYTON SLIGO 1.jpg",
-        "description": ""
+        "description": "",
+        "order" : 3
       },
       {
         "filename": "07-TIMES FOOD AWARD.jpg",
-        "description": "Narendra received an award for his exceptional performance in an all-day dining restaurant at The Oberoi in New Delhi."
+        "description": "Narendra received an award for his exceptional performance in an all-day dining restaurant at The Oberoi in New Delhi.",
+        "order" : 4
       },
       {
         "filename": "06-THE LANDMARK.jpg",
-        "description": "Narendra spearheaded the introduction of a new carvery lunch service at the Landmark Hotel, leading the initiative from its inception."
+        "description": "Narendra spearheaded the introduction of a new carvery lunch service at the Landmark Hotel, leading the initiative from its inception.",
+        "order" : 5
       },
       {
         "filename": "08-WEDDING ONLINE AWARD.jpg",
-        "description": "During his tenure, Narendra contributed to winning the award for the best waterside venue as the top wedding destination."
+        "description": "During his tenure, Narendra contributed to winning the award for the best waterside venue as the top wedding destination.",
+        "order" : 6
       },
       {
         "filename": "09-La-Madeleine.jpg",
-        "description": "Narendra established the team and restaurant for La Madeleine, a French fine dining establishment, in Chennai, India."
+        "description": "Narendra established the team and restaurant for La Madeleine, a French fine dining establishment, in Chennai, India.",
+        "order" : 7
       },
       {
         "filename": "10-vogue.jpg",
-        "description": "Narendra's writeup on Ayurvedic cuisine was featured in Vogue Magazine's January 2016 issue."
+        "description": "Narendra's writeup on Ayurvedic cuisine was featured in Vogue Magazine's January 2016 issue.",
+        "order" : 8
       },
       {
         "filename": "11-hospitality-blitz.jpg",
-        "description": "Narendra was featured in Hospitality Biz in August 2015, sharing his culinary journey and insights with young chefs."
+        "description": "Narendra was featured in Hospitality Biz in August 2015, sharing his culinary journey and insights with young chefs.",
+        "order" : 9
       },
       {
         "filename": "12-just-breathe.jpg",
-        "description": "Narendra was featured in Breathe Magazine in August 2018 for his expertise in menu creation focused on weight loss and detox."
+        "description": "Narendra was featured in Breathe Magazine in August 2018 for his expertise in menu creation focused on weight loss and detox.",
+        "order" : 10
       },
       {
         "filename": "13-LANDMARK-BEST-RESTAURANT.jpg",
-        "description": "Narendra was awarded for serving the best bar food in Co. Leitrim."
+        "description": "Narendra was awarded for serving the best bar food in Co. Leitrim.",
+        "order" : 11
       }
     ]
   }
