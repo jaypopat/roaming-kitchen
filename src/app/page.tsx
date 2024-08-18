@@ -14,6 +14,7 @@ export default function Page() {
         <section className="w-full h-screen relative">
           <video className="w-full h-full object-cover" autoPlay loop muted playsinline controls>
             <source src="/slideshow.mp4" type="video/mp4" />
+            <source src="/slideshow.webm" type="video/webm" />
           </video>
           <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
             <div className="space-y-2 flex flex-col items-center">
