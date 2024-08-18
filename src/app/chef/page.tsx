@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 type FileData = {
   filename: string;
   description: string;
+  order: number;
 };
 
 type JSONData = {
@@ -21,9 +22,9 @@ type JSONData = {
 };
 
 export default function ChefPage() {
-  function findDescription(data: JSONData, filename: string): string | null {
+  function findFileData(data: JSONData, filename: string): FileData | null {
     const file = data.files.find((item) => item.filename === filename);
-    return file ? file.description : null;
+    return file || null;
   }
 
   const chef_portfolio_dir = "/chef-portfolio/Narendra";
@@ -35,15 +36,33 @@ export default function ChefPage() {
     return files.filter((file) => /\.(jpg|JPG|jpeg|png|gif)$/.test(file));
   };
 
-  const chef_images = readDirectory(chef_portfolio_dir).map((file) => ({
-    src: file,
-    text: `${findDescription(portfolioData, file)}`,
-  }));
+  const chef_images = readDirectory(chef_portfolio_dir)
+    .map((file) => {
+      const fileData = findFileData(portfolioData, file);
+      return fileData
+        ? {
+            src: file,
+            text: fileData.description,
+            order: fileData.order,
+          }
+        : null;
+    })
+    .filter((item): item is NonNullable<typeof item> => item !== null)
+    .sort((a, b) => a.order - b.order);
 
-  const chef_achievements = readDirectory(chef_awards_dir).map((file) => ({
-    src: file,
-    text: `${findDescription(awardsData, file)}`,
-  }));
+  const chef_achievements = readDirectory(chef_awards_dir)
+    .map((file) => {
+      const fileData = findFileData(awardsData, file);
+      return fileData
+        ? {
+            src: file,
+            text: fileData.description,
+            order: fileData.order,
+          }
+        : null;
+    })
+    .filter((item): item is NonNullable<typeof item> => item !== null)
+    .sort((a, b) => a.order - b.order);
 
   return (
     <>
