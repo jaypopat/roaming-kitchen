@@ -1,36 +1,36 @@
 {
   "files": [
     {
-      "filename": "01-ANANDA.jpg",
-      "description": "Narendra treated Neeti Mohan's entourage to exquisite cuisine during their stay at Ananda in the Himalayas."
-    },
-    {
-      "filename": "03-BIPASHA-BASU.jpg",
-      "description": "A picture with Bipasha Basu & Karan Singh Grover"
-    },
-    {
       "filename": "04-CHARLES-PRINCE.jpg",
       "description": "Narendra served as a personal chef butler for King Charles, preparing exquisite meals fit for royalty"
-    },
-    {
-      "filename": "05-MR.MAHADEVAN.jpeg",
-      "description": "A picture with acclaimed singer Mr. Mahadevan"
-    },
-    {
-      "filename": "06-MR.TATA.JPG",
-      "description": "Narendra has showcased his culinary skills in various settings, preparing meals fit for dignitaries like Mr. Tata"
     },
     {
       "filename": "07-OPERAH-WINFREY.jpg",
       "description": "Narendra crafted a delightful detox experience for Oprah Winfrey"
     },
     {
-      "filename": "08-SONU-NIGAM.jpg",
-      "description": "Sonu Nigam savored Narendra's delightful Ayurvedic culinary creations."
+      "filename": "06-MR.TATA.JPG",
+      "description": "Narendra has showcased his culinary skills in various settings, preparing meals fit for dignitaries like Mr. Tata"
+    },
+    {
+      "filename": "05-MR.MAHADEVAN.jpeg",
+      "description": "A picture with acclaimed singer Mr. Mahadevan"
     },
     {
       "filename": "02-ANUSHKA-SHARMA.jpg",
       "description": "Anushka Sharma praised Narendra for his exceptional culinary skills."
+    },
+    {
+      "filename": "08-SONU-NIGAM.jpg",
+      "description": "Sonu Nigam savored Narendra's delightful Ayurvedic culinary creations."
+    },
+    {
+      "filename": "03-BIPASHA-BASU.jpg",
+      "description": "A picture with Bipasha Basu & Karan Singh Grover"
+    },
+    {
+      "filename": "01-ANANDA.jpg",
+      "description": "Narendra treated Neeti Mohan's entourage to exquisite cuisine during their stay at Ananda in the Himalayas."
     }
   ]
 }
