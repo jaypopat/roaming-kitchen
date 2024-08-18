@@ -12,7 +12,7 @@ export default function Page() {
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
         <section className="w-full h-screen relative">
-          <video className="w-full h-full object-cover" autoPlay loop muted playsInline controls>
+          <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
             <source src="/slideshow.mp4" type="video/mp4" />
           </video>
           <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-white px-4 text-center">
