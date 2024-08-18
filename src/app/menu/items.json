@@ -286,19 +286,19 @@
       {
         "item": "Chole Masala",
         "image": "/menu/main-course/Punjabi-Chole-Masala.jpg",
-        "allergens": "",
+        "allergens": [],
         "description": "Chole Masala is a flavorful Punjabi chickpea curry cooked with onions, tomatoes, and a blend of spices, simmered to perfection and served with rice or bread."
       },
       {
         "item": "Rajma Masala",
         "image": "/menu/main-course/vegan-rajma-masala.jpg",
-        "allergens": "",
+        "allergens": [],
         "description": "Rajma Masala is a hearty North Indian dish made by simmering cooked red kidney beans in a spiced onion-tomato gravy, served with rice or bread for a comforting meal."
       },
       {
         "item": "Kale Methi Palak",
         "image": "/menu/main-course/kale-methi-palak.jpeg",
-        "allergens": "",
+        "allergens": [],
         "description": "Kale Methi Palak combines sautéed kale, fenugreek, and spinach, cooked with spices and garlic, creating a nutritious and flavorful dish that pairs well with roti or rice."
       },
       {
@@ -512,7 +512,7 @@
       {
         "item": "Mixed Fruits",
         "image": "/menu/deserts/MixedFruitSalad.jpg",
-        "allergens": "",
+        "allergens": [],
         "description": "Mixed Fruits is a refreshing salad made by combining a variety of fresh fruits, often dressed with lime or honey, creating a colorful and nutritious dish perfect for any occasion."
       }
     ],

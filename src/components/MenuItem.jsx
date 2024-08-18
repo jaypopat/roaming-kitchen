@@ -16,7 +16,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { allergensIndex } from "../app/menu/allergensIndex";
-import { Analytics, track } from "@vercel/analytics/react";
 
 const CARD_SIZE = 400;
 const TEXT_HEIGHT = 50;
@@ -74,7 +73,7 @@ const AllergenIndicator = ({ allergens }) => {
 
 const MenuItem = ({ item, isVeg }) => {
   const handleDialogOpen = () => {
-    track("Item Dialog Opened", { itemName: item.item, isVegetarian: isVeg });
+    // track("Item Dialog Opened", { itemName: item.item, isVegetarian: isVeg });
   };
   return (
     <Dialog>
