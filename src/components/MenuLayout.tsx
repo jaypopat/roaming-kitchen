@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { MenuItems } from "@/components/MenuItem";
 import DietaryFilter from "@/components/DietaryFilter";
 import { useEffect, useState } from "react";
+import { sendGAEvent } from "@next/third-parties/google";
 
 interface Filters {
   vegetarian: boolean;
@@ -85,7 +86,7 @@ const TabButtons: React.FC<TabButtonsProps> = ({
       className="mr-2 whitespace-nowrap flex-shrink-0"
       onClick={() => {
         setActiveTab(type);
-        // track("Menu Tab Selected", { tabName: type });
+        sendGAEvent({ event: "tab clicked", value: type });
       }}
     >
       {type}

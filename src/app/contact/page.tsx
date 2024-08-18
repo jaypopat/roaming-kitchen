@@ -2,7 +2,7 @@ import ContactFormClient from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Cpntact us",
+  title: "Contact us",
   description:
     "Get in touch with us for catering, event bookings, or any other inquiries.",
 };

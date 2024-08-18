@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -16,6 +18,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { allergensIndex } from "../app/menu/allergensIndex";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const CARD_SIZE = 400;
 const TEXT_HEIGHT = 50;
@@ -73,7 +76,7 @@ const AllergenIndicator = ({ allergens }) => {
 
 const MenuItem = ({ item, isVeg }) => {
   const handleDialogOpen = () => {
-    // track("Item Dialog Opened", { itemName: item.item, isVegetarian: isVeg });
+    sendGAEvent({ event: "dialog opened", value: item });
   };
   return (
     <Dialog>
