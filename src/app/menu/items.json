@@ -1,70 +1,4 @@
 {
-  "Finger Foods": {
-    "Vegetarian": [
-      {
-        "item": "Vegetable Spring Rolls",
-        "image": "/menu/finger-foods/RK_spring_rolls.jpg",
-        "allergens": [4, 5, 6, 7, 8, 10, 12],
-        "description": "Our Vegetable Spring Rolls feature finely chopped carrots, cabbage, bell peppers, and bean sprouts sautéed with garlic and ginger. Wrapped in rice paper, they are lightly fried to a golden crisp. Served with a signature dipping sauce, these rolls offer a perfect balance of fresh, crunchy, and savory flavors."
-      },
-      {
-        "item": "Chips / Wedges",
-        "image": "/menu/finger-foods/chips-and-wedges.jpeg",
-        "allergens": [8, 9],
-        "description": "Our chips and wedges are a perfect blend of crispy and savory. Potatoes are expertly sliced, then seasoned with a blend of herbs and spices. They are baked or fried to golden perfection, ensuring a crunchy exterior with a soft, fluffy interior. Served with a side of tangy dipping sauce, they make a deliciously satisfying snack."
-      },
-      {
-        "item": "Garlic Mushrooms",
-        "image": "/menu/finger-foods/garlic-mushrooms.jpg",
-        "allergens": [6, 8, 9, 11, 12],
-        "description": "Our Garlic Mushrooms are a savory delight. Fresh mushrooms are sautéed in a rich blend of garlic, butter, and herbs until tender and flavorful. Each bite offers a perfect balance of earthy mushroom taste and aromatic garlic. Served hot, they make an irresistible appetizer or side dish."
-      },
-      {
-        "item": "Mozarella Sticks",
-        "image": "/menu/finger-foods/mozzarella-sticks.jpeg",
-        "allergens": [5, 7, 8, 9, 11],
-        "description": "Handcrafted Mozzarella Sticks: premium cheese, double-breaded, and flash-fried to golden perfection. Crispy outside, irresistibly gooey inside. Served piping hot with our signature marinara sauce for the ultimate cheesy indulgence."
-      },
-      {
-        "item": "Crumb Fried Brie",
-        "image": "/menu/finger-foods/RK_brie.jpg",
-        "allergens": [5, 7, 8, 9, 11],
-        "description": "Creamy French cheese encased in a golden, herb-flecked crust. Crisp exterior gives way to a molten center. Served with tangy berry compote for a perfect sweet-savory balance."
-      }
-    ],
-    "NonVegetarian": [
-      {
-        "item": "Cocktail Sausages",
-        "image": "/menu/finger-foods/cocktail-sausages.jpeg",
-        "allergens": [6, 8, 11],
-        "description": "Juicy, bite-sized sausages simmered in a sweet and tangy glaze. Perfectly seasoned and caramelized for a flavorful punch. Skewered for easy enjoyment, these savory morsels make an irresistible appetizer or snack."
-      },
-      {
-        "item": "Chicken Wings",
-        "image": "/menu/finger-foods/RK_chicken_wings.jpg",
-        "allergens": [6, 7, 9],
-        "description": "Crispy, tender chicken wings tossed in our signature spicy sauce. Perfectly fried for a satisfying crunch, with meat that falls off the bone. Served with cool ranch dip to balance the heat."
-      },
-      {
-        "item": "Fish Goujons",
-        "image": "/menu/finger-foods/fish-goujons.png",
-        "allergens": [1, 2, 3, 6, 7, 8, 11],
-        "description": "Fresh white fish fillets are cut into strips, dipped in seasoned flour, dredged in beaten egg, then coated in crispy breadcrumbs. Fried to golden perfection until crispy on the outside and tender inside."
-      },
-      {
-        "item": "Chicken Goujons",
-        "image": "/menu/finger-foods/chicken-goujons.jpg",
-        "allergens": [6, 7, 8, 9, 11],
-        "description": "Chicken tenders are dipped in seasoned flour, dredged in beaten egg, then coated in crispy breadcrumbs and panko. Baked until golden and crispy on the outside, tender inside"
-      },
-      {
-        "item": "Spicy Cocktail Chicken Skewers",
-        "image": "/menu/finger-foods/spicky-cocktail-chicken-skewers.jpg",
-        "allergens": [8, 9, 11],
-        "description": "Chicken pieces are marinated in a blend of olive oil, garlic, lemon juice, and spices. Skewered and grilled until charred, they are served with a zesty dipping sauce."
-      }
-    ]
-  },
   "Soups": {
     "Vegetarian": [
       {
@@ -606,6 +540,72 @@
         "image": "/menu/deserts/RK_apple_crumble_tart.jpg",
         "allergens": [6, 7, 11],
         "description": "Apple Crumble Tart features a crisp sweet pastry shell filled with spiced apples, topped with a buttery crumble topping, baked until golden, and served warm with a dollop of cream or custard."
+      }
+    ]
+  },
+  "Finger Foods": {
+    "Vegetarian": [
+      {
+        "item": "Vegetable Spring Rolls",
+        "image": "/menu/finger-foods/RK_spring_rolls.jpg",
+        "allergens": [4, 5, 6, 7, 8, 10, 12],
+        "description": "Our Vegetable Spring Rolls feature finely chopped carrots, cabbage, bell peppers, and bean sprouts sautéed with garlic and ginger. Wrapped in rice paper, they are lightly fried to a golden crisp. Served with a signature dipping sauce, these rolls offer a perfect balance of fresh, crunchy, and savory flavors."
+      },
+      {
+        "item": "Chips / Wedges",
+        "image": "/menu/finger-foods/chips-and-wedges.jpeg",
+        "allergens": [8, 9],
+        "description": "Our chips and wedges are a perfect blend of crispy and savory. Potatoes are expertly sliced, then seasoned with a blend of herbs and spices. They are baked or fried to golden perfection, ensuring a crunchy exterior with a soft, fluffy interior. Served with a side of tangy dipping sauce, they make a deliciously satisfying snack."
+      },
+      {
+        "item": "Garlic Mushrooms",
+        "image": "/menu/finger-foods/garlic-mushrooms.jpg",
+        "allergens": [6, 8, 9, 11, 12],
+        "description": "Our Garlic Mushrooms are a savory delight. Fresh mushrooms are sautéed in a rich blend of garlic, butter, and herbs until tender and flavorful. Each bite offers a perfect balance of earthy mushroom taste and aromatic garlic. Served hot, they make an irresistible appetizer or side dish."
+      },
+      {
+        "item": "Mozarella Sticks",
+        "image": "/menu/finger-foods/mozzarella-sticks.jpeg",
+        "allergens": [5, 7, 8, 9, 11],
+        "description": "Handcrafted Mozzarella Sticks: premium cheese, double-breaded, and flash-fried to golden perfection. Crispy outside, irresistibly gooey inside. Served piping hot with our signature marinara sauce for the ultimate cheesy indulgence."
+      },
+      {
+        "item": "Crumb Fried Brie",
+        "image": "/menu/finger-foods/RK_brie.jpg",
+        "allergens": [5, 7, 8, 9, 11],
+        "description": "Creamy French cheese encased in a golden, herb-flecked crust. Crisp exterior gives way to a molten center. Served with tangy berry compote for a perfect sweet-savory balance."
+      }
+    ],
+    "NonVegetarian": [
+      {
+        "item": "Cocktail Sausages",
+        "image": "/menu/finger-foods/cocktail-sausages.jpeg",
+        "allergens": [6, 8, 11],
+        "description": "Juicy, bite-sized sausages simmered in a sweet and tangy glaze. Perfectly seasoned and caramelized for a flavorful punch. Skewered for easy enjoyment, these savory morsels make an irresistible appetizer or snack."
+      },
+      {
+        "item": "Chicken Wings",
+        "image": "/menu/finger-foods/RK_chicken_wings.jpg",
+        "allergens": [6, 7, 9],
+        "description": "Crispy, tender chicken wings tossed in our signature spicy sauce. Perfectly fried for a satisfying crunch, with meat that falls off the bone. Served with cool ranch dip to balance the heat."
+      },
+      {
+        "item": "Fish Goujons",
+        "image": "/menu/finger-foods/fish-goujons.png",
+        "allergens": [1, 2, 3, 6, 7, 8, 11],
+        "description": "Fresh white fish fillets are cut into strips, dipped in seasoned flour, dredged in beaten egg, then coated in crispy breadcrumbs. Fried to golden perfection until crispy on the outside and tender inside."
+      },
+      {
+        "item": "Chicken Goujons",
+        "image": "/menu/finger-foods/chicken-goujons.jpg",
+        "allergens": [6, 7, 8, 9, 11],
+        "description": "Chicken tenders are dipped in seasoned flour, dredged in beaten egg, then coated in crispy breadcrumbs and panko. Baked until golden and crispy on the outside, tender inside"
+      },
+      {
+        "item": "Spicy Cocktail Chicken Skewers",
+        "image": "/menu/finger-foods/spicky-cocktail-chicken-skewers.jpg",
+        "allergens": [8, 9, 11],
+        "description": "Chicken pieces are marinated in a blend of olive oil, garlic, lemon juice, and spices. Skewered and grilled until charred, they are served with a zesty dipping sauce."
       }
     ]
   },
