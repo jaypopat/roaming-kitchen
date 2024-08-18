@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">{children}</main>
-        <GoogleAnalytics gaId="GTM-PJDHW4K7" />
+        <GoogleAnalytics gaId="G-M8T3J3BTE6" />
         <Socials />
         <Footer />
       </body>
