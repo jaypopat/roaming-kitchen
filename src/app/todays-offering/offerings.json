@@ -1,0 +1,13 @@
+{
+    "offerings": [
+      {
+        "name": "Chicken Curry with Rice",
+        "description": "Succulent pieces of chicken in gravy served with egg fried rice",
+        "allergens": [1,2,3],
+        "image" : "/todays-offering/chicken-curry.jpg",
+        "price": "€ 10.00",
+        "dietary-type" : "non-vegetarian"
+      }
+    ]
+  }
+  
