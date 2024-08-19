@@ -4,11 +4,7 @@ import { MenuItems } from "@/components/MenuItem";
 import DietaryFilter from "@/components/DietaryFilter";
 import { useEffect, useState } from "react";
 import { sendGAEvent } from "@next/third-parties/google";
-
-interface Filters {
-  vegetarian: boolean;
-  nonVegetarian: boolean;
-}
+import { Filters, Menu } from "@/app/menu/types";
 
 interface TabContainerProps {
   types: string[];
@@ -21,21 +17,6 @@ interface TabButtonsProps {
   types: string[];
   activeTab: string;
   setActiveTab: React.Dispatch<React.SetStateAction<string>>;
-}
-interface Item {
-  item: string;
-  image: string;
-  allergens: number[];
-  description: string;
-}
-
-interface Category {
-  Vegetarian?: Item[];
-  NonVegetarian?: Item[];
-}
-
-interface Menu {
-  [key: string]: Category;
 }
 
 interface MenuLayoutProps {

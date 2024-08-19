@@ -24,6 +24,26 @@ const CARD_SIZE = 400;
 const TEXT_HEIGHT = 50;
 const DIALOG_IMAGE_HEIGHT = 400;
 
+// interface MenuItemsProps {
+//   category: string;
+//   filters: Filters;
+//   items: Menu;
+// }
+
+// interface VegIndicatorProps {
+//   isVeg: boolean;
+// }
+
+// interface AllergenIndicatorProps {
+//   allergens: number[];
+// }
+
+// interface MenuItemProps {
+//   item: Item;
+//   isVeg: boolean;
+// }
+
+
 const VegIndicator = ({ isVeg }) => (
   <div
     style={{
@@ -210,4 +230,4 @@ export const MenuItems = ({ category, filters, items }) => {
         : filters.nonVegetarian && renderNoItemsMessage("non-vegetarian")}
     </div>
   );
-};
+};      
