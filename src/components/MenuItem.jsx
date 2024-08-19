@@ -43,7 +43,6 @@ const DIALOG_IMAGE_HEIGHT = 400;
 //   isVeg: boolean;
 // }
 
-
 const VegIndicator = ({ isVeg }) => (
   <div
     style={{
@@ -94,7 +93,7 @@ const AllergenIndicator = ({ allergens }) => {
   );
 };
 
-const MenuItem = ({ item, isVeg }) => {
+export const MenuItem = ({ item, isVeg }) => {
   const handleDialogOpen = () => {
     sendGAEvent({ event: "buttonClicked", value: item });
   };
@@ -230,4 +229,4 @@ export const MenuItems = ({ category, filters, items }) => {
         : filters.nonVegetarian && renderNoItemsMessage("non-vegetarian")}
     </div>
   );
-};      
+};
