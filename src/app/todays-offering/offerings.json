@@ -7,6 +7,14 @@
         "image" : "/todays-offering/chicken-curry.jpg",
         "price": "€ 10.00",
         "dietary-type" : "non-vegetarian"
+      },
+      {
+        "name": "Puri Bhaji",
+        "description": "Crispy, puffy bread served with spicy potato curry. A flavorful Indian street food delight.",
+        "allergens": [1,2,3],
+        "image" : "/todays-offering/puri-bhaji.jpg",
+        "price": "€ 8.00",
+        "dietary-type" : "vegetarian"
       }
     ]
   }
