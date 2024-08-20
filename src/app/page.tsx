@@ -34,8 +34,8 @@ export default function Page() {
             Something Delicious is Coming!
           </h1>
           <p className="max-w-2xl text-lg md:text-2xl text-white/90">
-            We're busy cooking up something special for you. Stay tuned to our socials
-            and be the first to know!
+            We're busy cooking up something special for you. 
+            Stay tuned to our socials and be the first to know!
           </p>
 
           <Countdown />
