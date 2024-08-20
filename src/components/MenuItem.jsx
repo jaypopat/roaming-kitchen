@@ -95,7 +95,7 @@ const AllergenIndicator = ({ allergens }) => {
 
 export const MenuItem = ({ item, isVeg }) => {
   const handleDialogOpen = () => {
-    sendGAEvent({ event: "buttonClicked", value: item });
+    sendGAEvent("buttonClicked", item);
   };
   return (
     <Dialog>
