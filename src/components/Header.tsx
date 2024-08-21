@@ -11,12 +11,12 @@ export default function Header() {
       href: "/menu",
     },
     {
-      name: "About",
-      href: "/about",
-    },
-    {
       name: "Chef",
       href: "/chef",
+    },
+    {
+      name: "About",
+      href: "/about",
     },
     {
       name: "Contact",
