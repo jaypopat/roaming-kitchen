@@ -67,7 +67,6 @@ const TabButtons: React.FC<TabButtonsProps> = ({
       className="mr-2 whitespace-nowrap flex-shrink-0"
       onClick={() => {
         setActiveTab(type);
-        console.log("Event value being sent = " + type);
         sendGAEvent("event", "menuCategoryClicked", {value: type});
       }}
     >
