@@ -68,11 +68,7 @@ const TabButtons: React.FC<TabButtonsProps> = ({
       onClick={() => {
         setActiveTab(type);
         console.log("Event value being sent = " + type);
-        sendGAEvent("menuTabClicked", {
-          category: 'item_view',
-          label: "item-name",
-          value: type
-        });
+        sendGAEvent("event", "menuCategoryClicked", {value: type});
       }}
     >
       {type}
