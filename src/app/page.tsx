@@ -30,7 +30,7 @@ export default function Page() {
             alt="Roaming Kitchen Logo"
             className="mx-auto animate-pulse"
           />
-          <h1 className="text-6xl font-bold tracking-wide">
+          <h1 className="text-4xl font-bold tracking-wide">
             Something Delicious is Coming!
           </h1>
           <p className="max-w-2xl text-lg md:text-2xl text-white/90">

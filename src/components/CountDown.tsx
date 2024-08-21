@@ -29,7 +29,7 @@ export default function Countdown() {
   }, []);
 
   return (
-    <div className="flex justify-center items-center space-x-6 md:space-x-12 text-3xl md:text-6xl font-display">
+    <div className="flex justify-center items-center space-x-6 md:space-x-12 text-2xl md:text-4xl font-display">
       {Object.entries(timeLeft).map(([unit, value]) => (
         <div
           key={unit}
