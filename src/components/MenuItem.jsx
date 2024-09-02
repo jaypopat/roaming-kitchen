@@ -95,7 +95,7 @@ const AllergenIndicator = ({ allergens }) => {
 
 export const MenuItem = ({ item, isVeg }) => {
   const handleDialogOpen = () => {
-    sendGAEvent("event", "menuItemClicked", {value: item.item});
+    sendGAEvent("event", "menuItemClicked", { value: item.item });
   };
   return (
     <Dialog>
@@ -212,21 +212,29 @@ export const MenuItems = ({ category, filters, items }) => {
       <MenuItem key={item.item} item={item} isVeg={isVeg} />
     ));
 
-  const renderNoItemsMessage = (type) => (
-    <div className="col-span-full text-center text-gray-500">
-      No {type} items available.
-    </div>
-  );
+  // Check if there are vegetarian items
+  const vegetarianItems = filters.vegetarian ? items[category]?.Vegetarian : [];
+  // Check if there are non-vegetarian items
+  const nonVegetarianItems = filters.nonVegetarian
+    ? items[category]?.NonVegetarian
+    : [];
+
+  // If there are no items to display, return null
+  if (vegetarianItems.length === 0 && nonVegetarianItems.length === 0) {
+    return null; // Render nothing
+  }
 
   return (
     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-      {filters.vegetarian && items[category]?.Vegetarian?.length > 0
-        ? renderItems(items[category].Vegetarian, true)
-        : filters.vegetarian && renderNoItemsMessage("vegetarian")}
+      {/* Render Vegetarian Items */}
+      {filters.vegetarian &&
+        vegetarianItems.length > 0 &&
+        renderItems(vegetarianItems, true)}
 
-      {filters.nonVegetarian && items[category]?.NonVegetarian?.length > 0
-        ? renderItems(items[category].NonVegetarian, false)
-        : filters.nonVegetarian && renderNoItemsMessage("non-vegetarian")}
+      {/* Render Non-Vegetarian Items */}
+      {filters.nonVegetarian &&
+        nonVegetarianItems.length > 0 &&
+        renderItems(nonVegetarianItems, false)}
     </div>
   );
 };
