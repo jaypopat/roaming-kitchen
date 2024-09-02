@@ -3,13 +3,15 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import DietaryFilter from "@/components/DietaryFilter";
 import { MenuItem } from "@/components/MenuItem";
-import { offerings } from "./offerings.json";
+import offeringsData from "./offerings.json";
 
 export default function TodaysOfferings() {
   const [filters, setFilters] = useState({
     vegetarian: true,
     nonVegetarian: true,
   });
+
+  const offerings = offeringsData.offerings;
 
   const filteredOfferings = offerings.filter(
     (offering) =>

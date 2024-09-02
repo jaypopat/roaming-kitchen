@@ -28,30 +28,30 @@ const Search: React.FC<SearchProps> = ({ items, onSearchResults }) => {
           })),
         ),
     );
-
     const fuseInstance = new Fuse(allItems, {
       keys: ["item.item", "item.description"],
       threshold: 0.3,
     });
-
     setFuse(fuseInstance);
   }, [items]);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const term = e.target.value;
     setSearchTerm(term);
-
     if (fuse && term) {
       const searchResults = fuse.search(term);
       const groupedResults: Menu = searchResults.reduce((acc, result) => {
         const { category, type, item } = result.item;
         if (!acc[category]) {
-          acc[category] = { Vegetarian: [], NonVegetarian: [] };
+          acc[category] = { Vegetarian: [], NonVegetarian: [] } as Category;
         }
-        acc[category][type].push(item);
+        if (type === "Vegetarian" || type === "NonVegetarian") {
+          (acc[category][type] as Item[]) =
+            (acc[category][type] as Item[]) || [];
+          (acc[category][type] as Item[]).push(item);
+        }
         return acc;
       }, {} as Menu);
-
       onSearchResults(groupedResults);
     } else {
       onSearchResults({});
