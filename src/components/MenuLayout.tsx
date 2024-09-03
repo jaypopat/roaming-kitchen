@@ -122,16 +122,35 @@ export function MenuLayout({ types, items }: MenuLayoutProps): JSX.Element {
       />
       <DietaryFilter setFilters={setFilters} />
       {activeTab === "Search Results" ? (
-        Object.entries(displayItems).map(([category, categoryItems]) => (
-          <div key={category}>
-            <h3 className="text-xl font-semibold mt-6 mb-4">{category}</h3>
-            <MenuItems
-              category={category}
-              filters={filters}
-              items={{ [category]: categoryItems }}
-            />
-          </div>
-        ))
+        Object.entries(displayItems).map(([category, categoryItems]) => {
+          const filteredVegetarianItems = filters.vegetarian
+            ? categoryItems.Vegetarian || []
+            : [];
+          const filteredNonVegetarianItems = filters.nonVegetarian
+            ? categoryItems.NonVegetarian || []
+            : [];
+          const hasItems =
+            filteredVegetarianItems.length > 0 ||
+            filteredNonVegetarianItems.length > 0;
+
+          return (
+            hasItems && (
+              <div key={category}>
+                <h3 className="text-xl font-semibold mt-6 mb-4">{category}</h3>
+                <MenuItems
+                  category={category}
+                  filters={filters}
+                  items={{
+                    [category]: {
+                      Vegetarian: filteredVegetarianItems,
+                      NonVegetarian: filteredNonVegetarianItems,
+                    },
+                  }}
+                />
+              </div>
+            )
+          );
+        })
       ) : (
         <MenuItems
           category={activeTab}
