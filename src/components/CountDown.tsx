@@ -12,7 +12,7 @@ export default function Countdown() {
   useEffect(() => {
     const countdown = () => {
       const now = new Date().getTime();
-      const target = new Date("2024-09-09T00:00:00Z").getTime();
+      const target = new Date("2024-09-19T00:00:00Z").getTime();
       const difference = target - now;
       setTimeLeft({
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),

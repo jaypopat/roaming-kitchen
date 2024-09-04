@@ -52,7 +52,6 @@ const Search: React.FC<SearchProps> = ({ items, onSearchResults }) => {
         }
         return acc;
       }, {} as Menu);
-      console.log(groupedResults);
       onSearchResults(groupedResults);
     } else {
       onSearchResults({});

@@ -1,11 +1,20 @@
 import { NextRequest } from "next/server";
 import nodemailer from "nodemailer";
+import { z } from "zod";
+
+let schema = z.object({
+  name: z.string(),
+  phone: z.string(),
+  email: z.string().email(),
+  message: z.string(),
+});
 
 export async function POST(request: NextRequest) {
   let user = process.env.GMAIL_USER;
   let pass = process.env.GMAIL_PWD;
   try {
-    const { name, phone, email, message } = await request.json();
+    const data = await request.json();
+    const { name, phone, email, message } = schema.parse(data);
     const transporter = nodemailer.createTransport({
       service: "Gmail",
       auth: { user, pass },

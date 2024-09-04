@@ -154,12 +154,12 @@ export const MenuItem = ({ item, isVeg }) => {
         <DialogHeader className="p-4 bg-gray-50 shrink-0">
           <DialogTitle className="text-2xl font-bold">{item.item}</DialogTitle>
         </DialogHeader>
-        <DialogDescription>
+        <DialogDescription className="px-4">
           {item.description && (
             <p className="text-gray-700 mb-4">{item.description}</p>
           )}
         </DialogDescription>
-        <div className="flex-grow overflow-y-auto">
+        <div className="flex-grow overflow-y-auto ">
           <div
             className="relative w-full"
             style={{ height: `${DIALOG_IMAGE_HEIGHT}px` }}
@@ -214,12 +214,10 @@ export const MenuItems = ({ category, filters, items }) => {
 
   // Check if there are vegetarian items
   const vegetarianItems = filters.vegetarian ? items[category]?.Vegetarian : [];
-
   // Check if there are non-vegetarian items
-  const nonVegetarianItems =
-    filters.nonVegetarian && items[category]?.NonVegetarian
-      ? items[category].NonVegetarian
-      : [];
+  const nonVegetarianItems = filters.nonVegetarian
+    ? items[category]?.NonVegetarian || []
+    : [];
 
   // If there are no items to display, return null
   if (vegetarianItems.length === 0 && nonVegetarianItems.length === 0) {
@@ -229,12 +227,12 @@ export const MenuItems = ({ category, filters, items }) => {
   return (
     <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
       {/* Render Vegetarian Items */}
-      {filters?.vegetarian &&
+      {filters.vegetarian &&
         vegetarianItems.length > 0 &&
         renderItems(vegetarianItems, true)}
 
       {/* Render Non-Vegetarian Items */}
-      {filters?.nonVegetarian &&
+      {filters.nonVegetarian &&
         nonVegetarianItems.length > 0 &&
         renderItems(nonVegetarianItems, false)}
     </div>

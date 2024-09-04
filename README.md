@@ -10,3 +10,9 @@ cd roaming-kitchen
 npm i
 npm run dev
 ```
+## Tech Stack
+- NextJS (React)
+- Tailwind CSS
+- Vercel
+- NextJS API routes
+- Shadcn UI
