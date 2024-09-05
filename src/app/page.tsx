@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 import Image from "next/image";
 import Countdown from "@/components/CountDown";
+import WaitlistForm from "@/components/WaitlistForm";
 
 export const metadata: Metadata = {
   title: "Roaming Kitchen",
@@ -21,8 +22,7 @@ export default function Page() {
         >
           <source src="/slideshow.mp4" type="video/mp4" />
         </video>
-
-        <div className="relative z-20 flex flex-col items-center justify-center h-screen px-4 text-center space-y-6 bg-black/70">
+        <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-4 text-center space-y-6 bg-black/70 py-12">
           <Image
             height={300}
             width={300}
@@ -34,12 +34,10 @@ export default function Page() {
             Something Delicious is Coming!
           </h1>
           <p className="max-w-2xl text-lg md:text-2xl text-white/90">
-            We're busy cooking up something special for you. 
-            Stay tuned to our socials and be the first to know!
+            We're busy cooking up something special for you. Stay tuned to our
+            socials and be the first to know!
           </p>
-
           <Countdown />
-
           <Link
             href="/menu"
             className="mt-6 inline-flex h-12 items-center justify-center rounded-md bg-red-600 px-8 text-lg font-semibold text-white shadow-lg hover:bg-red-700 transition-all duration-300"
@@ -47,6 +45,10 @@ export default function Page() {
           >
             Sneak Peek at Our Menu
           </Link>
+          <div className="mt-12">
+            <h2 className="text-2xl font-semibold mb-4">Join Our Mail List</h2>
+            <WaitlistForm />
+          </div>
         </div>
       </main>
     </div>

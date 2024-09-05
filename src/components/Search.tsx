@@ -25,8 +25,8 @@ const Search: React.FC<SearchProps> = ({ items, onSearchResults }) => {
             item,
             category,
             type: type as "Vegetarian" | "NonVegetarian",
-          })),
-        ),
+          }))
+        )
     );
     const fuseInstance = new Fuse(allItems, {
       keys: ["item.item", "item.description"],
