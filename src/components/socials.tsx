@@ -21,7 +21,7 @@ const FacebookIcon = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-const TwitterIcon = (props: React.SVGProps<SVGSVGElement>) => (
+const XLogo = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
     xmlns="http://www.w3.org/2000/svg"
@@ -31,8 +31,8 @@ const TwitterIcon = (props: React.SVGProps<SVGSVGElement>) => (
     fill="none"
   >
     <path
-      fill="#1DA1F2"
-      d="M23.954 4.569c-.885.392-1.83.656-2.825.775a4.932 4.932 0 002.163-2.723 9.864 9.864 0 01-3.127 1.195 4.924 4.924 0 00-8.389 4.482 13.978 13.978 0 01-10.148-5.148 4.822 4.822 0 00-.665 2.475c0 1.708.87 3.213 2.188 4.096a4.904 4.904 0 01-2.229-.616v.061a4.927 4.927 0 003.946 4.827 4.902 4.902 0 01-2.224.085 4.927 4.927 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.396 0-.787-.023-1.175-.068a13.945 13.945 0 007.548 2.212c9.058 0 14.01-7.506 14.01-14.01 0-.213-.004-.426-.014-.637a10.005 10.005 0 002.457-2.548l-.047-.02z"
+      fill="#000000" // Black fill to match the current "X" logo branding
+      d="M5 2L12 10L19 2H22L14 12L22 22H19L12 14L5 22H2L10 12L2 2H5Z"
     />
   </svg>
 );
@@ -103,9 +103,9 @@ const socialLinks: SocialLink[] = [
     Icon: FacebookIcon,
   },
   {
-    name: "Twitter",
+    name: "X",
     href: "https://x.com/RoamingKitchen_",
-    Icon: TwitterIcon,
+    Icon: XLogo,
   },
   {
     name: "Instagram",

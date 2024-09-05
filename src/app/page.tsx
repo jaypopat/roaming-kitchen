@@ -46,7 +46,6 @@ export default function Page() {
             Sneak Peek at Our Menu
           </Link>
           <div className="mt-12">
-            <h2 className="text-2xl font-semibold mb-4">Join Our Mail List</h2>
             <WaitlistForm />
           </div>
         </div>
