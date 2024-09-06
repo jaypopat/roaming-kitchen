@@ -23,12 +23,13 @@ export const Email = ({ name, description }: EmailProps) => (
     <Body style={main}>
       <Container style={container}>
         <Img
-          src="https://roaming-kitchen.vercel.app/_next/image?url=%2Femail-logo.png&w=96&q=75"
+          src="https://roaming-kitchen.vercel.app/_next/image?url=%2Femail-logo.png&w=170&q=75"
           width="170"
-          height="50"
+          height="170"
           alt="Roaming Kitchen"
           style={logo}
         />
+
         <Text style={paragraph}>Hi {name},</Text>
         <Text style={paragraph}>{description}</Text>
         <Section style={btnContainer}>
