@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 import { z } from "zod";
 import { Pool } from "pg";
 import { render } from "@react-email/render";
-import { EmailComponent } from "@/components/Email";
+import { Email } from "@/components/Email";
 
 const schema = z.object({
   subject: z.string(),
@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
     await Promise.all(
       waitlistUsers.map(async (user: WaitlistUser) => {
         const emailHtml = await render(
-          <EmailComponent name={user.name} description={message} />,
+          <Email name={user.name} description={message} />,
         );
         const mailOptions = {
           from: gmailUser,
