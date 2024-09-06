@@ -27,7 +27,6 @@ export async function POST(request: NextRequest) {
       return new Response("Email already exists in waitlist", { status: 400 });
     }
 
-    // Insert new entry
     await client.query("INSERT INTO waitlist (name, email) VALUES ($1, $2)", [
       name,
       email,
@@ -45,8 +44,11 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// Optionally, you can add a GET method to retrieve the waitlist
 export async function GET(request: NextRequest) {
+  const apiKey = request.headers.get("x-api-key");
+  if (apiKey !== process.env.API_SECRET_KEY) {
+    return new Response("Unauthorized", { status: 401 });
+  }
   const client = await pool.connect();
   try {
     const result = await client.query(

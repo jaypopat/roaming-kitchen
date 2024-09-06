@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
     });
 
     const mailOptions = {
-      from: user,
+      from: "contact-submissions@roaming.kitchen",
       to: user,
       subject: `New Contact Form Submission from ${name}`,
       text: `

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-const WaitlistForm: React.FC = () => {
+const NewsletterSignup: React.FC = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -15,11 +15,13 @@ const WaitlistForm: React.FC = () => {
         body: JSON.stringify({ name, email }),
       });
       if (response.ok) {
-        setMessage("Thanks for joining our waitlist!");
+        setMessage("Thanks for subscribing to our newsletter!");
         setName("");
         setEmail("");
+      } else if (response.status === 400) {
+        setMessage("You're already subscribed!");
       } else {
-        setMessage("Error joining waitlist. Please try again.");
+        setMessage("Error subscribing. Please try again.");
       }
     } catch (error) {
       setMessage("An error occurred. Please try again later.");
@@ -31,7 +33,7 @@ const WaitlistForm: React.FC = () => {
       onSubmit={handleSubmit}
       className="bg-white/10 p-6 rounded-lg shadow-lg animate-fade-in"
     >
-      <h2 className="text-2xl font-bold mb-4 text-center">Join Our Waitlist</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center">Stay Updated</h2>
       <div className="space-y-4">
         <input
           type="text"
@@ -53,7 +55,7 @@ const WaitlistForm: React.FC = () => {
           type="submit"
           className="w-full px-4 py-2 rounded bg-red-600 text-white font-semibold hover:bg-red-700 transition-colors duration-300"
         >
-          Join Waitlist
+          Subscribe to Newsletter
         </button>
       </div>
       {message && (
@@ -63,4 +65,4 @@ const WaitlistForm: React.FC = () => {
   );
 };
 
-export default WaitlistForm;
+export default NewsletterSignup;

@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
           <Email name={user.name} description={message} />,
         );
         const mailOptions = {
-          from: gmailUser,
+          from: " roaming.kitchen@noreply.com",
           to: user.email,
           subject: subject,
           html: emailHtml,
