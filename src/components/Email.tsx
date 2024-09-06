@@ -10,7 +10,6 @@ import {
   Section,
   Text,
 } from "@react-email/components";
-import * as React from "react";
 
 interface EmailProps {
   name: string;
@@ -24,7 +23,7 @@ export const Email = ({ name, description }: EmailProps) => (
     <Body style={main}>
       <Container style={container}>
         <Img
-          src="/logo.png"
+          src="https://roaming-kitchen.vercel.app/_next/image?url=%2Femail-logo.png&w=96&q=75"
           width="170"
           height="50"
           alt="Roaming Kitchen"
