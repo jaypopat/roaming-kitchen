@@ -39,13 +39,12 @@ export default function Page() {
               We're busy cooking up something special for you. Stay tuned to our
               socials and be the first to know!
             </p>
-            <Countdown />
             <Link
               href="/menu"
               className="mt-6 inline-flex h-12 items-center justify-center rounded-md bg-red-600 px-8 text-lg font-semibold text-white shadow-lg hover:bg-red-700 transition-all duration-300"
               prefetch={false}
             >
-              Sneak Peek at Our Menu
+              Menu
             </Link>
             <div className="mt-12 max-w-md mx-auto">
               <NewsletterSignup />
