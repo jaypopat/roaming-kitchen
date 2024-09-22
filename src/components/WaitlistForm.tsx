@@ -16,7 +16,7 @@ const NewsletterSignup: React.FC = () => {
         body: JSON.stringify({ name, email }),
       });
       if (response.ok) {
-        setMessage("Thanks for joining our waitlist!");
+        setMessage("Thanks for joining our mailing list!");
         setName("");
         setEmail("");
       } else if (response.status === 400) {
@@ -32,7 +32,7 @@ const NewsletterSignup: React.FC = () => {
   return (
     <div className="bg-white/10 p-4 md:p-6 rounded-lg shadow-lg backdrop-blur-sm">
       <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-center text-white">
-        Join Our Waitlist
+        Join Our Mailing List
       </h2>
       <form onSubmit={handleSubmit} className="space-y-3 md:space-y-4">
         <div className="relative">
@@ -75,7 +75,7 @@ const NewsletterSignup: React.FC = () => {
           type="submit"
           className="w-full px-4 py-2 rounded-full bg-red-600 text-white text-sm md:text-base font-semibold hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-400 focus:ring-offset-2 focus:ring-offset-black transition-all duration-300 flex items-center justify-center group"
         >
-          <span>Join Waitlist</span>
+          <span>Join our Mailing List</span>
           <Send
             className="ml-2 group-hover:translate-x-1 transition-transform duration-300"
             size={16}
