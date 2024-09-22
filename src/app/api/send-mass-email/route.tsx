@@ -3,7 +3,7 @@ import nodemailer from "nodemailer";
 import { z } from "zod";
 import { Pool } from "pg";
 import { render } from "@react-email/render";
-import { Email } from "@/components/Email";
+import Email from "@/components/Email";
 
 const schema = z.object({
   subject: z.string(),
