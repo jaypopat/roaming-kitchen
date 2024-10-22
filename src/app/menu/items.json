@@ -34,7 +34,7 @@
       {
         "item": "Hot & Sour",
         "image": "/menu/soups/Hot-and-Sour-Soup.jpg",
-        "allergens": [4, 6, 10, 12],
+        "allergens": [4, 6, 8, 10, 12],
         "description": "Vegetable broth is simmered with mushrooms, bamboo shoots, and tofu, then thickened with cornstarch. Finished with vinegar and spices for a tangy flavor."
       },
       {
@@ -136,7 +136,7 @@
       {
         "item": "Honey Chilli Potato",
         "image": "/menu/starters/honey-chilli-potato.jpg",
-        "allergens": [7, 8, 10, 11, 12],
+        "allergens": [7, 8, 10, 12],
         "description": "Potato wedges are deep-fried until crispy, then tossed in a sweet and spicy sauce made with honey, soy sauce, and chili sauce, garnished with sesame seeds and spring onions."
       },
       {
@@ -482,7 +482,7 @@
       {
         "item": "Gajar ka Halwa",
         "image": "/menu/deserts/Gajar-ka-Halwa.webp",
-        "allergens": [7],
+        "allergens": [7, 15],
         "description": "Gajar ka Halwa is a traditional Indian dessert made from grated carrots cooked in milk and ghee, sweetened with sugar, and flavored with cardamom, garnished with nuts."
       },
       {
